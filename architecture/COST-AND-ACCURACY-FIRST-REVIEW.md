@@ -81,4 +81,4 @@ The existing `LICENSE` covers authored Markdown under CC BY 4.0 and excludes off
 
 ## What this review changed
 
-Recorded the owner's cost-reduction objective and confirmations 5 and 6; qualified earlier assurance language; prepared risk-tier examples and future English publication copy; added reproducible diagnostic probes. No runtime defect was fixed, no new cases were ingested, no operational advice was certified, no private data was uploaded and nothing was published to GitHub or LinkedIn.
+Recorded the owner's cost-reduction objective and confirmations 5 and 6; qualified earlier assurance language; prepared risk-tier examples and future publication copy; added reproducible diagnostic probes. No runtime defect was fixed, no new cases were ingested, no operational advice was certified, no private data was uploaded and nothing was published to GitHub or LinkedIn.

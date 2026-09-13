@@ -1,4 +1,4 @@
-# English-Only Accuracy Optimisation
+# Accuracy Optimisation
 
 Date: 13 September 2026. This release is a bounded implementation step toward
 lower-cost, reliable enterprise electricity-compliance research. It is not a
@@ -14,7 +14,7 @@ nationwide-completeness, professional-outperformance or operational-clearance cl
    spans. Preserved the original 34 provision records and 241 source chunks. The
    full NER v254, final FY27 fees and invoice fact sheet are byte-preserved. The
    global legal baseline remains 29 August 2026.
-3. Added the [English answer workflow](../../ENGLISH-ANSWER-WORKFLOW.md): explicit
+3. Added the [answer workflow](../../ANSWER-WORKFLOW.md): explicit
    subquestions, intake, local search and counter-search, exact citations, separate
    answer/reviewer adapters, bounded targeted repair and private audit artifacts.
    No providers configured means an offline handoff, not an autonomous model answer.
@@ -28,9 +28,6 @@ nationwide-completeness, professional-outperformance or operational-clearance cl
 5. Prepared the [enterprise pilot gate](../../ENTERPRISE-PILOT.md). Corporate facts,
    approved processing, provider configuration, an accountable reviewer and a
    frozen matched evaluation sample are still needed for a real pilot.
-
-No Chinese answering, translation or bilingual optimisation was added. Authored
-knowledge, runtime contracts, test questions and review output are English.
 
 ## Source and Rule Corrections
 

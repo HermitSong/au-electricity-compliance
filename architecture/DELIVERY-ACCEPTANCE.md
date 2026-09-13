@@ -126,5 +126,5 @@ The four generated reports are `delivery-readiness.json`,
 `delivery-readiness.md`, `delivery-tasks.jsonl` and
 `delivery-review-candidates.jsonl`. The JSON contains all family/URL counters,
 gate reasons, input defects/hashes, associations, candidates and actionable tasks.
-The Markdown is a compact overview. Generated reports and authored files are
-English/ASCII; non-ASCII source excerpts are escaped without changing originals.
+The Markdown is a compact overview. Non-ASCII source excerpts in generated
+reports are escaped without changing originals.

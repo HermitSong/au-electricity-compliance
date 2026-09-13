@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Produce and recheck bounded English research answers using explicit JSON adapters."""
+"""Produce and recheck bounded research answers using explicit JSON adapters."""
 from __future__ import annotations
 
 import argparse

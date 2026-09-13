@@ -17,7 +17,7 @@ require unrelated nationwide backfill before answering a bounded question. The
 public edition contains no official source files, screenshots or extracted full
 text. Locally collected evidence is not automatically approved for legal answers.
 
-For substantive English answers with separate review, read `ENGLISH-ANSWER-WORKFLOW.md`
+For substantive answers with separate review, read `ANSWER-WORKFLOW.md`
 and use `scripts/answer_workflow.py`. Explicitly enumerate the required subquestions
 and resolve the jurisdiction, actor, activity and action date before retrieval.
 Do not assume arbitrary free-text activity labels are canonical routing keys.
@@ -63,7 +63,7 @@ issue detection or operational clearance. Consult
    - If the KB does not cover the question, SAY SO — do not improvise an answer from general knowledge without flagging it as unverified.
    - Claims marked ⚠️ in the KB are flagged uncertainties — carry the flag into your answer.
    - The KB baseline is 2026-08. For time-sensitive items (DMO/VDO yearly, AEMO fees each FY, NER versions, penalty-unit values), advise checking the live source linked in the page.
-7. **Answer language**: use English for this knowledge-base system's answers, reviews, requests, tests and authored content. Preserve statutory names, case names and defined terms in their official English form. Translation and bilingual optimisation are outside the current implementation scope.
+7. **Answer contract**: follow the answer and review contract in `ANSWER-WORKFLOW.md`. Preserve statutory names, case names and defined terms in their official form.
 
 ## Standing disclaimers
 

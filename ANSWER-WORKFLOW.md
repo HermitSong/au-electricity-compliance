@@ -1,6 +1,6 @@
-# English Answer Workflow
+# Answer Workflow
 
-This sidecar produces a substantive, claim-addressable English research answer,
+This sidecar produces a substantive, claim-addressable research answer,
 checks it, obtains a separate configured semantic review, and repairs it through
 targeted retrieval when needed. An evidence packet alone is never called an answer.
 It uses the standard library and the existing KB scripts. No model, adapter,
@@ -149,10 +149,10 @@ All substantive answer statements belong in cited claims. Provider sections refe
 them and supply private limitation notes for checking/review. Every requirement must appear exactly once, with reciprocal
 claim references. Missing required intake cannot be marked answered. A current-law
 requirement needs a passing current-law claim to be marked answered. Empty answers
-must be `unanswered` with an explicit limitation. English checks apply to prose;
+must be `unanswered` with an explicit limitation. Language checks apply to prose;
 source quotations retain the exact characters from the cited packet text field.
 
-Provider limitation notes remain free-form English for scope, missing inputs and
+Provider limitation notes remain free-form prose for scope, missing inputs and
 causes of uncertainty, but are never released. The existing deterministic lexical
 guard flags some explicit uncited duties,
 permissions, exemptions, stated fees and deadlines, including negative duties,
@@ -164,7 +164,7 @@ assessment phrases such as "The current rule must be verified against an operati
 official source" remain available. An assessment phrase does not exempt a later
 obligation in the same sentence. Explicit standalone denials of authority, such as
 "This answer does not grant permission to act", are allowed; positive or conditional
-grants are not. These checks do not classify every possible English assertion;
+grants are not. These checks do not classify every possible assertion;
 they remain audit/review checks, not the release boundary. No blacklist expansion
 or reviewer judgment is relied on to make free-form limitation notes publishable.
 
@@ -228,7 +228,7 @@ different claims, scripts, packets or message characters produce different IDs.
 
 Return every warning ID exactly once, even if it is not a contradiction. The array
 is required and empty when there are no warnings. Each disposition requires an
-English rationale and valid associated `claim_ids`, including the warned claim.
+rationale and valid associated `claim_ids`, including the warned claim.
 A count or blanket assertion that all warnings were reviewed is not coverage.
 Acceptance requires all dispositions to be `addressed`; `missing` requires
 `revise` and may request targeted retrieval through the existing `claim_ids` search
@@ -252,7 +252,7 @@ are integrity bindings, not signatures or proof of reviewer identity.
 1. Validate the request and explicit trusted command config.
 2. Invoke existing `answer_kb.py` by subprocess for the original question and a
    counter-search. Preserve applicability routing and all packet release blockers.
-3. Request an English draft; validate completeness, reciprocal references and exact
+3. Request a draft; validate completeness, reciprocal references and exact
    quotations. Run existing `check_answer.py` and `double_check_answer.py` on each
    packet's canonical claims. Research observations receive research-source/quote
    validation and semantic review, not fabricated canonical-law admission.

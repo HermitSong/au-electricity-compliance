@@ -6,7 +6,7 @@ Repository: [au-electricity-compliance](https://github.com/HermitSong/au-electri
 Paid external services, white-label products and resale need separate permission.
 See [Commercial Use](COMMERCIAL-USE.md). This is not OSI-approved open source.
 
-An English-language research toolkit for finding Australian electricity rules,
+A research toolkit for finding Australian electricity rules,
 connecting historical cases to their applicable legal context, and preparing
 evidence-bound answers for review.
 
@@ -80,7 +80,7 @@ Read [Source Acquisition](SOURCE-ACQUISITION.md). More files do not guarantee be
 answers; obtain and verify the authoritative sources relevant to the actual question.
 
 For an evidence-packet and answer/review handoff, read the
-[English Answer Workflow](ENGLISH-ANSWER-WORKFLOW.md). Configure separate trusted
+[Answer Workflow](ANSWER-WORKFLOW.md). Configure separate trusted
 JSON command adapters yourself. Without adapters the workflow emits
 `handoff-not-integrated-model`; it does not pretend to generate an answer.
 Exit code `2` in a research handoff can signify an unmet evidence/release gate.

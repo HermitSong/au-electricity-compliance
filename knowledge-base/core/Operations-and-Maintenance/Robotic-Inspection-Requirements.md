@@ -836,7 +836,7 @@ Questions for a robotics supplier:
 | v1.0 | 2026-06-04 | Initial version, including emphasis on wildlife and closed-cabinet assessment |
 | v1.2 | 2026-06-05 | Removed animal emoji; changed capacity range to 200 kW–500 MW; removed site-layout diagram and commercial terms |
 | v1.3 | 2026-06-05 | Converted the complete document to Chinese; added Section 3.6 on vegetation and weeds and Section 5.6 on recognition and cutting; added vegetation questions to the decision matrix |
-| v1.4 | 2026-08-27 | Refactored the complete document into professional English while preserving technical thresholds and internal links |
+| v1.4 | 2026-08-27 | Refactored the complete document while preserving technical thresholds and internal links |
 | v1.5 | 2026-08-27 | Reclassified numerical targets as draft acceptance criteria; removed unsupported cost, wildlife-deterrence and guaranteed-performance claims; corrected Australian product-compliance and MASS references |
 
 > **Note:** this document is designed to be iterative. After a technical assessment by the robotics supplier, the owner and supplier should jointly refine the specific capability requirements in Part 5 into a contract schedule.

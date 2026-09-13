@@ -3,8 +3,8 @@
   "original_artifact": "review/questions/questions-blind-v1.json",
   "status": "superseded",
   "superseded_by": "review/questions/case-question-bank-v4-blind.jsonl",
-  "archive_reason": "Superseded by the current English blind case-loop evaluation set.",
-  "stale_question_level_content": "Removed during the English and accuracy refactor; no legacy question text or answer fields are retained in this manifest.",
+  "archive_reason": "Superseded by the current blind case-loop evaluation set.",
+  "stale_question_level_content": "Removed during the documentation and accuracy refactor; no legacy question text or answer fields are retained in this manifest.",
   "documented_aggregate_metadata": {
     "domains": 16,
     "questions": 80,

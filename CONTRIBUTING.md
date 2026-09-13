@@ -1,7 +1,7 @@
 # Contributing
 
 Accuracy and useful evidence take priority over document or question counts.
-Contribute in English. Preserve official names, defined terms, dates and status.
+Preserve official names, defined terms, dates and status.
 
 ## Corrections
 

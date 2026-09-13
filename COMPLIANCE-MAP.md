@@ -53,6 +53,6 @@ This map routes a question to the minimum knowledge-base pages that must be read
 
 - Original blind examination: 73 of 80 strict passes in round one; 80 of 80 after corrections.
 - Practical case loop: 100 enforcement and control scenarios, with separate keyed, blind-answer and audit artefacts.
-- English refactor: repository-wide authored-text language scan, JSON and JSONL validation, jurisdiction coverage audit and repeated case-loop review.
+- Quality review: repository-wide authored-text checks, JSON and JSONL validation, jurisdiction coverage audit and repeated case-loop review.
 
 See `review/EVAL-REPORT.md` and `review/results/` for evidence and limitations.

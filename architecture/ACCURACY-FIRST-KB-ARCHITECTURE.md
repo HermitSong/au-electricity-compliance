@@ -6,7 +6,7 @@
 
 ## Architecture decision
 
-The repository was previously an English Markdown and JSON evidence corpus with a routing skill and evaluation files. It was not a runtime RAG or KAG system because it had no searchable index, retrieval service, authority graph, answer evidence packet or independent answer validator.
+The repository was previously a Markdown and JSON evidence corpus with a routing skill and evaluation files. It was not a runtime RAG or KAG system because it had no searchable index, retrieval service, authority graph, answer evidence packet or independent answer validator.
 
 The target is not plain vector RAG and not an LLM-generated knowledge graph as the source of truth. It is a temporal evidence system with four separate layers:
 

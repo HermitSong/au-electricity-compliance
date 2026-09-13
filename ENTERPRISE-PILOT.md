@@ -6,8 +6,6 @@ Status: preparation only. No real enterprise pilot or cost saving has been measu
 
 Reduce total human time per correctly resolved Australian electricity compliance
 matter without increasing customer harm, unsafe clearance or missed obligations.
-English is the supported knowledge, query and answer workflow. No translation
-feature is required for this release.
 
 ## Required Before Real Records
 

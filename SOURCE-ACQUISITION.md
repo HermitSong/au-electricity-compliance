@@ -94,7 +94,7 @@ Inventory mode can also rebuild the private research index after interruption.
 Re-extraction needs renewed applicable permissions. Do not modify source bytes to
 make a test pass. Review pages, OCR, version/commencement, jurisdiction, exceptions,
 case status and later treatment before making exact clause bindings. See
-`CLAUSE-REVIEW.md`, `ORIGINAL-READING.md` and `ENGLISH-ANSWER-WORKFLOW.md`.
+`CLAUSE-REVIEW.md`, `ORIGINAL-READING.md` and `ANSWER-WORKFLOW.md`.
 
 Corpus backfill and question-scoped research are complementary. More files are
 not automatically more accurate; irrelevant or outdated records can confuse
