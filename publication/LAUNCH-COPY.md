@@ -27,6 +27,13 @@ research and enterprise internal use are free under the project licence. Resale,
 white-label offerings and paid external services require separate permission.
 Official source materials retain their own rights and attribution.
 
+The current repository does not bundle official documents, screenshots or extracted
+full text. It includes a lawful-source-acquisition skill for building private local
+evidence collections with scoped permission records. The default is offline
+inventory, not automatic bulk scraping. Acquisition is not legal verification and
+does not guarantee completeness or accuracy. Earlier public history is described
+in DISTRIBUTION.md; no historical recall or zero-risk claim is made.
+
 Coverage is incomplete. The project is not legal advice, regulator-endorsed or
 proven to outperform professionals. Tests measure their stated software scope,
 not universal legal accuracy or demonstrated cost savings. The custom licence has

@@ -18,11 +18,18 @@ Contribute in English. Preserve official names, defined terms, dates and status.
    `EVALUATION.md`, and inspect the actual staged diff before submitting.
 
 Do not broaden a clause approval just because a whole instrument was downloaded.
-New source text requires provenance, extraction checks, a redistribution decision
-and independent scoped review. Missing citations and substantively false answers
+Source text stays in the separately reviewed private archive, with provenance,
+extraction checks and independent scoped review. Missing citations and substantively false answers
 must be reported as separate defects.
 
 ## Public Data Boundary
+
+Submit source links, identifiers and independently authored factual summaries,
+not PDFs, screenshots, page copies or OCR/full-text exports. This policy applies
+even where a particular publisher permits redistribution. Use the local
+acquisition Skill for private source collection. Run both working-tree and staged
+release scans before pushing; CI runs after upload and cannot prevent disclosure
+in already-public commits, issues or PR attachments. See `DISTRIBUTION.md`.
 
 Never post customer identifiers, account details, credentials, real meetings,
 private company context, privileged advice, gold sets or private output bundles

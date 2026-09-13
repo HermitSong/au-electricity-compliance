@@ -1,15 +1,23 @@
-"""Release text/asset consistency checks, not legal interpretation or clearance."""
+"""Release metadata consistency, not legal interpretation or clearance."""
 import copy
 import json
 from pathlib import Path
-import shutil
 import sys
-import tempfile
 import unittest
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / 'scripts'))
-from check_public_release import approved_assets
+from check_public_release import validate_manifest
+
+
+def reference_manifest():
+    return {
+        'schema_version': '2.0', 'distribution_mode': 'references-only',
+        'project_licence_applies': False, 'current_law_release': False, 'assets': [],
+        'sources': [{'title': 'Synthetic source reference', 'issuer': 'Example issuer',
+                     'official_url': 'https://example.org/reference.pdf',
+                     'redistribution_status': 'reference-only', 'current_law_release': False}],
+    }
 
 
 class ReleaseLicensingTests(unittest.TestCase):
@@ -31,77 +39,64 @@ class ReleaseLicensingTests(unittest.TestCase):
         self.assertIn('third-party material', contribution)
         self.assertIn('An unchecked box is not consent', (ROOT / '.github/pull_request_template.md').read_text('utf-8'))
 
-    def test_actual_assets_are_separate_from_current_law_and_project_licence(self):
-        assets = approved_assets(ROOT)
-        self.assertEqual(len(assets), 4)
-        self.assertEqual(sum(path.endswith('.pdf') for path in assets), 2)
-        for asset in assets.values():
-            self.assertFalse(asset['current_law_release'])
-            self.assertIsNone(asset['retrieved_at'])
+    def test_actual_release_has_two_references_and_no_asset_exemptions(self):
+        manifest = validate_manifest((ROOT / 'evidence/manifest.json').read_bytes())
+        self.assertEqual(manifest['assets'], [])
+        self.assertEqual(len(manifest['sources']), 2)
+        self.assertFalse(manifest['project_licence_applies'])
+        self.assertFalse(manifest['current_law_release'])
 
-    def fixture(self, folder):
-        root = Path(folder)
-        manifest = json.loads((ROOT / 'evidence/manifest.json').read_text('utf-8'))
-        manifest['assets'] = [manifest['assets'][0]]
-        path = root / manifest['assets'][0]['path']
-        path.parent.mkdir(parents=True)
-        shutil.copyfile(ROOT / manifest['assets'][0]['path'], path)
-        return root, manifest, path
+    def test_valid_reference_metadata(self):
+        manifest = reference_manifest()
+        self.assertEqual(validate_manifest(json.dumps(manifest).encode()), manifest)
 
-    def write_manifest(self, root, manifest):
-        (root / 'evidence/manifest.json').write_text(json.dumps(manifest), encoding='utf-8')
+    def test_policy_switches_fail_closed(self):
+        for field, value in [
+                ('schema_version', '1.0'), ('distribution_mode', 'attachments'),
+                ('assets', [{'path': 'evidence/originals/reintroduced.pdf'}]),
+                ('assets', None), ('assets', {}), ('project_licence_applies', True),
+                ('project_licence_applies', 0), ('current_law_release', True),
+                ('current_law_release', 'false'), ('sources', []), ('sources', {}),
+                ('sources', [None])]:
+            with self.subTest(field=field, value=value):
+                manifest = reference_manifest()
+                manifest[field] = value
+                with self.assertRaises(ValueError):
+                    validate_manifest(json.dumps(manifest).encode())
 
-    def test_tampered_bytes_fail_closed(self):
-        with tempfile.TemporaryDirectory() as folder:
-            root, manifest, path = self.fixture(folder)
-            self.write_manifest(root, manifest)
-            path.write_bytes(path.read_bytes() + b'changed')
-            with self.assertRaises(ValueError):
-                approved_assets(root)
+    def test_missing_required_fields_fail_closed(self):
+        manifest = reference_manifest()
+        for field in manifest:
+            with self.subTest(field=field):
+                changed = copy.deepcopy(manifest)
+                del changed[field]
+                with self.assertRaises(ValueError):
+                    validate_manifest(json.dumps(changed).encode())
 
-    def test_unreviewed_or_promoted_manifest_fails_closed(self):
-        with tempfile.TemporaryDirectory() as folder:
-            root, manifest, _ = self.fixture(folder)
-            for field, value in [('redistribution_status', 'not-cleared'),
-                                 ('current_law_release', True), ('attribution', '')]:
-                with self.subTest(field=field):
-                    changed = copy.deepcopy(manifest)
-                    changed['assets'][0][field] = value
-                    self.write_manifest(root, changed)
-                    with self.assertRaises(ValueError):
-                        approved_assets(root)
-            manifest['project_licence_applies'] = True
-            self.write_manifest(root, manifest)
-            with self.assertRaises(ValueError):
-                approved_assets(root)
+    def test_source_record_cannot_reenable_attachments_or_payloads(self):
+        for field, value in [
+                ('path', 'evidence/originals/source.pdf'), ('path', '../outside.txt'),
+                ('attachments', []), ('assets', [{'path': 'source.pdf'}]),
+                ('redistribution_status', 'reviewed-for-this-release'),
+                ('redistribution_status', []),
+                ('current_law_release', True), ('project_licence_applies', True),
+                ('distribution_mode', 'attachments'), ('attachments_allowed', True),
+                ('full_text', 'Copied source body'), ('content', {'base64': 'payload'}),
+                ('official_url', 'file:///private/source.pdf'), ('title', '')]:
+            with self.subTest(field=field):
+                manifest = reference_manifest()
+                manifest['sources'][0][field] = value
+                with self.assertRaises(ValueError):
+                    validate_manifest(json.dumps(manifest).encode())
 
-    def test_out_of_scope_paths_and_duplicates_fail_closed(self):
-        with tempfile.TemporaryDirectory() as folder:
-            root, manifest, _ = self.fixture(folder)
-            for path in ['../secret.pdf', '/evidence/originals/a.pdf',
-                         'evidence/originals/../../a.pdf', 'evidence/originals/a.html',
-                         'evidence\\originals\\a.pdf']:
-                with self.subTest(path=path):
-                    changed = copy.deepcopy(manifest)
-                    changed['assets'][0]['path'] = path
-                    self.write_manifest(root, changed)
-                    with self.assertRaises(ValueError):
-                        approved_assets(root)
-            manifest['assets'].append(copy.deepcopy(manifest['assets'][0]))
-            self.write_manifest(root, manifest)
-            with self.assertRaises(ValueError):
-                approved_assets(root)
-
-    def test_arbitrary_binary_is_not_approved_by_matching_hash(self):
-        import hashlib
-        with tempfile.TemporaryDirectory() as folder:
-            root, manifest, path = self.fixture(folder)
-            raw = b'Not a PDF'
-            path.write_bytes(raw)
-            manifest['assets'][0].update(size_bytes=len(raw), sha256=hashlib.sha256(raw).hexdigest())
-            self.write_manifest(root, manifest)
-            with self.assertRaises(ValueError):
-                approved_assets(root)
+    def test_malformed_manifest_fails_closed(self):
+        valid = json.dumps(reference_manifest()).encode()
+        cases = [b'', b'{', b'[]', b'null', b'false', b'\xff',
+                 valid[:-1] + b', "assets": []}',
+                 valid[:-1] + b', "unexpected": NaN}']
+        for raw in cases:
+            with self.subTest(raw=raw[:25]), self.assertRaises(ValueError):
+                validate_manifest(raw)
 
 
 if __name__ == '__main__':

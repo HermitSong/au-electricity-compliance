@@ -6,7 +6,7 @@ This release is **source-available, not OSI-approved open source**.
 | --- | --- |
 | Original code, CI configuration, tests and code snippets | Project Source-Available Licence 1.0 in `LICENSE` |
 | Original Markdown and protectable JSON/JSONL selection or arrangement | The same project licence; see `LICENSE-CONTENT.md` |
-| Approved official files and page renders | Their issuer permissions in `evidence/manifest.json`; not the project licence |
+| Official source files and page renders | Not bundled in the current tree; separately acquired private copies remain governed by source rights |
 | Other third-party text, official wording, titles, facts and trademarks | No new rights granted; consult the source owner and applicable law |
 | Separately installed dependencies | Their own licences; not relicensed or vendored |
 | Private company records, prompts and ordinary outputs | Not public contributions; no ownership claimed merely because the project processed them |

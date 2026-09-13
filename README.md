@@ -39,12 +39,13 @@ that review nor a later software release refreshes the whole knowledge base.
 ## Public Edition Boundary
 
 This repository publishes source code, authored knowledge, public-source
-references and curated case metadata, plus a small [evidence bundle](evidence/README.md)
-with two AEMO PDFs and two page renders under AEMO's separate permissions.
-**Other original files, bulk extracted text, OCR archives, private run outputs
-and prebuilt indexes are not bundled.**
-Some long publisher-derived event descriptions are replaced by existing curated
-status notes, with per-record projection markers. The full local research archive
+references and curated case metadata. The [evidence directory](evidence/README.md)
+contains source-reference metadata only.
+**No original PDFs, screenshots, page renders, bulk extracted text, OCR archives,
+private run outputs or prebuilt indexes are bundled in the current tree.**
+Publisher-derived narratives and parser residue in 322 event records have been
+replaced with factual summaries, legal identifiers or explicit review gaps,
+with per-record projection markers. The full local research archive
 has not been relicensed or uploaded in full.
 
 Historical source hashes and clause-review receipts describe the originating
@@ -70,6 +71,13 @@ python -B scripts/double_search_kb.py "battery registration SRA scheduled BDU"
 
 The generated index stays local and is ignored by Git. Building an index does
 not fetch originals, renew review dates or establish legal accuracy.
+
+For a private evidence collection, use the
+[Lawful Source Acquisition Skill](skills/au-lawful-source-acquisition/SKILL.md).
+Inventory is offline by default. Downloads require an explicit opt-in, a private
+output directory outside Git, and scoped operator-reviewed permission records.
+Read [Source Acquisition](SOURCE-ACQUISITION.md). More files do not guarantee better
+answers; obtain and verify the authoritative sources relevant to the actual question.
 
 For an evidence-packet and answer/review handoff, read the
 [English Answer Workflow](ENGLISH-ANSWER-WORKFLOW.md). Configure separate trusted
@@ -101,7 +109,7 @@ not test the full bulk archive, automatic intake or production API integration.
 Post-feedback repairs are development results, not a new blind score.
 See [Evaluation](EVALUATION.md) for the public-checkout tests and their limits.
 
-Public-edition local check: **446 passes, two Windows privilege skips**, with
+Public-edition local check: **491 passes, five Windows privilege skips**, with
 12 separately listed archive-dependent tests not run. The rebuilt public index
 has **1,817 documents**, not the larger local archive's 4,307.
 

@@ -7,6 +7,7 @@ import sys
 import sqlite3
 import tempfile
 import unittest
+from types import SimpleNamespace
 from unittest.mock import patch
 from urllib.error import HTTPError
 
@@ -71,7 +72,7 @@ class SourceOriginalTests(unittest.TestCase):
         self.assertIn("Decision on 5 September 2026", result["units"][0]["text"])
 
     def test_robots_denial_stops_source_request(self):
-        fetcher = Fetcher(set(), 5, 1024, 0)
+        fetcher = Fetcher(set(), 5, 1024, 0, permissions=SimpleNamespace(require=lambda url: {}))
         item = {"canonical_url": "https://www.aer.gov.au/private/case", "references": [],
                 "source_family_ids": [], "discovery_depth": 0, "discovered_from": []}
         with tempfile.TemporaryDirectory() as folder, patch.object(fetcher, "request", return_value=(
@@ -85,8 +86,8 @@ class SourceOriginalTests(unittest.TestCase):
         result = extract(b"<html><title>Sign in</title><body>Account needed</body></html>", "text/html", "https://www.aer.gov.au/a")
         self.assertEqual(result["extraction_status"], "blocked-or-error-page")
 
-    def test_one_path_denial_does_not_block_other_public_paths(self):
-        fetcher = Fetcher(set(), 5, 1024, 0)
+    def test_first_access_denial_pauses_host_for_review(self):
+        fetcher = Fetcher(set(), 5, 1024, 0, permissions=SimpleNamespace(require=lambda url: {}))
         item = {"canonical_url": "https://www.aer.gov.au/restricted", "references": [],
                 "source_family_ids": [], "discovery_depth": 0, "discovered_from": []}
         with tempfile.TemporaryDirectory() as folder, patch.object(fetcher, "permission", return_value=(True, "robots-allowed")), \
@@ -94,7 +95,7 @@ class SourceOriginalTests(unittest.TestCase):
             fetcher.robots["www.aer.gov.au"] = (None, None)
             row = fetcher.fetch(item, Path(folder))
         self.assertEqual(row["reason"], "http-403")
-        self.assertNotIn("www.aer.gov.au", fetcher.paused)
+        self.assertIn("www.aer.gov.au", fetcher.paused)
 
     def test_slow_host_does_not_occupy_all_workers(self):
         queued = deque([{"canonical_url": "https://www.aer.gov.au/a"},

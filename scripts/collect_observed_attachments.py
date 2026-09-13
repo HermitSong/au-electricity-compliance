@@ -6,10 +6,12 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 from collect_source_originals import Fetcher, now, read_jsonl
+from source_permissions import PermissionPolicy, private_path
 
 
-def collect(enumeration, evidence_root, output_root, resume_local_network_failure=False):
-    evidence_root, output_root = evidence_root.resolve(), output_root.resolve()
+def collect(enumeration, evidence_root, output_root, resume_local_network_failure=False, permissions=None):
+    evidence_root = evidence_root.resolve()
+    output_root = private_path(output_root)
     if (evidence_root == output_root or output_root.is_relative_to(evidence_root)
             or evidence_root.is_relative_to(output_root)):
         raise ValueError('Evidence and output roots must be disjoint')
@@ -26,7 +28,7 @@ def collect(enumeration, evidence_root, output_root, resume_local_network_failur
             if (not path.is_relative_to((evidence_root / 'source-originals/objects').resolve())
                     or hashlib.sha256(path.read_bytes()).hexdigest() != evidence['sha256']):
                 raise ValueError('Missing or changed link evidence')
-    log = output_root / 'source-originals/recovery-attachments.jsonl'
+    log = private_path(output_root / 'source-originals/recovery-attachments.jsonl')
     previous = read_jsonl(log)
     latest = {r['canonical_url']: r for r in previous}
     retry_reasons = {'robots-check-failed:URLError',
@@ -36,7 +38,7 @@ def collect(enumeration, evidence_root, output_root, resume_local_network_failur
     stopped = {urlparse(r['canonical_url']).hostname: r.get('reason', '') for r in latest.values()
                if r['canonical_url'] not in retriable
                if r.get('reason', '').startswith(('robots-', 'http-401', 'http-403', 'http-429', 'host-paused'))}
-    fetcher = Fetcher({'aer.gov.au', 'aemc.gov.au'}, timeout=20, max_bytes=40_000_000, delay=1)
+    fetcher = Fetcher({'aer.gov.au', 'aemc.gov.au'}, timeout=20, max_bytes=40_000_000, delay=1, permissions=permissions)
     log.parent.mkdir(parents=True, exist_ok=True)
     outcomes = []
     for row in candidates:
@@ -66,7 +68,9 @@ if __name__ == '__main__':
     parser.add_argument('--enumeration', type=Path, required=True)
     parser.add_argument('--evidence-root', type=Path, required=True)
     parser.add_argument('--output-root', type=Path, required=True)
+    parser.add_argument('--permissions', type=Path, required=True)
     parser.add_argument('--resume-local-network-failure', action='store_true',
                         help='Only after independently confirming a local socket-permission failure, never a site access denial')
     args = parser.parse_args()
-    collect(args.enumeration, args.evidence_root, args.output_root, args.resume_local_network_failure)
+    collect(args.enumeration, args.evidence_root, args.output_root, args.resume_local_network_failure,
+            PermissionPolicy.load(args.permissions))

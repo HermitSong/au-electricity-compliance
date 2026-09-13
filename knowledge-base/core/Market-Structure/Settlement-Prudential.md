@@ -103,8 +103,9 @@ The shorter cycle **shrinks the outstandings window (OSL/TOSL) ⇒ lower OSL ⇒
 | **Prudential Margin (PM) = reaction period** | 7 days | 7 days (unchanged) |
 | **= Total collateralised MCL window** | **42 days (~6 weeks)** | **26 days (~3.7 weeks)** |
 
-> AEMC verbatim: *"the current OSL time period is 35 days … reduce the calculation of the OSL from 35 days to 19 days … the PM is seven days."* **Day-counts are structural, NOT seasonal** — seasonality (summer/autumn/winter/spring) only affects the **$ inputs** (average prices, volatility factors), not the number of days. AEMO's **Credit Limit Procedures updated effective 9 Aug 2026**. New cadence: preliminary statement day 3, final day 7, **payment day 9**, routine revision (R0) day 20 (business days).
-> Source: [AEMC ERC0384 Final Determination (12 Dec 2024) p.12](https://www.aemc.gov.au/sites/default/files/2024-12/Shortening%20the%20settlement%20cycle%20-%20ERC0384%20-%20Final%20determination_final.pdf).
+The cited determination describes a shorter OSL calculation period and an unchanged seven-day PM. **Day-counts are structural, NOT seasonal** — seasonality (summer/autumn/winter/spring) only affects the **$ inputs** (average prices, volatility factors), not the number of days. AEMO's **Credit Limit Procedures updated effective 9 Aug 2026**. New cadence: preliminary statement day 3, final day 7, **payment day 9**, routine revision (R0) day 20 (business days).
+
+Source: [AEMC ERC0384 Final Determination (12 Dec 2024) p.12](https://www.aemc.gov.au/sites/default/files/2024-12/Shortening%20the%20settlement%20cycle%20-%20ERC0384%20-%20Final%20determination_final.pdf).
 
 ### Monitoring & escalation
 

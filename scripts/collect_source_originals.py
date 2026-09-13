@@ -26,6 +26,7 @@ from urllib.robotparser import RobotFileParser
 from lxml import etree, html
 from pypdf import PdfReader
 from source_manifest import select_manifest_rows
+from source_permissions import PermissionPolicy, linked_path, private_archive, private_path
 
 
 USER_AGENT = "AU-Power-Compliance-KB/1.0 public-source-preservation"
@@ -101,6 +102,8 @@ def seeds(root: Path) -> tuple[dict[str, dict], set[str]]:
             add(url, ref, families.get(url, set()))
     paths = sorted((root / "knowledge-base").rglob("*.md")) + [root / "official-documents" / "SOURCES.md"]
     for path in paths:
+        if not path.exists():
+            continue
         for match in URL_PATTERN.finditer(path.read_text(encoding="utf-8-sig")):
             url = match.group().rstrip(".,;:")
             while url.endswith(")") and url.count(")") > url.count("("):
@@ -110,10 +113,19 @@ def seeds(root: Path) -> tuple[dict[str, dict], set[str]]:
     return entries, hosts
 
 
-def save_object(root: Path, data: bytes, suffix: str) -> tuple[str, str]:
+def save_object(root: Path, data: bytes, suffix: str, *, require_private=False) -> tuple[str, str]:
+    root = Path(root).absolute()
     digest = hashlib.sha256(data).hexdigest()
     relative = Path("source-originals") / "objects" / digest[:2] / (digest + suffix)
     path = root / relative
+    if require_private:
+        private_path(path)
+    # Offline import fixtures may be versioned; network entry points enforce private storage.
+    for part in (path, *path.parents):
+        if linked_path(part):
+            raise ValueError("Object paths must not traverse symlinks or junctions")
+    if not path.resolve().is_relative_to((root / "source-originals" / "objects").resolve()):
+        raise ValueError("Object path escapes content-addressed storage")
     path.parent.mkdir(parents=True, exist_ok=True)
     with OBJECT_LOCKS[str(path)]:
         if path.exists():
@@ -205,7 +217,7 @@ def extract(data: bytes, content_type: str, url: str) -> dict:
     return result
 
 
-def attach_extraction(record: dict, data: bytes, output_root: Path) -> dict:
+def attach_extraction(record: dict, data: bytes, output_root: Path, *, require_private=False) -> dict:
     for key in ("text_path", "text_sha256", "extraction_error"):
         record.pop(key, None)
     try:
@@ -219,24 +231,20 @@ def attach_extraction(record: dict, data: bytes, output_root: Path) -> dict:
     record["extraction_revision"] = 4
     if units:
         rendered = (json.dumps(units, ensure_ascii=True, indent=2) + "\n").encode("utf-8")
-        text_path, text_digest = save_object(output_root, rendered, ".json")
+        text_path, text_digest = save_object(output_root, rendered, ".json", require_private=require_private)
         record.update({"text_path": text_path, "text_sha256": text_digest})
     return record
 
 
 class SafeRedirect(HTTPRedirectHandler):
-    def __init__(self, hosts: set[str]):
-        self.hosts = hosts
-
     def redirect_request(self, req, fp, code, msg, headers, newurl):
-        if not allowed_url(newurl, self.hosts):
-            raise ValueError("Redirect requires separate authority/HTTPS review")
-        return super().redirect_request(req, fp, code, msg, headers, newurl)
+        raise ValueError("Automatic redirects are disabled; review and acquire the target URL directly")
 
 
 class Fetcher:
-    def __init__(self, hosts: set[str], timeout: int, max_bytes: int, delay: float):
+    def __init__(self, hosts: set[str], timeout: int, max_bytes: int, delay: float, permissions=None):
         self.hosts, self.timeout, self.max_bytes, self.delay = hosts, timeout, max_bytes, delay
+        self.permissions = permissions
         self.locks = defaultdict(threading.Lock)
         self.last = defaultdict(float)
         self.robots: dict[str, tuple[RobotFileParser | None, str | None]] = {}
@@ -246,7 +254,10 @@ class Fetcher:
     def request(self, url: str, max_bytes: int) -> tuple[bytes, dict, str, int]:
         if not allowed_url(url, self.hosts):
             raise ValueError("Source requires authority/HTTPS review")
-        opener = build_opener(SafeRedirect(self.hosts))
+        if self.permissions is None:
+            raise ValueError("acquisition-permission-required")
+        self.permissions.require_transport(url)
+        opener = build_opener(SafeRedirect())
         with opener.open(Request(transport_url(url), headers={"User-Agent": USER_AGENT}), timeout=self.timeout) as response:
             chunks, size, started = [], 0, time.monotonic()
             while True:
@@ -265,7 +276,7 @@ class Fetcher:
             return data, headers, response.geturl(), response.status
 
     def permission(self, url: str) -> tuple[bool, str]:
-        host = urlparse(url).netloc
+        host = urlparse(url).hostname.lower()
         if host not in self.robots:
             robots_url = f"https://{host}/robots.txt"
             try:
@@ -289,35 +300,44 @@ class Fetcher:
         record = {**item, "attempted_at": now(), "acquisition_method": "https-original-bytes",
                   "legal_review_status": "not-reviewed", "current_law_release": False,
                   "redistribution_status": "not-cleared", "source_time_version": "not-established"}
-        host = urlparse(url).netloc
+        host = urlparse(url).hostname.lower()
         try:
+            output_root = private_archive(output_root)
+            if self.permissions is None:
+                return {**record, "capture_status": "deferred", "reason": "acquisition-permission-required"}
+            record.update(self.permissions.require(url))
             with self.locks[host]:
                 if host in self.paused:
                     return {**record, "capture_status": "deferred", "reason": self.paused[host]}
                 allowed, reason = self.permission(url)
                 if not allowed:
+                    self.paused[host] = 'host-paused-after-access-stop:' + reason
                     return {**record, "capture_status": "deferred", "reason": reason}
                 robot = self.robots[host][0]
                 delay = max(self.delay, (robot.crawl_delay(USER_AGENT) or robot.crawl_delay("*") or 0) if robot else 0)
                 time.sleep(max(0, delay - (time.monotonic() - self.last[host])))
                 self.last[host] = time.monotonic()
-                data, headers, response_url, status = self.request(url, self.max_bytes)
+                try:
+                    data, headers, response_url, status = self.request(url, self.max_bytes)
+                except HTTPError as exc:
+                    if exc.code in (401, 403, 429):
+                        self.paused[host] = f"host-paused-after-http-{exc.code}; review access without bypassing restrictions"
+                    raise
                 self.denials[host] = 0
             content_type = headers.get("content-type", "application/octet-stream")
             suffix = ".pdf" if data.startswith(b"%PDF-") else ".html" if "html" in content_type else ".bin"
-            snapshot_path, digest = save_object(output_root, data, suffix)
+            snapshot_path, digest = save_object(output_root, data, suffix, require_private=True)
             record.update({"capture_status": "bytes-preserved", "retrieved_at": now(),
                            "response_url": response_url, "status_code": status, "response_headers": headers,
                            "content_type": content_type, "size_bytes": len(data), "snapshot_path": snapshot_path,
                            "sha256": digest, "robots_status": reason})
-            return attach_extraction(record, data, output_root)
+            return attach_extraction(record, data, output_root, require_private=True)
         except HTTPError as exc:
             reason = f"http-{exc.code}"
             if exc.code in (401, 403, 429):
                 with self.locks[host]:
                     self.denials[host] += 1
-                    if exc.code == 429 or self.denials[host] >= 3:
-                        self.paused[host] = f"host-paused-after-{reason}; review access without bypassing restrictions"
+                    self.paused[host] = f"host-paused-after-{reason}; review access without bypassing restrictions"
             return {**record, "capture_status": "failed", "reason": reason}
         except Exception as exc:
             return {**record, "capture_status": "failed", "reason": f"{type(exc).__name__}: {exc}"}
@@ -387,6 +407,8 @@ def rebuild_outputs(root: Path, entries: dict[str, dict], seed_count: int, run_i
     for item in inventory:
         source = latest.get(item["canonical_url"], {})
         tasks = []
+        if item.get('acquisition_permission_status') == 'review-required':
+            tasks.append('acquisition-and-local-use-permission-review')
         if item.get("selection_status") == "authority-or-https-review-required":
             tasks.append("authority-or-https-review")
         elif item["latest_capture_status"] == "not-attempted":
@@ -476,7 +498,7 @@ def rebuild_outputs(root: Path, entries: dict[str, dict], seed_count: int, run_i
         report.append(f"| {host} | {count} | {host_text[host]} | {count - host_text[host]} |")
     report.extend(["", "The URL inventory is not an established universe of all Australian electricity material. Site-specific pagination, historical versions, missing source families, inaccessible material and relevance review remain open.",
                    "Source responses, extracted text and browser renderings are different representations. Preserve their individual provenance and do not mistake a current capture for an event-time copy.",
-                   "Raw files and derived full text are excluded from Git until redistribution rights are reviewed.", ""])
+                   "Raw files and derived full text remain private and are not part of this references-only public distribution.", ""])
     (report_root / "original-source-collection-report.md").write_text("\n".join(report), encoding="utf-8")
     return summary
 
@@ -484,8 +506,10 @@ def rebuild_outputs(root: Path, entries: dict[str, dict], seed_count: int, run_i
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--root", type=Path, default=Path(__file__).resolve().parents[1])
-    parser.add_argument("--output-root", type=Path)
-    parser.add_argument("--max-requests", type=int, default=1000)
+    parser.add_argument("--output-root", type=Path, required=True, help="Private directory outside all Git worktrees")
+    parser.add_argument("--permissions", type=Path, help="Private operator-reviewed exact-URL permission file")
+    parser.add_argument("--download", action="store_true", help="Opt in to network acquisition within recorded permissions")
+    parser.add_argument("--max-requests", type=int, default=1000, help="Maximum source URL attempts; robots checks are additional, cached per host")
     parser.add_argument("--max-runtime-seconds", type=int, default=900, help="Stop scheduling after this budget, then finish in-flight requests.")
     parser.add_argument("--workers", type=int, choices=range(1, 5), default=4)
     parser.add_argument("--timeout", type=int, default=15)
@@ -498,12 +522,20 @@ def main() -> int:
     parser.add_argument("--reextract", action="store_true", help="Re-extract preserved bytes offline; requires --inventory-only.")
     parser.add_argument("--host", action="append", default=[])
     args = parser.parse_args()
+    if args.download and args.inventory_only:
+        parser.error("Choose --download or --inventory-only, not both")
+    if args.download and not args.permissions:
+        parser.error("--download requires --permissions; public URLs and robots are not licences")
+    args.inventory_only = not args.download
     if args.max_requests < 0 or args.timeout < 1 or args.max_mb < 1 or args.delay < 0 or args.max_runtime_seconds < 1:
         parser.error("Invalid resource limit")
     if args.reextract and not args.inventory_only:
         parser.error("--reextract requires --inventory-only to keep offline processing separate from fetching")
+    if args.reextract and not args.permissions:
+        parser.error("--reextract requires applicable local-use permissions")
     source_root = args.root.resolve()
-    output_root = (args.output_root or source_root).resolve()
+    output_root = private_archive(args.output_root, source_root)
+    permissions = PermissionPolicy.load(args.permissions) if args.permissions else None
     entries, hosts = seeds(source_root)
     seed_count = len(entries)
     for item in read_jsonl(output_root / "data" / "source-original-inventory.jsonl"):
@@ -519,10 +551,11 @@ def main() -> int:
             for row in previous.values():
                 if not generic_reextract_allowed(row) or row.get("extraction_revision") == 4:
                     continue
+                permissions.require(row['canonical_url'])
                 data = (output_root / row["snapshot_path"]).read_bytes()
                 if hashlib.sha256(data).hexdigest() != row["sha256"]:
                     raise ValueError("Preserved source hash mismatch before re-extraction")
-                attach_extraction(row, data, output_root)
+                attach_extraction(row, data, output_root, require_private=True)
                 row["invalidates_prior_text"] = True
                 row["extraction_refreshed_at"] = now()
                 handle.write(json.dumps(row, ensure_ascii=True) + "\n")
@@ -536,7 +569,16 @@ def main() -> int:
     candidates = []
     for url, item in entries.items():
         item["selection_status"] = "public-authority-candidate" if allowed_url(url, hosts) else "authority-or-https-review-required"
+        item['acquisition_permission_status'] = 'review-required'
+        if permissions:
+            try:
+                permissions.require(url)
+                item['acquisition_permission_status'] = 'operator-recorded-scope'
+            except ValueError:
+                pass
         if not allowed_url(url, hosts) or (args.host and host_key(url) not in args.host):
+            continue
+        if args.download and item['acquisition_permission_status'] != 'operator-recorded-scope':
             continue
         if url in previous:
             prior = previous[url]
@@ -547,7 +589,7 @@ def main() -> int:
         candidates.append(item)
     print(json.dumps({"seed_urls": seed_count, "queued_urls": len(candidates), "max_requests": args.max_requests}), flush=True)
     queue = balanced_queue(candidates)
-    fetcher = Fetcher(hosts, args.timeout, args.max_mb * 1024 * 1024, args.delay)
+    fetcher = Fetcher(hosts, args.timeout, args.max_mb * 1024 * 1024, max(1.0, args.delay), permissions)
     attempted = 0
     deadline = time.monotonic() + args.max_runtime_seconds
     if not args.inventory_only:
@@ -572,7 +614,13 @@ def main() -> int:
                     for child in discover(row, hosts, args.attachment_depth):
                         url = child["canonical_url"]
                         if url not in entries:
+                            child['acquisition_permission_status'] = 'review-required'
                             entries[url] = child
+                            try:
+                                permissions.require(url)
+                                child['acquisition_permission_status'] = 'operator-recorded-scope'
+                            except ValueError:
+                                continue
                             if not args.host or host_key(url) in args.host:
                                 queue.append(child)
                     completed = attempted - len(active)

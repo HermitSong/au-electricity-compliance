@@ -9,17 +9,18 @@ No affiliation with or endorsement by these organisations is claimed. Names and
 trademarks identify the relevant source or entity only. The project's software
 and content licences cannot grant rights over third-party expression.
 
-Only the two AEMO PDFs and two page renders identified in `evidence/manifest.json`
-are included as source attachments. They follow AEMO's separate copyright
-permissions with attribution, not the project licence. Bulk extraction/OCR archives
-and other originals are not distributed. An old filename or ledger entry alone
+No source attachments are included in the current tree. `evidence/manifest.json`
+retains source references, not original files or an acquisition licence. The earlier
+preview's four AEMO attachments were removed under the references-only policy;
+see `DISTRIBUTION.md` for the historical-publication boundary. Bulk extraction/OCR
+archives and other originals are not distributed. An old filename or ledger entry alone
 does not establish that its attachment is bundled. Follow the official source URL
 for the operative publication, terms and version.
 
 Authored discussion may contain limited attributed legal terminology, clause
 labels, case titles or quotations. Their inclusion does not place the underlying
-source under the project's restrictive licence. Any addition of source assets requires
-a per-source redistribution review, including attribution and exclusions.
+source under the project's restrictive licence. This edition excludes source assets
+even when a separate publisher permission could allow their redistribution.
 
 Dependencies are downloaded separately rather than vendored. Their own notices
 and licences continue to apply. Optional OCR, Office and PDF tooling may require

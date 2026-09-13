@@ -4,6 +4,13 @@
 **Collection started:** 5 September 2026  
 **Status:** active backfill; completeness is not established.
 
+**Public-edition update, 13 September 2026:** source references and original
+tooling only; no original documents or screenshots are bundled. Read
+`SOURCE-ACQUISITION.md` and `skills/au-lawful-source-acquisition/SKILL.md` before
+collection. Download mode now requires a private output directory, explicit
+`--download` and a scoped permission record. Older recovery descriptions below
+are historical, not permission to reproduce their acquisition steps.
+
 ## Scope
 
 The collection covers Commonwealth/national arrangements and all eight states and territories. It includes retail, wholesale, generation, storage, networks, connection, DER, metering, safety, WHS, consumer protection, environment, climate reporting and cyber obligations when materially relevant to electricity operations. It is broader than the enforcement-event corpus.
@@ -18,7 +25,7 @@ Mixed gas/electricity documents may be preserved where relevant provisions or ev
 
 1. Identify the source families for every jurisdiction and document class, including families not yet cited by this KB.
 2. Enumerate each official index, pagination sequence, period, version history and relevant attachment. Reconcile against available register totals and archival boundaries.
-3. Preserve every accessible in-scope original and record inaccessible, missing, restricted or unpublished material as an explicit gap.
+3. Preserve every in-scope original whose acquisition and intended local use are lawful; record missing, restricted, unpublished or permission-unresolved material as an explicit gap.
 4. Extract all substantive pages, footnotes and appendices; check page counts, OCR requirements, truncation, missing attachments and source identity.
 5. Bind reviewed propositions to the exact source version and locator, with separate case-status and temporal review.
 
@@ -26,7 +33,7 @@ Completion of the currently known URL queue is only seed-backfill completion, no
 
 ## Acquisition pipeline implemented
 
-`scripts/collect_source_originals.py` starts from canonical case/provision/source registers, existing document citations and authored knowledge-page URLs. It records authority/HTTPS-review candidates separately, follows directly linked official document attachments to a bounded depth, checks robots policy, uses at most four workers and serialises requests per host. Authentication, denial and rate limiting create recorded gaps; the collector does not bypass them.
+`scripts/collect_source_originals.py` starts from canonical case/provision/source registers, existing document citations and authored knowledge-page URLs. Offline inventory is the default. Actual downloads require exact-URL, dated operator permission records separately covering automated access, copying, local storage, extraction and privacy. The bounded collector checks robots policy, uses at most four workers and serialises requests per host. Discovered attachments do not inherit rights from their parent. Authentication, denial and rate limiting create gaps; the collector does not bypass them.
 
 Each URL outcome is appended and flushed to `source-originals/manifest.jsonl`. Original HTTP response bytes are content-addressed under `source-originals/objects/`; extracted text is a separate hashed JSON object with page or DOM-section locators. Repeated runs skip previously attempted URLs by default. `--retry-failed` is an explicit maintenance action, not a way around denied access. Only run one collector against an archive at a time.
 
@@ -34,7 +41,7 @@ HTML text extraction omits navigation and scripts where a main-content container
 
 The collector does not yet enumerate every site-specific pagination/version API, automate authenticated sessions or determine final legal relevance. Those remain explicit work queues. The 5 September recovery batch adds browser captures, official browser downloads, safe WorkSafe embedded-record extraction, and page-image OCR with two independent English engines. The finite-cohort reconciliation is in `review/results/source-recovery-summary.json`; it must not be advertised as nationwide exhaustiveness. Browser renderings and screenshots remain distinct from original HTTP/PDF bytes.
 
-Non-government network operator originals are also in scope. Publisher homepages checked on 5 September 2026 include [Ausgrid](https://www.ausgrid.com.au/), [AusNet](https://www.ausnetservices.com.au/), [Energex](https://www.energex.com.au/), [CitiPower and Powercor](https://www.powercor.com.au/), [Endeavour Energy](https://www.endeavourenergy.com.au/), [Essential Energy](https://www.essentialenergy.com.au/), [TasNetworks](https://www.tasnetworks.com.au/) and [Transgrid](https://www.transgrid.com.au/). Their cited public documents are eligible for acquisition, but publication by a network does not make every document legislation, a binding connection condition, or current. This reviewed publisher list is not a complete Australian network census.
+Non-government network operator originals are also in scope. Publisher homepages checked on 5 September 2026 include [Ausgrid](https://www.ausgrid.com.au/), [AusNet](https://www.ausnetservices.com.au/), [Energex](https://www.energex.com.au/), [CitiPower and Powercor](https://www.powercor.com.au/), [Endeavour Energy](https://www.endeavourenergy.com.au/), [Essential Energy](https://www.essentialenergy.com.au/), [TasNetworks](https://www.tasnetworks.com.au/) and [Transgrid](https://www.transgrid.com.au/). Their cited public documents are acquisition candidates subject to source-specific access and local-use permission review, but publication by a network does not make every document legislation, a binding connection condition, or current. This reviewed publisher list is not a complete Australian network census.
 
 ## Evidence and answer boundary
 
@@ -52,20 +59,20 @@ User authentication, where legitimately required, remains in the browser and out
 
 `scripts/import_browser_source.py` imports a rendered-text descriptor only after its UTF-16 character count and FNV-1a transfer fingerprint match the independently observed browser output. The archived file then receives a SHA-256 hash. The transfer fingerprint is an accidental-copy-error check, not cryptographic source authentication. The descriptor records the original URL, capture time, DOM selector, representation, attribution and scope. Only run imports while the collector is stopped, then rebuild the research index. The AER's [copyright policy](https://www.aer.gov.au/about/policies/disclaimer-copyright), checked in the browser for the example, describes CC BY 4.0 for AER-owned material with exceptions; it does not clear every source or third-party asset.
 
-## Open-source boundary
+## Public Distribution Boundary
 
-Authored documentation, schemas and metadata remain English. Original source bytes are preserved unchanged even if an issuing body includes other languages; translations are separate derivatives, never replacements. The raw archive and derived text are excluded from Git by default pending item-level redistribution review. Public accessibility is not blanket permission to redistribute copyrighted standards, subscription databases or every official PDF. Licensed or unavailable materials remain inventoried with the acquisition/rights gap rather than copied through a restriction.
+Authored documentation, schemas and metadata remain English. Lawfully acquired source bytes are preserved unchanged; translations are separate derivatives, never replacements. The raw archive, screenshots and derived full text are excluded from this references-only public edition. Public accessibility is not blanket permission to copy or redistribute copyrighted standards, subscription databases or every official PDF. Licensed or unavailable materials remain inventoried with the acquisition/rights gap rather than copied through a restriction. The project remains source-available, not OSI open source.
 
 ## Commands
 
 ```powershell
-python .\scripts\collect_source_originals.py --inventory-only
-python .\scripts\collect_source_originals.py --max-requests 2000 --workers 4 --attachment-depth 1
-python .\scripts\search_source_originals.py "ENGIE complaints"
-python .\scripts\validate_source_originals.py
+python .\scripts\collect_source_originals.py --output-root ..\au-electricity-private --inventory-only
+python .\scripts\collect_source_originals.py --output-root ..\au-electricity-private --download --permissions ..\au-electricity-private\permissions.local.json --max-requests 20 --workers 1 --attachment-depth 1
+python .\scripts\search_source_originals.py "ENGIE complaints" --root ..\au-electricity-private
+python .\scripts\validate_source_originals.py --root ..\au-electricity-private
 ```
 
-Dependencies: Python 3.11 or later, `lxml` and `pypdf`; SQLite must include FTS5. Tested with Python 3.12.14, lxml 6.1.1 and pypdf 6.10.0; dependency versions are in `requirements-originals.txt`. The Windows runtime used for this batch was the bundled Codex Python runtime, because `python` was not on PATH. The interface defaults to the repository root; `--output-root` permits an isolated acquisition staging directory.
+Dependencies: Python 3.11 or later, `lxml` and `pypdf`; SQLite must include FTS5. Historical runtime: Python 3.12.14, lxml 6.1.1 and pypdf 6.10.0; dependency versions are in `requirements-originals.txt`. `--root` selects the knowledge checkout; `--output-root` is now mandatory and must be private and outside Git worktrees.
 
 Office extraction additionally uses openpyxl 3.1.5. OCR is an optional, isolated workflow; engine/model details and reproduction steps are in `review/results/source-recovery-2026-09-05.md`. Generic `--reextract` preserves specialist OCR and embedded-record extractions. The recovery merger is append-only and idempotent, invalidates known binary-as-text mistakes, and keeps replacement URLs separate from historical originals.
 

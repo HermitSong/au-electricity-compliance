@@ -16,6 +16,7 @@ for the measured release run and exact selected test scope.
 python -m pip install -r requirements-dev.txt
 python -B scripts/build_search_index.py
 python -B scripts/check_public_release.py
+python -B scripts/check_public_release.py --staged
 python -B scripts/test_public_release.py
 ```
 
@@ -26,6 +27,12 @@ public edition will therefore also run those unavailable-archive assumptions and
 is not expected to pass. Four public-distribution tests separately check event-chain
 retrieval and the absence of source-based current-law approval. Platform skips are
 reported independently from both passes and the 12 not-run tests.
+
+Acquisition tests use synthetic permission records and mocked network responses.
+They check scope, expiry, private-output boundaries and denial behavior, not real
+publisher authorisation or legally valid use. Release checks inspect the current
+tracked tree and exact staged blobs; they do not scan past commits, recall clones,
+or prove that all apparently original prose is independently authored.
 
 ## Originating Local Diagnostic
 
