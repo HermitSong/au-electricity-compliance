@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "scope": "Public edition: synthetic and public-data regressions; not a legal accuracy benchmark",
+  "archive_dependent_tests": {
+    "test_answer_workflow_adversarial.CurrentNERRegressionTests.test_current_law_label_and_statutory_cites_do_not_license_court_findings": "Requires reviewed NER originals and source spans not distributed here",
+    "test_answer_workflow_adversarial.CurrentNERRegressionTests.test_pending_engie_allegations_still_cannot_be_reported_as_findings": "Requires reviewed NER originals and source spans not distributed here",
+    "test_answer_workflow_adversarial.CurrentNERRegressionTests.test_reviewed_provision_not_lost_when_full_ner_pages_fill_general_search": "Requires reviewed NER originals and source spans not distributed here",
+    "test_answer_workflow_adversarial.CurrentNERRegressionTests.test_stale_independent_checker_hash_is_rejected": "Requires reviewed NER originals and source spans not distributed here",
+    "test_answer_workflow_adversarial.CurrentNERRegressionTests.test_statutory_exception_does_not_cover_past_named_or_judicial_findings": "Requires reviewed NER originals and source spans not distributed here",
+    "test_answer_workflow_adversarial.CurrentNERRegressionTests.test_statutory_joint_liability_does_not_require_a_court_finding": "Requires reviewed NER originals and source spans not distributed here",
+    "test_answer_workflow_adversarial.RealKBBoundaryTests.test_resealed_official_span_tampering_is_rejected": "Requires a real archived official span; synthetic tampering tests still run",
+    "test_hornsdale_case_retrieval.HornsdaleCaseRetrievalTests.test_explicit_named_battery_case_includes_lifecycle_and_court_orders": "Court orders are not bundled; a separate public metadata-chain test runs",
+    "test_original_research_packet.OriginalResearchPacketTests.test_brief_keeps_research_chain_and_rejects_a_stale_ready_label": "Requires an undistributed original-source answer packet",
+    "test_original_research_packet.OriginalResearchPacketTests.test_brief_quarantines_renamed_originals_and_reversed_warnings": "Requires an undistributed original-source answer packet",
+    "test_original_research_packet.OriginalResearchPacketTests.test_real_canonical_span_requires_unchanged_text_and_provenance": "Requires a real archived official span; synthetic provenance tests still run",
+    "test_reviewed_bindings_adversarial.StagedSourceReplayTests.test_each_staged_candidate_replays_exact_pdf_spans": "Requires the exact historical PDF snapshots and extracted spans"
+  }
+}

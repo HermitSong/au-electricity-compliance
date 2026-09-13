@@ -1,0 +1,8 @@
+{
+  "schema_version": "1.0",
+  "current_provision_max_age_days": 7,
+  "route_only_source_max_age_days": 30,
+  "enforcement_source_max_age_days": 14,
+  "release_rule": "A current-law answer requires a fresh immutable snapshot and addressable source text for every controlling provision. Capture failures and stale sources require live professional verification.",
+  "restricted_source_rule": "Bot-protected or browser-only official sources remain blocked until a browser-assisted or manually deposited byte snapshot is hashed and extracted."
+}

@@ -1,0 +1,1150 @@
+{
+  "schema_version": "1.0",
+  "edition": "public-research-preview",
+  "prepared_on": "2026-09-13",
+  "raw_snapshots_distributed": false,
+  "extracted_source_text_distributed": false,
+  "prebuilt_indexes_distributed": false,
+  "private_gold_distributed": false,
+  "local_corpus_accuracy_inherited": false,
+  "projected_issue_records": [
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-accc-2007-12-21-energyaustralia-clears-air-about-green-electricity-claims"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-accc-2010-01-06-former-greenpower-retailer-to-purchase-outstanding-certificates"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-accc-2010-08-02-solar-panel-retailers-amend-claims-on-discounts-and-electricity-savings"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-accc-2011-04-13-accc-issues-contempt-of-court-proceedings-against-global-green-plan-ltd"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2011-08-30-aer-institutes-proceedings-against-queensland-generator-stanwell"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-accc-2011-09-02-wa-solar-retailer-austech-pays-infringement-notice"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-accc-2011-11-04-true-value-solar-pays-infringement-notices-for-misleading-advertising"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-accc-2012-03-27-accc-takes-court-action-against-energy-retailers-for-door-to-door-sales-tactics"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-accc-2012-05-11-solar-company-pays-infringement-notice-for-affiliation-claims"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2012-12-19-aer-takes-enforcement-action-life-support-obligations"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-accc-2013-05-08-accc-takes-action-against-euro-solar-and-australian-solar-panel-for-misleading-claims"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-accc-2013-09-27-accc-takes-action-against-origin-energy-and-salesforce-for-door-to-door-selling"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2013-10-07-a-h-p-d-clissold-pty-ltd-worksafe-155871"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2013-10-22-sims-group-australia-holdings-limited-worksafe-155861"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-accc-2013-11-28-australian-power-and-gas-ordered-by-consent-to-pay-11-million-for-door-to-door-sales-conduct"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-accc-2013-12-05-accc-takes-action-against-agl-south-australia-for-alleged-false-or-misleading-representations"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2014-newmont-ap-power-2014-performance-audit-report-erl13"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-accc-2014-01-17-145000-penalty-for-fake-testimonials-and-false-solar-energy-country-of-origin-representations"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2014-04-23-ironman-roofing-pty-ltd-worksafe-155561"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-accc-2014-05-08-accc-takes-action-against-origin-for-alleged-false-or-misleading-representations"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-accc-2014-06-10-gotta-getta-group-pays-infringement-notices-for-alleged-misleading-solar-offer"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2014-11-21-energyaustralia-requirement-explicit-informed-consent-certain-transactions"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-accc-2014-12-16-federal-court-finds-agl-sa-made-false-or-misleading-representations-about-discounts-under-energ"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2015-02-02-nsw-electricity-distributors-pay-infringement-notice-penalties-regarding-life-support-obligatio"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-accc-2015-02-10-origin-companies-ordered-to-pay-penalties-of-325000-for-misleading-consumers-about-discounts-un"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2015-02-12-federal-court-declares-snowy-hydro-limited-breached-national-electricity-rules"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2015-03-27-aer-v-energyaustralia-pty-ltd-2015-fca-274"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-accc-2015-03-30-origin-to-pay-2-million-for-unlawful-door-to-door-sales-tactics"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-accc-2015-04-29-agl-sa-ordered-to-pay-700000-penalty-and-to-offer-refunds-to-consumers-for-false-or-misleading"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2016-03-10-origin-energy-uranquinty-power-failure-follow-dispatch-instructions"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2016-03-22-infringement-notices-issued-red-energy-failing-inform-customers-their-options-and-obtain-explic"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-accc-2016-04-11-true-value-solar-discontinues-incentives-for-positive-online-reviews"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-accc-2016-04-21-momentum-energy-pays-penalties-of-54000-in-relation-to-renewable-energy-advertising"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2016-05-11-erm-power-failure-follow-dispatch-instructions"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2016-07-04-cs-energy-failure-follow-dispatch-instructions-and-offer-obligations"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2016-09-13-property-company-stockland-pays-five-infringement-notices-selling-electricity-without-exemption"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2017-01-13-agl-hydro-partnership-failure-comply-all-times-latest-generation-dispatch-offer"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2017-01-13-energyaustralia-and-energyaustralia-yallourn-failure-follow-dispatch-instructions"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2017-02-aer-v-pelican-point-power-ltd-2023-fca-1110"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2017-05-02-southern-generators-electrical-pty-ltd-worksafe-153856"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-accc-2017-06-06-lumo-energy-pays-penalty-for-alleged-energy-offer-misrepresentations"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2017-10-03-administrative-undertakings-provided-energex-and-tasnetworks-and-infringement-notices-issued-al"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2017-11-03-redback-tree-services-pty-ltd-worksafe-153501"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2017-12-14-agl-failure-inform-customers-contract-end"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2018-01-11-dhillon-scaffolding-pty-ltd-worksafe-153426"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-accc-2018-06-20-alinta-energy-misled-consumers-on-discounts"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2018-07-19-engie-failure-follow-dispatch-instructions-and-related-obligations"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-accc-2018-07-23-one-big-switch-pays-penalties-over-electricity-discount-and-savings-claims"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2018-08-14-kwikserv-formwork-and-scaffolding-vic-pty-ltd-worksafe-156966"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2018-10-11-3-point-electrics-pty-ltd-worksafe-157081"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-accc-2019-04-12-iselect-in-court-for-alleged-misleading-conduct-and-claims-about-energy-plan-comparisons"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2019-05-22-mildura-rural-city-council-worksafe-160061"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-accc-2019-07-18-dodo-and-covau-to-refund-customers-and-pay-penalties-over-energy-discount-claims"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2019-08-16-origin-energy-de-energisation-obligations"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2019-10-15-all-scaffolding-pty-ltd-worksafe-162111"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2019-10-15-k-c-constructions-pty-ltd-worksafe-162106"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2020-01-31-mainline-developments-pty-ltd-worksafe-162886"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2020-02-03-dodo-power-and-gas-origin-energy-and-energyaustralia-breaches-metering-rules"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2020-02-20-tasnetworks-breaches-life-support-obligations"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2020-04-09-energyaustralia-enforceable-undertaking-regarding-life-support-obligations"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-accc-2020-07-29-locality-planning-energy-pays-penalty-for-alleged-breach-of-electricity-retail-code"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2020-07-30-g-i-developments-pty-ltd-worksafe-164341"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-accc-2020-08-05-sumo-power-allegedly-misled-consumers-about-electricity-pricing"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2020-09-10-barro-group-pty-ltd-worksafe-164366"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-accc-2020-10-08-iselect-to-pay-85-million-for-misleading-consumers-comparing-energy-plans"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2020-11-04-agl-energy-wrongful-disconnections-and-failure-offer-payment-plans"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2020-11-05-aer-v-energyaustralia-pty-ltd-2020-fca-1647"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2020-11-13-aer-v-agl-sales-pty-limited-ors-2020-fca-1623"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2020-11-26-alinta-energy-breaches-life-support-obligations"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2020-11-30-taylor-ferguson-co-pty-ltd-worksafe-164426"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-accc-2020-12-21-1st-energy-admits-it-likely-misled-tasmanian-consumers"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-accc-2020-12-22-origin-energy-pays-penalty-for-allegedly-misleading-electricity-customers"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2020-12-22-aer-v-snowtown-wind-farm-stage-2-pty-ltd-2020-fca-1845"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2021-02-22-cs-energy-inability-provide-frequency-control-ancillary-services"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2021-06-03-horizon-power-eirl2-notice-type-1-licence-contravention-horizon-power"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2021-06-17-community-energy-group-pty-ltd-worksafe-165271"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-accc-2021-06-30-sumo-power-to-pay-12-million-for-misleading-electricity-plans"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2021-07-01-aer-v-hwf-1-pty-ltd-2021-fca-732"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2021-07-01-aer-v-pacific-hydro-clements-gap-pty-ltd-2021-fca-733"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2021-08-12-michael-bojic-esv-prosecution"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2021-08-16-nicholas-lye-and-toby-bell-esv-prosecution"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2021-08-24-origin-energy-alleged-hardship-breaches"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2021-09-22-hornsdale-power-reserve-alleged-breaches-national-electricity-rules"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2021-10-08-alinta-energy-retail-alleged-hardship-breaches"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2021-10-26-horizon-power-eirl2-notice-type-1-licence-contravention-eirl2-horizon-power"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2021-11-05-milan-jakovljevic-and-sampson-electrical-contractors-pty-ltd-electrical"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2021-12-10-electrician-fined-after-dangerous-error-causes-electric-shocks-electrical"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2021-12-10-steven-ryan-buckle-electrical"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2021-12-13-powercor-esv-prosecution"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2022-south32-worsley-alumina-2022-performance-audit-and-asset-management-system-report-egl12"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2022-tec-hedland-eirl9-2022-performance-audit-and-asset-management-system-review-report-eirl9"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2022-01-07-romiss-pty-ltd-trading-as-fair-price-electrical-services-electrical"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-accc-2022-01-12-covau-pays-penalties-for-allegedly-failing-to-publish-comparison-pricing-on-electricity-plans"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2022-02-16-laidlaw-electrical-pty-ltd-worksafe-164641"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2022-03-10-metro-trains-melbourne-pty-limited-worksafe-164701"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2022-04-01-electricity-networks-corporation-trading-as-western-power-electrical"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2022-04-01-samuel-thomas-alliston-electrical"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2022-04-04-d-caelli-cranes-pty-ltd-worksafe-164821"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2022-04-07-electricity-networks-corporation-trading-as-western-power-network-operators"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2022-04-11-cte-power-control-pty-ltd-worksafe-164841"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2022-04-29-westbury-holdings-pty-ltd-trading-as-air-group-australia-coolbreeze-air-conditioning-electrical"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2022-06-01-aer-v-energyaustralia-pty-ltd-2022-fca-644"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2022-06-24-wesco-electrics-1966-pty-ltd-and-paul-michael-thomas-electrical"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2022-06-28-aer-v-agl-hp-1-pty-ltd-2022-fca-737"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2022-06-28-aer-v-hornsdale-power-reserve-pty-ltd-2022-fca-738"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2022-06-29-aer-v-origin-energy-electricity-ltd-ors"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2022-06-30-endeavour-energy-breaches-life-support-obligations"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2022-07-19-effective-electrical-pty-ltd-worksafe-165201"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2022-08-12-aurora-energy-fined-alleged-customer-life-support-breaches"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2022-08-31-greska-homes-pty-ltd-worksafe-165471"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2022-10-18-k1-homes-id-pty-ltd-worksafe-165551"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2022-10-24-major-scaffolding-contractors-pty-ltd-worksafe-165571"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2022-11-01-western-power-fined-for-safety-failures-after-injuries-to-line-worker-network-operators"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2022-11-02-agl-broken-hill-solar-plant"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2022-11-07-synergy-type-1-licence-contravention-erl1"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2022-12-13-tin-man-tucker-pty-ltd-worksafe-165741"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2022-12-16-agl-alleged-breaches-overcharging-obligations"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2023-amanda-energy-2023-performance-audit-report-erl20"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2023-horizon-power-eirl2-2023-performance-audit-report-eirl2"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2023-rottnest-island-authority-eirl3-2023-performance-audit-report-eirl3"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2023-southern-energy-2023-performance-audit-report-erl27"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2023-synergy-2023-performance-audit-report-erl1"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2023-02-03-john-edward-wigley-and-redprize-nominees-pty-ltd-electrical"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2023-02-13-energyaustralia-yallourn-pty-ltd-worksafe-165816"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2023-03-10-pro-install-electrical-pty-ltd-esv-prosecution"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2023-03-15-hanso-constructions-pty-ltd-worksafe-165906"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2023-05-08-limitless-energy-group-pty-ltd-worksafe-166156"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2023-06-01-stanwell-corporation-limited-breaches-national-electricity-rules"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2023-06-06-acn-electrical-contractors-pty-ltd-worksafe-166251"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2023-06-09-western-power-notice-western-power-type-1-licence-contravention-edl1"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-accc-2023-06-27-covau-and-reamped-pay-penalties-for-alleged-breaches-of-electricity-code"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2023-06-27-covau-failure-present-standing-offer-prices-its-website"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2023-06-30-agl-alleged-breaches-national-electricity-rules"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2023-07-10-hydroxygas-pty-ltd-and-renaud-kobrynski-esv-prosecution"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2023-07-17-pascoes-maintenance-group-pty-ltd-electrical"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2023-08-04-minbaringu-services-pty-ltd-zane-russell-trent-tatham-electrical"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2023-08-10-j-l-hutt-electrical-pty-ltd-jason-hutt-and-austin-calverley-esv-prosecution"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2023-08-30-trinity-place-investments-pty-ltd-overcharging-embedded-network-electricity-consumers"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-accc-2023-09-22-energyaustralia-in-court-over-alleged-misleading-electricity-price-information"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2023-09-22-explosion-risk-from-south-west-electrical-work-electrical"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2023-10-11-united-energy-distribution-pty-limited-esv-prosecution"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2023-10-18-cs-energy-limited-alleged-failure-obtain-regulatory-approval-operate-generating-system"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2023-10-20-cam-engineering-and-construction-pty-ltd-alleged-breach-national-energy-retail-law"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2023-10-26-nicola-terrigno-electrical"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2023-10-31-agl-fcas-final-court-order"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2023-12-04-harmony-operations-australia-pty-ltd-worksafe-166696"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2024-01-04-mathew-james-smith-cancellation-of-licensed-electrical-worker-licence-lew-a38739-disciplinary"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2024-01-23-darren-scott-hardy-electrical"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2024-02-09-callide-power-trading-pty-ltd-alleged-breaches-national-electricity-rules"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2024-02-09-ballantyne-commercial-property-services-electrical"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2024-03-08-powercor-australia-ltd-esv-prosecution"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2024-03-20-luke-warren-appeal-esv-prosecution"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2024-05-03-ergon-energy-alleged-breaches-life-support-obligations"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2024-05-03-aras-holdings-vic-pty-ltd-worksafe-167066"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2024-05-08-split-system-installers-melb-pty-ltd-acn-663-024-128-split-system-installers-cancellation-of-registered-e"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2024-05-24-gregory-craig-jason-briffa-electrical"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2024-06-11-draco-air-pty-ltd-electrical"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2024-06-12-kevin-nathaniel-martin-cancellation-of-registered-electrical-contractor-licence-rec-30685-disciplinary"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2024-06-18-evoenergy-enforceable-undertaking-regarding-ring-fencing-obligations"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2024-06-19-synergy-notice-synergy-type-1-licence-contravention"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-accc-2024-06-27-dodo-power-gas-pays-82500-in-penalties-for-breaches-of-electricity-code"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2024-06-27-starfish-energy-pty-ltd-worksafe-167186"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2024-06-27-the-splendor-homes-pty-ltd-worksafe-167201"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2024-07-01-origin-institution-proceedings-against-origin-subsidiaries-breaching-life-support-obligations"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2024-07-04-gk-solar-electricals-pty-ltd-worksafe-167211"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2024-07-04-michael-georgiou-electrical"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2024-07-19-reztech-electrical-services-pty-ltd-electrical"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2024-08-13-adam-falzon-conditions-placed-on-licenced-electrical-worker-lew-a34067-disciplinary"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2024-08-15-gavin-ross-brady-cancellation-of-licenced-electrical-workers-lew-licence-a63630-disciplinary"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2024-09-06-m2-energy-pty-ltd-trading-as-dodo-power-gas-penalty-notice-s-number-of-notices-22-penalty-amount-825-472"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2024-09-13-buchanan-electrical-holdings-pty-ltd-and-scott-buchanan-electrical"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2024-09-13-electricity-networks-corporation-trading-as-western-power-network-operators"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2024-09-20-ipower-pty-limited-and-ipower-2-pty-limited-trading-as-engie-penalty-notice-s-number-of-notices-45-penalt"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-accc-2024-09-26-energyaustralia-to-pay-14m-for-making-misleading-statements-and-breaching-the-electricity-retai"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2024-10-02-locality-planning-energy-pty-ltd-alleged-breaches-national-electricity-law"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2024-10-03-origin-energy-electricity-ltd-alleged-breaches-national-energy-retail-rules"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2024-10-11-ges-wa-pty-ltd-and-johnston-parker-brooks-electrical"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2024-11-22-campervan-case-drives-home-risks-of-unlicensed-electrical-work-electrical"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2024-11-28-jack-alexander-lusty-electrical"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2024-12-06-sumo-power-pty-ltd-and-sumo-gas-pty-ltd-contravention-order-the-nature-of-the-contravention-order-obligat"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2024-12-18-origin-breaches-life-support-obligations"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2024-12-19-agl-breaches-national-energy-retail-rules"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2025-4-000-fine-after-hazardous-live-cables-left-within-reach-at-family-home-electrical"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2025-alinta-eirl8-2025-performance-audit-report-erl6"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2025-angelo-betti-electrical"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2025-apa-dewap-eirl7-2025-performance-audit-and-asset-management-system-review-report-eirl7"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2025-boss-electrical-and-mechanical-pty-ltd-electrical"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2025-cold-comfort-in-court-after-unlicensed-air-con-work-electrical"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2025-ev-energy-2025-performance-audit-and-asset-management-system-review-report-erl33"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2025-future-power-wa-pty-ltd-and-mj-electrical"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2025-kleenheat-2025-performance-audit-report-erl5"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2025-xtra-solutions-pty-ltd-trading-as-xtra-electrical-electrical"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2025-02-04-callide-power-trading-breaches-national-electricity-rules"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2025-02-17-petar-vasilev-esv-prosecution"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2025-02-21-per-melbourne-pty-ltd-trading-as-richtek-perth-and-richtek-melbourne-electrical"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2025-03-07-western-power-fined-220-000-for-unsafe-connection-with-extremely-high-risk-network-operators"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2025-03-11-nicholas-peter-sheehan-worksafe-167656"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2025-03-14-maas-cleaning-pty-ltd-maas-green-planet-veu-accredited-person-veu-certificate-surrender-refusal-victorian"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2025-03-18-accurate-marketing-pty-ltd-glow-green-and-b-g-green-trading-pty-ltd-aussie-greenmarks-veu-accredited-pers"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2025-03-21-abigail-energy-pty-ltd-60-shades-veu-accredited-person-veu-certificate-surrender-refusal-victorian-energy"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2025-03-27-origin-energy-electricity-limited-contravention-order-the-nature-of-the-contravention-order-obligations-b"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2025-03-27-origin-energy-electricity-limited-declaration-declarations-in-its-orders-the-court-also-made-declara"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2025-03-27-origin-energy-retail-limited-declaration-the-supreme-court-of-victoria-made-declarations-that-b"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2025-03-27-origin-energy-vic-pty-limited-declaration-declarations-in-its-orders-the-court-also-made-declara"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2025-03-27-origin-energy-vic-pty-ltd-contravention-order-the-nature-of-the-contravention-order-obligations-on-a"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2025-03-27-energyaustralia-yallourn-pty-ltd-worksafe-167686"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2025-04-09-m2-energy-pty-ltd-alleged-breaches-national-energy-retail-rules"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2025-04-09-red-energy-pty-limited-alleged-breaches-national-energy-retail-law"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2025-05-29-powershop-australia-pty-ltd-alleged-breaches-national-energy-retail-rules"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2025-06-05-guangming-wei-condition-placed-on-licensed-electrical-worker-lew-a41677s-licence-disciplinary"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2025-06-05-panda-development-group-pty-ltd-cancellation-of-registered-electrical-contractor-rec-rec-28846-disciplina"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2025-06-06-kage-systems-pty-ltd-t-a-shield-electrical-and-jye-andrew-blackie-electrical"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-accc-2025-06-18-diamond-energy-pays-penalties-for-failing-to-adequately-communicate-pricing-information-to-cons"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2025-06-20-business-channel-australia-pty-ltd-opt-energy-veu-accredited-person-veu-certificate-surrender-refusal-vic"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2025-06-27-nordic-elevators-pty-ltd-and-nordic-elevators-services-pty-ltd-and-johan-pasek-esv-prosecution"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2025-06-27-nordic-elevator-services-pty-ltd-worksafe-167866"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2025-06-27-nordic-elevators-pty-ltd-worksafe-167881"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2025-07-03-phenix-trading-pty-ltd-trading-as-ledsaves-veu-accredited-person-veu-accreditation-restriction-veu-certif"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2025-07-04-cam-engineering-construction-pty-ltd-breach-national-energy-retail-law"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2025-07-14-powerflex-electrical-pty-ltd-and-russell-peter-brown-electrical"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2025-07-14-synergy-notice-synergy-compliance-enforcement-notice-issued-for-licence-breach"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2025-07-20-gb-environmental-trading-pty-ltd-greenbank-environmental-veu-accredited-person-veu-accreditation-restrict"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2025-07-25-goming-electrix-pty-ltd-suspension-of-registered-electrical-contractor-rec-rec-19101-disciplinary"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2025-07-31-willoworks-pty-ltd-worksafe-167646"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2025-08-01-cody-de-waal-electrical"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2025-08-11-green-energy-trading-pty-ltd-veu-accredited-person-veu-accreditation-restriction-veu-certificate-surrende"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2025-08-12-sustainable-renew-energy-pty-ltd-veu-accredited-person-veu-certificate-surrender-refusal-victorian-energy"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2025-08-13-scaff-right-scaffolding-pty-ltd-worksafe-167966"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2025-08-22-intelligent-home-pty-ltd-and-rory-james-mcgrath-electrical"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2025-08-27-renewable-energy-pty-ltd-re-energi-veu-accredited-person-veu-accreditation-suspension-veu-certificate-sur"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2025-08-27-horizon-power-eirl2-notice-horizon-power-type-1-licence-breach"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2025-08-31-in2-energy-pty-ltd-veu-accredited-person-veu-certificate-surrender-refusal-victorian-energy-efficiency-ce"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2025-09-03-myom-australia-pty-ltd-veu-accredited-person-veu-accreditation-restriction-duration-of-accreditation-rest"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2025-09-04-ausnet-transmission-group-pty-ltd-esv-prosecution"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2025-09-25-deren-deniz-electrical"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2025-09-30-vision-environmental-solutions-pty-ltd-veu-accredited-person-veu-accreditation-restriction-veu-certificat"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2025-10-01-home-tanning-australia-pty-ltd-esv-prosecution"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2025-10-09-gb-environmental-trading-pty-ltd-greenbank-environmental-veu-accredited-person-veu-accreditation-restrict"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2025-11-06-momentum-energy-pty-limited-penalty-notice-s-number-of-notices-20-penalty-amount-764-380-provisio"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2025-11-11-synergy-notice-energy-retailer-overcharges-investigation-decision-report-and-compliance-enforcement-notice"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2025-11-13-alinta-energy-retail-sales-pty-ltd-alleged-breaches-national-energy-retail-rules"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2025-11-14-planetwise-solutions-pty-ltd-veu-accredited-person-veu-accreditation-cancellation-veu-certificate-surrend"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2025-11-25-ang-energy-pty-ltd-worksafe-168181"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2025-12-09-target-green-pty-ltd-veu-accredited-person-veu-accreditation-suspension-veu-certificate-surrender-refusal"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2025-12-11-cyanergy-pty-ltd-veu-accredited-person-veu-accreditation-restriction-veu-certificate-surrender-refusal-du"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2025-12-17-transgrid-alleged-breaches-national-electricity-rules"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2025-12-22-origin-alleged-breaches-overcharging-rules"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2025-12-24-shantey-pty-ltd-energy-efficient-upgrades-veu-accredited-person-veu-accreditation-cancellation-veu-certif"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2026-reginald-noel-byrne-electrical"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2026-the-service-mate-australia-pty-ltd-electrical"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2026-01-08-greenova-pty-ltd-esv-prosecution"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2026-01-14-jsd-electricals-pty-ltd-worksafe-168296"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2026-02-06-davor-banadinovic-esv-prosecution"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2026-02-26-ecosaver-australia-pty-ltd-veu-accredited-person-veu-accreditation-cancellation-veu-certificate-surrender"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2026-02-27-jaccob-pty-ltd-electrical"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2026-03-13-team-smartfix-pty-ltd-joshua-ryan-howes-joshua-hills-electrical"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2026-03-17-ea-building-developments-pty-ltd-worksafe-168406"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2026-03-20-electrician-fined-after-wiring-error-causes-electric-shocks-electrical"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-aer-2026-03-24-energyaustralia-alleged-breaches-national-energy-retail-law-and-national-energy-retail-rules"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2026-03-31-a-k-alvi-enterprises-pty-ltd-veu-accreditation-cancellation-veu-certificate-surrender-refusal-victorian-e"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2026-05-11-electrical-masters-pty-ltd-worksafe-168501"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2026-05-15-da-inquiry-name-description-daniel-kostovski-cancellation-of-licensed-electrical-worker-licence-lew-a6361"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2026-05-15-daniel-kostovski-cancellation-of-registration-rec-30778-disciplinary"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2026-05-18-wesco-electrics-1966-pty-ltd-electrical"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2026-05-21-adam-coffey-esv-prosecution"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2026-05-22-aad-civil-constructions-pty-ltd-worksafe-168101"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2026-05-28-western-power-fined-over-inadequate-pole-inspection-prior-to-reported-electric-shock-network-operators"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2026-06-05-jarred-lambert-electrical"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2026-06-19-brit-group-pty-ltd-jordan-samuel-bissett-electrical"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2026-06-26-sunbeam-electric-pty-ltd-worksafe-168586"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-accc-2026-07-14-origin-energy-to-refund-customers-after-accc-investigation"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2026-07-14-ensabella-homes-pty-ltd-worksafe-168091"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2026-07-22-covau-pty-ltd-penalty-notice-s-number-of-notices-2-penalty-amount-81-404-provisions"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2026-07-30-synergy-notice-synergy-type-1-licence-breaches"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "au-accc-2026-08-03-energyaustralia-admits-breaching-electricity-retail-code-over-free-power-offer-delay"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "vic-2026-08-06-hw-electrical-pty-ltd-worksafe-168686"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2026-08-20-horizon-power-eirl2-notice-horizon-power-type-1-licence-breaches-family-and-domestic-violence"
+    },
+    {
+      "file": "enforcement-events-full.jsonl",
+      "event_id": "wa-2026-08-20-horizon-power-eirl2-notice-horizon-power-type-1-licence-breaches-life-support-equipment"
+    },
+    {
+      "file": "enforcement-events-selected.jsonl",
+      "event_id": null
+    },
+    {
+      "file": "technical-events-full.jsonl",
+      "event_id": "au-aer-tech-2018-12-14-investigation-report-south-australias-2016-state-wide-blackout"
+    },
+    {
+      "file": "technical-events-full.jsonl",
+      "event_id": "wa-2021-newgen-neerabup-partnership-2021-performance-audit-report-and-asset-management-system-review-report-egl18"
+    },
+    {
+      "file": "technical-events-full.jsonl",
+      "event_id": "au-aer-tech-2022-12-15-june-2022-market-events-report"
+    },
+    {
+      "file": "technical-events-full.jsonl",
+      "event_id": "wa-2025-aer-retail-2025-performance-audit-report-erl18"
+    },
+    {
+      "file": "technical-events-full.jsonl",
+      "event_id": "wa-2025-bluewaters-power-1-pty-ltd-and-bluewaters-power-2-pty-ltd-2025-performance-audit-and-asset-management-system-rev"
+    }
+  ],
+  "omitted_local_link_count": 20,
+  "knowledge_baseline": "2026-08-29"
+}

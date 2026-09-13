@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "legal_entity_ref": "SYNTHETIC-RETAILER-NOT-A-REAL-COMPANY",
+  "jurisdiction": "SA",
+  "actor": "retailer",
+  "customer_class": "residential",
+  "record_date": "2026-09-10",
+  "assessment_date": "2026-09-10",
+  "source_kind": "transcript",
+  "language": "en",
+  "processing_authorised": true
+}

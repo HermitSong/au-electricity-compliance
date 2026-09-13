@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0",
+  "baseline_date": "2026-08-29",
+  "corpus_period": "2006-01-01 to 2026-08-29 inclusive",
+  "public_exhaustiveness_status": "not-established-archive-gaps-remain",
+  "enforcement_event_count": 824,
+  "technical_event_count": 50,
+  "total_event_count": 874,
+  "source_family_count": 54,
+  "source_review_count": 54,
+  "source_status_counts": [
+    {
+      "status": "aggregate-only",
+      "count": 10
+    },
+    {
+      "status": "archive-gap",
+      "count": 37
+    },
+    {
+      "status": "complete-case-indexed",
+      "count": 6
+    },
+    {
+      "status": "complete-series-indexed",
+      "count": 1
+    }
+  ],
+  "archive_gap_source_family_ids": [
+    "ACT-ICRC-ULAR",
+    "ACT-WORKSAFE-PROSECUTIONS",
+    "AU-ACMA-SPAM-TELEMARKETING",
+    "AU-AEMO-NEM-MARKET-EVENTS",
+    "AU-AEMO-NEM-OPERATING-INCIDENTS",
+    "AU-CER-COMPLIANCE",
+    "AU-DCCEEW-EPBC-COMPLIANCE",
+    "NSW-BUILDING-COMMISSION-ELECTRICAL",
+    "NSW-EPA-PUBLIC-REGISTERS",
+    "NSW-IPART-NETWORK-COMPLIANCE",
+    "NSW-SAFEWORK-PROSECUTIONS",
+    "NT-EPA-COMPLIANCE",
+    "NT-UC-ANNUAL-COMPLIANCE",
+    "NT-WORKSAFE-PROSECUTIONS",
+    "QLD-ENVIRONMENT-ENFORCEMENT",
+    "QLD-QCA-ENERGY-REPORTING",
+    "SA-EPA-COMPLIANCE",
+    "SA-ESCOSA-ENFORCEMENT",
+    "SA-OTR-ANNUAL-REPORTS",
+    "SA-SAFEWORK-PROSECUTIONS",
+    "TAS-ECONOMIC-REGULATOR",
+    "TAS-ELECTRICITY-INCIDENTS",
+    "TAS-ENERGY-OMBUDSMAN-REPORTS",
+    "TAS-WORKSAFE-PROSECUTIONS",
+    "VIC-ENERGY-SAFE-PROSECUTIONS",
+    "VIC-EPA-PUBLIC-REGISTERS",
+    "VIC-ESC-PENALTIES",
+    "VIC-ESV-DISCIPLINARY-OUTCOMES",
+    "VIC-ESV-TECHNICAL-INVESTIGATIONS",
+    "VIC-WORKSAFE-PROSECUTIONS",
+    "WA-AEMO-WEM-SYSTEM-MANAGEMENT",
+    "WA-BUILDING-ENERGY-SAFETY",
+    "WA-BUILDING-ENERGY-STATEMENTS",
+    "WA-DWER-ENVIRONMENTAL-ENFORCEMENT",
+    "WA-ERA-ELECTRICITY-LICENSING",
+    "WA-ERA-PILBARA-DISPUTES",
+    "WA-ERA-WEM-REGISTERS"
+  ],
+  "aggregate_only_source_family_ids": [
+    "ACT-ACAT-ENERGY-DISPUTES",
+    "ACT-EPA-ENFORCEMENT",
+    "AU-CISC-SOCI-COMPLIANCE",
+    "NSW-EWON-SYSTEMIC",
+    "NT-UC-COMPLAINT-ROUTING",
+    "QLD-ELECTRICITY-AUTHORITY-REPORTING",
+    "SA-EWOSA-ANNUAL-REPORTS",
+    "VIC-ESC-COMPLIANCE-REPORTING",
+    "VIC-EWOV-SYSTEMIC-ISSUES",
+    "WA-EWOWA-REPORTS"
+  ],
+  "provision_resolution_counts": [
+    {
+      "status": "exact-official-provision",
+      "count": 53
+    },
+    {
+      "status": "non-contravention-event",
+      "count": 50
+    },
+    {
+      "status": "source-recorded-not-separately-audited",
+      "count": 741
+    },
+    {
+      "status": "unresolved-official-source-insufficient",
+      "count": 30
+    }
+  ]
+}

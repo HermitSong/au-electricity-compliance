@@ -1,0 +1,147 @@
+{
+  "schema_version": "1.0",
+  "candidates": [
+    {
+      "provision_id": "NER-BDU-REGISTRATION-V254-2026-09-04",
+      "provision_sha256": "d43d4891337f804f3ae30f85b61a6ec6ad2c8c5bdcd183fa5936d63b10a85255",
+      "prepared_by": "codex-implementation-2026-09-13",
+      "verified_as_of": "2026-09-13",
+      "operative_from": "2026-09-04",
+      "official_url": "https://aemc-dra-production-s3.s3.ap-southeast-2.amazonaws.com/rules/bc0d2a8e1cf523289a553dfefbec0a3b359f4b5b/assets/files/NER%20-%20v254%20-%20Full.pdf",
+      "official_version_page": "https://energy-rules.aemc.gov.au/ner/818",
+      "clause_scope": "2.1A.1-2.1A.3; 2.1B.2; 2.2.2-2.2.3; 2.2.5A-2.2.8; 2.9.3; Chapter 10 small-resource definitions",
+      "source_span_ids": [
+        "source-span:30d8ff35bacbf4e240cee25e9628ae4e",
+        "source-span:a07dd6b79a66bbba1dedf3fb1e621334",
+        "source-span:bd0da43ff200aa0c479b64dee370e0e6",
+        "source-span:5b1a734350e26bb3db3401944cb45448",
+        "source-span:5e53e4033f304962864ac7aff7f61fed",
+        "source-span:43d19f71142de71500a4c0856e766738",
+        "source-span:02450b0079602a8103921e995c06359f",
+        "source-span:728d5bf77ff6bbcd8ad2710aca4c4e90",
+        "source-span:5ed2040800a014e26bc1393912b51667",
+        "source-span:1d6c703cf1aa8c11634330f43744cfd4",
+        "source-span:f63777d6d7cac2acb3042ef0316360ac",
+        "source-span:b8def8b89b5e2645131569703fd0ea42",
+        "source-span:223fa9dca42d7be0788f3d4f367b0238",
+        "source-span:4d61bd93e4a03e32c0d437d1da97b163",
+        "source-span:1c0ad0117027ee2f20383fa2cbc59a11"
+      ],
+      "source_sha256_values": [
+        "acc777d749c526c75e80c202ae176b5b0ed26750900a6050a542fa0ca426bf69"
+      ],
+      "span_record_sha256": "45ddf6ba93b82cf41c190a84f90796ebd70f6d6a49510cf80294f39db91b3617",
+      "applicability_limit": "NEM participant and BDU classifications, with statutory alternatives and intermediary liabilities. MW alone does not establish a registration exemption, connection entitlement, state licence or operational approval. This is not the WA WEM or NT regime."
+    },
+    {
+      "provision_id": "NER-BIDDING-V254-2026-09-04",
+      "provision_sha256": "1986e5df35001a099cbd27048fe8cb3b202e4c6d6c5e7788ee048cd125623709",
+      "prepared_by": "codex-implementation-2026-09-13",
+      "verified_as_of": "2026-09-13",
+      "operative_from": "2026-09-04",
+      "official_url": "https://aemc-dra-production-s3.s3.ap-southeast-2.amazonaws.com/rules/bc0d2a8e1cf523289a553dfefbec0a3b359f4b5b/assets/files/NER%20-%20v254%20-%20Full.pdf",
+      "official_version_page": "https://energy-rules.aemc.gov.au/ner/818",
+      "clause_scope": "3.8.6; 3.8.22; 3.8.22A; Chapter 10 trading interval",
+      "source_span_ids": [
+        "source-span:782181809f763dab9491b60719331fdc",
+        "source-span:3f6e61d5346e756578e12a4a90dcad63",
+        "source-span:3a8573cbbf95c9a2bfca9b4f901d5b69",
+        "source-span:727578ffd306a071f6d6a97d9cb7f3d2",
+        "source-span:08aa67beae41929c72e33500cca3b807",
+        "source-span:2352ef03a72aa7eaed228358ffb43298",
+        "source-span:a34cb2dc6aaae270d3f57620f976d9e4",
+        "source-span:261da2660b9865f404fdb5c4f0587b82"
+      ],
+      "source_sha256_values": [
+        "acc777d749c526c75e80c202ae176b5b0ed26750900a6050a542fa0ca426bf69"
+      ],
+      "span_record_sha256": "f1da486350ada1065a012808137dd88ba76107bdac45b1558c59fcd4d459e882",
+      "applicability_limit": "Energy dispatch bids and rebids in NER v254. GEN/LOAD bands, capacity, ramps and energy constraints are distinct. Separate FCAS offers, technical validation, AEMO procedures and plant-specific parameters require their own sources."
+    },
+    {
+      "provision_id": "NER-DISPATCH-V254-2026-09-04",
+      "provision_sha256": "a48a79e7fc588c5cef635c434751fbffefbaa6bc48c04b5316e101ed66cf09ac",
+      "prepared_by": "codex-implementation-2026-09-13",
+      "verified_as_of": "2026-09-13",
+      "operative_from": "2026-09-04",
+      "official_url": "https://aemc-dra-production-s3.s3.ap-southeast-2.amazonaws.com/rules/bc0d2a8e1cf523289a553dfefbec0a3b359f4b5b/assets/files/NER%20-%20v254%20-%20Full.pdf",
+      "official_version_page": "https://energy-rules.aemc.gov.au/ner/818",
+      "clause_scope": "4.9.8; 4.9.9; 4.9.9A; 4.9.9B",
+      "source_span_ids": [
+        "source-span:02626ac639f6ab5d31f509f8f5ffff14",
+        "source-span:b653232bec6a55b73f70a7eaeb94e80b",
+        "source-span:7a288812a370a46ccc8199414e00fb42"
+      ],
+      "source_sha256_values": [
+        "acc777d749c526c75e80c202ae176b5b0ed26750900a6050a542fa0ca426bf69"
+      ],
+      "span_record_sha256": "1fb155b563423c2f488df22a53fbc3d1967852129b2d7d2408df7dbdb78770ee",
+      "applicability_limit": "NER dispatch compliance, express safety/equipment and frequency-response qualifications, capability and change-notification duties. Do not substitute historical Hornsdale registration or paragraph numbering for the current plant classification. Technical tolerances and control evidence remain project-specific."
+    },
+    {
+      "provision_id": "NER-SETTLEMENT-V254-2026-09-04",
+      "provision_sha256": "00b24720c782ad06a95ce2c3b21f9eadb24974b3b6b75c61ffd82c28786821b6",
+      "prepared_by": "codex-implementation-2026-09-13",
+      "verified_as_of": "2026-09-13",
+      "operative_from": "2026-09-04",
+      "official_url": "https://aemc-dra-production-s3.s3.ap-southeast-2.amazonaws.com/rules/bc0d2a8e1cf523289a553dfefbec0a3b359f4b5b/assets/files/NER%20-%20v254%20-%20Full.pdf",
+      "official_version_page": "https://energy-rules.aemc.gov.au/ner/818",
+      "clause_scope": "3.15.6; 3.15.15-3.15.18; Chapter 10 payment date; 11.179",
+      "source_span_ids": [
+        "source-span:298baa9f0ccdef101ab58f593e4eeb11",
+        "source-span:ac43779067d59d6b7531495e008c89c7",
+        "source-span:2bb82a58a5e8ff0f97cfe495809cf33b",
+        "source-span:a5a4b61d470b3c06d6a6ae64b722c9d1",
+        "source-span:41ea9fe43fb1977b3c7d8de82564e6ac",
+        "source-span:3df3d0d3ff2383aae07072219be70e4f",
+        "source-span:9a63e16950ec0ff16c08b03bc2b67a9f",
+        "source-span:7928357e570a1a5b186336fc1b062188"
+      ],
+      "source_sha256_values": [
+        "acc777d749c526c75e80c202ae176b5b0ed26750900a6050a542fa0ca426bf69"
+      ],
+      "span_record_sha256": "1a3dc1b9239fa0d33deccd04f6d4f4caadd7684ac97c47bc6c307054e31139dc",
+      "applicability_limit": "Spot energy transaction formula, statements, payment and disputes. AGE must already be determined under rule 3.15.4; raw meter data and dispatch targets are not interchangeable. The formula excludes separate FCAS, fees, adjustments, tax and contracts. Payment is the later of the ninth business day or two business days after receipt of the final statement. During the 9 August to 17 October 2026 transition, clause 11.179 permits final statements between 7 and 18 business days: use the relevant billing-period transitional calendar, not an automatic nine-day payment date. This review does not establish any specific calendar payment date."
+    },
+    {
+      "provision_id": "AEMO-REGISTRATION-FEES-FY27",
+      "provision_sha256": "c1ebf9023042b1cff6f584e6892dd7738a02a188909c5991843b8962c0c0eb24",
+      "prepared_by": "codex-implementation-2026-09-13",
+      "verified_as_of": "2026-09-13",
+      "operative_from": "2026-07-01",
+      "official_url": "https://www.aemo.com.au/-/media/files/about_aemo/energy_market_budget_and_fees/2026/aemo-final-budget-and-fees-fy27.pdf?rev=6b35a59f8cfc49b58dd02205fc0770e0&sc_lang=en",
+      "official_version_page": "https://www.aemo.com.au/-/media/files/about_aemo/energy_market_budget_and_fees/2026/aemo-final-budget-and-fees-fy27.pdf?rev=6b35a59f8cfc49b58dd02205fc0770e0&sc_lang=en",
+      "clause_scope": "Important notice: GST basis; Table 46 and registration assessment explanation; Table 47 including footnotes",
+      "source_span_ids": [
+        "source-span:da4d1a6cccc30165fcf3197988cfe87e",
+        "source-span:682b1f2d25fbeb70c408956ac561129f",
+        "source-span:eee6f8fc3cc0d9b48b61edd924f63888"
+      ],
+      "source_sha256_values": [
+        "8832452d464178aa7b3ad90b8c9f4fc451d0c3123f2eb311543bb3868a322a86"
+      ],
+      "span_record_sha256": "9d5c2ed8ffa75869a2f448a6f62c44049448e7fd9b2c862918d61962fe800ece",
+      "applicability_limit": "NEM FY27 registration categories and published general hourly rates, net of GST. The Scheduled Market BDU fixed fee is per registration, not per MW and not a cap on project costs. A 6MW/55MW comparison assumes equal application scope. FCAS classification and additional registration categories are conditional. Do not substitute these rates for connection charge-out rates or infer actual additional hours."
+    },
+    {
+      "provision_id": "AEMO-REGISTRATION-INVOICING-FY27",
+      "provision_sha256": "c08163dd31ae946b494b09d83e247e41643e91ec712738dc5ccb439e4e279465",
+      "prepared_by": "codex-implementation-2026-09-13",
+      "verified_as_of": "2026-09-13",
+      "operative_from": "2026-07-01",
+      "official_url": "https://www.aemo.com.au/-/media/files/electricity/nem/participant_information/registration/2026/market-registration-invoice-fact-sheet.pdf?rev=4906ebba9fe545e595ae2b260aaa8a22&sc_lang=en",
+      "official_version_page": "https://www.aemo.com.au/-/media/files/electricity/nem/participant_information/registration/2026/market-registration-invoice-fact-sheet.pdf?rev=4906ebba9fe545e595ae2b260aaa8a22&sc_lang=en",
+      "clause_scope": "Invoicing approach and FAQ pages 1-3",
+      "source_span_ids": [
+        "source-span:a3dc708628717bb796e4a9ed508d3919",
+        "source-span:b3b1f01e2247987ee25e0a82ff9d76c3",
+        "source-span:c2f09e6a5e7b568df91bc8290d6811d9"
+      ],
+      "source_sha256_values": [
+        "f9f7f12952f3906897b6e126c574dad784576392cf3356ba971496a3c3559f94"
+      ],
+      "span_record_sha256": "5e3b55a18b13ce268c027e1105118396a8cd653b1309fbf09e358c91f483251f",
+      "applicability_limit": "Official administrative invoicing guidance effective 1 July 2026, not a statute or a fixed quote. Additional BDU/IRP assessment is scope-driven after the fixed-fee effort threshold. Notifications, the 95% stop option and monthly arrears do not themselves establish a project-specific fee ceiling, effort estimate or refund entitlement."
+    }
+  ]
+}

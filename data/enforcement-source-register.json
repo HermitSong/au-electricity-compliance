@@ -1,0 +1,1172 @@
+{
+  "schema_version": "1.2",
+  "baseline_date": "2026-08-29",
+  "coverage_definitions": {
+    "case-indexed": "The source publishes named or individually identified matters that can be recorded as separate events.",
+    "series-bound": "The source is an official periodic series that may contain multiple self-reported or assessed compliance matters.",
+    "source-identified": "The responsible official source is known, but no continuous public case-level series is available.",
+    "cross-domain-filtered": "An economy-wide official source filtered to matters whose conduct materially arises from electricity generation, networks, retail, DER, storage, electricity infrastructure, marketing or customer data."
+  },
+  "sources": [
+    {
+      "id": "AU-AER-COMPLIANCE",
+      "jurisdiction": "National Energy Laws",
+      "body": "Australian Energy Regulator",
+      "scope": [
+        "NEM wholesale",
+        "NEM networks",
+        "NECF retail"
+      ],
+      "coverage_type": "case-indexed",
+      "start_year": 2006,
+      "update_cadence": "continuous and annual",
+      "url": "https://www.aer.gov.au/publications/reports/compliance",
+      "limitation": "Some lower-level activity is reported only in annual compliance and enforcement reports.",
+      "coverage_start": "2006",
+      "coverage_end": "ongoing",
+      "gap_periods": [],
+      "completeness_level": "high for published named actions"
+    },
+    {
+      "id": "AU-ACCC-ENFORCEMENT",
+      "jurisdiction": "Commonwealth",
+      "body": "Australian Competition and Consumer Commission",
+      "scope": [
+        "Australian Consumer Law",
+        "competition",
+        "marketing",
+        "cartel conduct"
+      ],
+      "coverage_type": "case-indexed",
+      "start_year": 2006,
+      "update_cadence": "continuous",
+      "url": "https://www.accc.gov.au/business/compliance-and-enforcement",
+      "limitation": "The register is economy-wide and must be filtered for electricity-sector relevance.",
+      "coverage_start": "2006",
+      "coverage_end": "ongoing",
+      "gap_periods": [],
+      "completeness_level": "high for published named actions"
+    },
+    {
+      "id": "AU-CER-COMPLIANCE",
+      "jurisdiction": "Commonwealth",
+      "body": "Clean Energy Regulator",
+      "scope": [
+        "NGER",
+        "Safeguard Mechanism",
+        "Renewable Energy Target",
+        "certificates"
+      ],
+      "coverage_type": "case-indexed",
+      "start_year": 2006,
+      "update_cadence": "continuous and annual",
+      "url": "https://cer.gov.au/about-us/corporate-policies/compliance-enforcement-and-education-policy",
+      "limitation": "Operational outcomes are spread across enforceable undertakings, court matters, surrender actions and annual reports.",
+      "coverage_start": "2006",
+      "coverage_end": "ongoing",
+      "gap_periods": [
+        "Distributed enforcement outcomes across annual reports, undertakings and court pages"
+      ],
+      "completeness_level": "high for published named actions"
+    },
+    {
+      "id": "ACT-ICRC-ULAR",
+      "jurisdiction": "Australian Capital Territory",
+      "body": "Independent Competition and Regulatory Commission",
+      "scope": [
+        "utility licences",
+        "electricity networks",
+        "ACT retail overlays"
+      ],
+      "coverage_type": "series-bound",
+      "start_year": 2005,
+      "update_cadence": "annual",
+      "url": "https://www.icrc.act.gov.au/news/2019/commission-releases-2017-18-utility-licence-annual-licence-monitoring-report",
+      "limitation": "Retail regulation transferred substantially to the AER after NECF commencement; annual reports are not court findings.",
+      "coverage_start": "2005-06",
+      "coverage_end": "2024-25",
+      "gap_periods": [
+        "2012-13 to 2015-16"
+      ],
+      "completeness_level": "medium; monitoring series with a four-year publication gap"
+    },
+    {
+      "id": "NSW-IPART-NETWORK-COMPLIANCE",
+      "jurisdiction": "New South Wales",
+      "body": "Independent Pricing and Regulatory Tribunal",
+      "scope": [
+        "network licences",
+        "network safety",
+        "reliability",
+        "critical infrastructure conditions"
+      ],
+      "coverage_type": "series-bound",
+      "start_year": 2005,
+      "update_cadence": "annual and event-driven",
+      "url": "https://www.ipart.nsw.gov.au/Home/Publications?document_industry=1&document_type=923&page=0",
+      "limitation": "NECF retail enforcement is primarily in the AER source family.",
+      "coverage_start": "2005",
+      "coverage_end": "ongoing",
+      "gap_periods": [
+        "Report-level findings require dedicated PDF extraction"
+      ],
+      "completeness_level": "medium"
+    },
+    {
+      "id": "NSW-EWON-SYSTEMIC",
+      "jurisdiction": "New South Wales",
+      "body": "Energy and Water Ombudsman NSW",
+      "scope": [
+        "complaints",
+        "billing",
+        "credit",
+        "metering",
+        "systemic issues"
+      ],
+      "coverage_type": "series-bound",
+      "start_year": 2006,
+      "update_cadence": "annual",
+      "url": "https://www.ewon.com.au/page/publications-and-submissions/annual-reports",
+      "limitation": "Ombudsman outcomes and complaint patterns are not regulatory findings unless referred and formally determined.",
+      "coverage_start": "2006",
+      "coverage_end": "ongoing",
+      "gap_periods": [],
+      "completeness_level": "medium"
+    },
+    {
+      "id": "NT-UC-ANNUAL-COMPLIANCE",
+      "jurisdiction": "Northern Territory",
+      "body": "Utilities Commission of the Northern Territory",
+      "scope": [
+        "electricity licences",
+        "retail",
+        "generation",
+        "networks",
+        "system control"
+      ],
+      "coverage_type": "series-bound",
+      "start_year": 2006,
+      "update_cadence": "annual",
+      "url": "https://utilicom.nt.gov.au/electricity/reporting/annual-compliance-monitoring-report",
+      "limitation": "The Commission publishes annual summaries rather than a single continuous court-style enforcement register.",
+      "coverage_start": "2018-19",
+      "coverage_end": "2024-25",
+      "gap_periods": [
+        "2006-01-01 to 2017-06-30",
+        "2020-07-01 to 2021-06-30 detailed annual-report breach table",
+        "aggregate-only components within later reports where individual breaches are counted but not separately publicly described"
+      ],
+      "completeness_level": "high from 2018-19; medium before 2018-19"
+    },
+    {
+      "id": "QLD-ELECTRICITY-AUTHORITY-REPORTING",
+      "jurisdiction": "Queensland",
+      "body": "Under Treasurer, Queensland Treasury",
+      "scope": [
+        "generation authorities",
+        "transmission authorities",
+        "distribution authorities",
+        "special approvals"
+      ],
+      "coverage_type": "source-identified",
+      "start_year": 2006,
+      "update_cadence": "annual",
+      "url": "https://www.business.qld.gov.au/industries/mining-energy-water/energy/electricity/regulation-licensing/reporting-entities",
+      "limitation": "There is no single public named-case register spanning every Queensland electricity function.",
+      "coverage_start": "2006",
+      "coverage_end": "ongoing",
+      "gap_periods": [
+        "2006-01-01 to 2026-08-27"
+      ],
+      "completeness_level": "source-identified only"
+    },
+    {
+      "id": "QLD-EWOQ-ANNUAL",
+      "jurisdiction": "Queensland",
+      "body": "Energy and Water Ombudsman Queensland",
+      "scope": [
+        "complaints",
+        "systemic issues",
+        "billing",
+        "credit",
+        "customer service"
+      ],
+      "coverage_type": "series-bound",
+      "start_year": 2006,
+      "update_cadence": "annual",
+      "url": "https://www.ewoq.com.au/news-and-publications/publications/annual-reports",
+      "limitation": "Systemic-issue notices and complaint outcomes are not court or regulator findings by themselves.",
+      "coverage_start": "2006",
+      "coverage_end": "ongoing",
+      "gap_periods": [],
+      "completeness_level": "medium"
+    },
+    {
+      "id": "SA-ESCOSA-ENFORCEMENT",
+      "jurisdiction": "South Australia",
+      "body": "Essential Services Commission of South Australia",
+      "scope": [
+        "electricity licences",
+        "generation",
+        "networks",
+        "off-grid retail",
+        "small-scale networks"
+      ],
+      "coverage_type": "case-indexed",
+      "start_year": 2006,
+      "update_cadence": "continuous and annual",
+      "url": "https://www.escosa.sa.gov.au/approach/enforcement",
+      "limitation": "The public electricity warning-and-assurance register page exposes two in-period named electricity entries. It also links an April 2005 electricity warning outside this corpus period; no additional in-period named electricity entries are published on that register page.",
+      "coverage_start": "2006",
+      "coverage_end": "ongoing",
+      "gap_periods": "2006-01 to 2015-11; 2019-11 to 2026-08",
+      "completeness_level": "archive-gap"
+    },
+    {
+      "id": "TAS-ECONOMIC-REGULATOR",
+      "jurisdiction": "Tasmania",
+      "body": "Tasmanian Economic Regulator",
+      "scope": [
+        "generation licences",
+        "network licences",
+        "Bass Strait Islands retail",
+        "reliability",
+        "incidents"
+      ],
+      "coverage_type": "series-bound",
+      "start_year": 2006,
+      "update_cadence": "annual and event-driven",
+      "url": "https://www.economicregulator.tas.gov.au/about-us/annual-reports",
+      "limitation": "Mainland retail authorisation and enforcement are primarily in the AER source family.",
+      "coverage_start": "2013-14",
+      "coverage_end": "ongoing",
+      "gap_periods": "2006-01 to 2013-06",
+      "completeness_level": "medium"
+    },
+    {
+      "id": "VIC-ESC-PENALTIES",
+      "jurisdiction": "Victoria",
+      "body": "Essential Services Commission Victoria",
+      "scope": [
+        "retail licences",
+        "retail code",
+        "hardship",
+        "family violence",
+        "billing",
+        "disconnection"
+      ],
+      "coverage_type": "case-indexed",
+      "start_year": 2006,
+      "update_cadence": "continuous",
+      "url": "https://www.esc.vic.gov.au/electricity-and-gas/market-performance-and-reporting/company-penalty-notices",
+      "limitation": "The current official register states that it contains enforcement action since 2014; no earlier case index is exposed there.",
+      "coverage_start": "2006",
+      "coverage_end": "ongoing",
+      "gap_periods": [
+        "2006-01-01 to 2013-12-31"
+      ],
+      "completeness_level": "archive-gap"
+    },
+    {
+      "id": "VIC-ENERGY-SAFE-PROSECUTIONS",
+      "jurisdiction": "Victoria",
+      "body": "Energy Safe Victoria",
+      "scope": [
+        "electrical safety",
+        "major electricity companies",
+        "workers",
+        "installations",
+        "bushfire",
+        "vegetation"
+      ],
+      "coverage_type": "case-indexed",
+      "start_year": 2006,
+      "update_cadence": "continuous and annual",
+      "url": "https://www.energysafe.vic.gov.au/about-us/regulatory-framework/enforcement/prosecutions",
+      "limitation": "The current prosecution page exposes outcomes only from July 2021. No complete older ESV case index was publicly linked.",
+      "coverage_start": "2006",
+      "coverage_end": "ongoing",
+      "gap_periods": [
+        "2006-01-01 to 2021-06-30"
+      ],
+      "completeness_level": "archive-gap"
+    },
+    {
+      "id": "WA-ERA-WEM-REGISTERS",
+      "jurisdiction": "Western Australia",
+      "body": "Economic Regulation Authority",
+      "scope": [
+        "WEM",
+        "ESM Rules",
+        "market surveillance",
+        "investigations"
+      ],
+      "coverage_type": "case-indexed",
+      "start_year": 2006,
+      "update_cadence": "continuous and annual",
+      "url": "https://www.erawa.com.au/markets/wholesale-electricity-market/compliance/wholesale-electricity-market-wem-public-registers",
+      "limitation": "The live register does not expose a complete historic investigation index for the whole period; participant identity may lawfully be withheld.",
+      "coverage_start": "2006",
+      "coverage_end": "ongoing",
+      "gap_periods": [
+        "2006-01-01 to earliest retained current register entry"
+      ],
+      "completeness_level": "archive-gap"
+    },
+    {
+      "id": "WA-ERA-ELECTRICITY-LICENSING",
+      "jurisdiction": "Western Australia",
+      "body": "Economic Regulation Authority",
+      "scope": [
+        "generation licences",
+        "transmission licences",
+        "distribution licences",
+        "retail licences",
+        "integrated regional licences"
+      ],
+      "coverage_type": "case-indexed",
+      "start_year": 2006,
+      "update_cadence": "continuous and periodic audit",
+      "url": "https://www.erawa.com.au/licensing/electricity-licensing",
+      "limitation": "Compliance evidence is distributed across licensee pages, audit reports, rectification notices and annual reports.",
+      "coverage_start": "2006",
+      "coverage_end": "ongoing",
+      "gap_periods": [
+        "Former/expired licence-holder pages and older reports no longer linked from the current index"
+      ],
+      "completeness_level": "high for published named actions"
+    },
+    {
+      "id": "WA-BUILDING-ENERGY-SAFETY",
+      "jurisdiction": "Western Australia",
+      "body": "Building and Energy and the Director of Energy Safety",
+      "scope": [
+        "electrical workers",
+        "contractors",
+        "installations",
+        "network safety"
+      ],
+      "coverage_type": "source-identified",
+      "start_year": 2006,
+      "update_cadence": "continuous and annual",
+      "url": "https://www.wa.gov.au/organisation/building-and-energy/building-and-energy-legislative-framework",
+      "limitation": "Safety outcomes are spread across notices, disciplinary processes, prosecutions and public warnings.",
+      "coverage_start": "2006",
+      "coverage_end": "ongoing",
+      "gap_periods": [
+        "2006-01-01 to approximately 2020"
+      ],
+      "completeness_level": "source-identified only"
+    },
+    {
+      "id": "ACT-WORKSAFE-PROSECUTIONS",
+      "jurisdiction": "Australian Capital Territory",
+      "body": "WorkSafe ACT",
+      "scope": [
+        "WHS prosecutions",
+        "electrical work",
+        "worker safety"
+      ],
+      "coverage_type": "case-indexed",
+      "start_year": 2006,
+      "update_cadence": "event-driven",
+      "url": "https://www.worksafe.act.gov.au/laws-and-compliance/enforcement-and-prosecutions/prosecutions/list-of-prosecutions",
+      "limitation": "The list is WHS-wide and must be filtered for electricity-sector relevance.",
+      "coverage_start": "2006",
+      "coverage_end": "ongoing",
+      "gap_periods": [
+        "Dedicated detail-page extraction pending"
+      ],
+      "completeness_level": "high for published named actions"
+    },
+    {
+      "id": "ACT-ACAT-ENERGY-DISPUTES",
+      "jurisdiction": "Australian Capital Territory",
+      "body": "ACT Civil and Administrative Tribunal",
+      "scope": [
+        "energy complaints",
+        "water complaints",
+        "consumer dispute resolution"
+      ],
+      "coverage_type": "source-identified",
+      "start_year": 2006,
+      "update_cadence": "continuous",
+      "url": "https://www.icrc.act.gov.au/nerl-retailers",
+      "limitation": "ACAT is the ACT energy and water ombudsman function, but no continuous public case-level electricity decision series was identified.",
+      "coverage_start": "2006",
+      "coverage_end": "ongoing",
+      "gap_periods": [],
+      "completeness_level": "source-identified only"
+    },
+    {
+      "id": "NSW-BUILDING-COMMISSION-ELECTRICAL",
+      "jurisdiction": "New South Wales",
+      "body": "Building Commission NSW",
+      "scope": [
+        "electrical licensing",
+        "consumer electrical work",
+        "home-building compliance"
+      ],
+      "coverage_type": "source-identified",
+      "start_year": 2006,
+      "update_cadence": "continuous and event-driven",
+      "url": "https://www.nsw.gov.au/departments-and-agencies/building-commission/about-us/consumer-protection-schemes-and-systems/home-building-compliance-and-enforcement",
+      "limitation": "The source is construction-wide and does not provide a continuous electricity-only named-case register.",
+      "coverage_start": "2006",
+      "coverage_end": "ongoing",
+      "gap_periods": [
+        "No continuous electricity-only named-case register"
+      ],
+      "completeness_level": "source-identified only"
+    },
+    {
+      "id": "NT-UC-COMPLAINT-ROUTING",
+      "jurisdiction": "Northern Territory",
+      "body": "Utilities Commission of the Northern Territory",
+      "scope": [
+        "electricity supply complaints",
+        "licence breaches",
+        "code breaches",
+        "referrals"
+      ],
+      "coverage_type": "source-identified",
+      "start_year": 2006,
+      "update_cadence": "continuous",
+      "url": "https://utilicom.nt.gov.au/complaints/electricity-supply-complaints",
+      "limitation": "Customers must first use the provider process; Ombudsman NT or NT Consumer Affairs may be the correct destination depending on the provider and issue.",
+      "coverage_start": "2006",
+      "coverage_end": "ongoing",
+      "gap_periods": [
+        "2006-01-01 to 2026-08-27"
+      ],
+      "completeness_level": "source-identified only"
+    },
+    {
+      "id": "QLD-QCA-ENERGY-REPORTING",
+      "jurisdiction": "Queensland",
+      "body": "Queensland Competition Authority",
+      "scope": [
+        "electricity code breaches",
+        "minimum service standards",
+        "state retail derogations",
+        "energy reporting"
+      ],
+      "coverage_type": "case-indexed",
+      "start_year": 2006,
+      "update_cadence": "continuous and annual",
+      "url": "https://www.qca.org.au/energy-reporting/",
+      "limitation": "The accessible current register starts with a 2008 event and is current only to July 2025. It covers the QCA code and Queensland-derogation remit, not all safety, licensing or market enforcement.",
+      "coverage_start": "2006",
+      "coverage_end": "2025-07",
+      "gap_periods": [
+        "2006-01-01 to 2007-12-31",
+        "after July 2025 to 2026-08-27"
+      ],
+      "completeness_level": "archive-gap"
+    },
+    {
+      "id": "QLD-OWHSP-COURT-REPORTS",
+      "jurisdiction": "Queensland",
+      "body": "Office of the Work Health and Safety Prosecutor",
+      "scope": [
+        "electrical safety prosecutions",
+        "WHS prosecutions",
+        "court outcomes"
+      ],
+      "coverage_type": "case-indexed",
+      "start_year": 2006,
+      "update_cadence": "event-driven",
+      "url": "https://www.owhsp.qld.gov.au/court-report",
+      "limitation": "The court reports are safety-wide and must be filtered for electricity-sector relevance.",
+      "coverage_start": "2006",
+      "coverage_end": "ongoing",
+      "gap_periods": [],
+      "completeness_level": "high for published named actions"
+    },
+    {
+      "id": "SA-OTR-ANNUAL-REPORTS",
+      "jurisdiction": "South Australia",
+      "body": "Office of the Technical Regulator",
+      "scope": [
+        "electrical safety",
+        "technical regulation",
+        "expiations",
+        "licensing referrals"
+      ],
+      "coverage_type": "series-bound",
+      "start_year": 2006,
+      "update_cadence": "annual and event-driven",
+      "url": "https://www.energymining.sa.gov.au/about/open-government/annual-reports",
+      "limitation": "Annual statistics may aggregate or anonymise outcomes, and older reports require archive retrieval.",
+      "coverage_start": "2018-19",
+      "coverage_end": "2024-25",
+      "gap_periods": "2006-01 to 2009-02; annual-report archive before 2018-19",
+      "completeness_level": "medium; annual outcomes can be aggregated or anonymised"
+    },
+    {
+      "id": "SA-EWOSA-ANNUAL-REPORTS",
+      "jurisdiction": "South Australia",
+      "body": "Energy and Water Ombudsman South Australia",
+      "scope": [
+        "electricity complaints",
+        "systemic issues",
+        "billing",
+        "credit",
+        "customer service"
+      ],
+      "coverage_type": "series-bound",
+      "start_year": 2006,
+      "update_cadence": "annual",
+      "url": "https://ewosa.com.au/publications/annual-reports",
+      "limitation": "Complaint outcomes and trends are not regulator or court findings unless separately determined.",
+      "coverage_start": "2006",
+      "coverage_end": "ongoing",
+      "gap_periods": "2025-07 to 2026-08",
+      "completeness_level": "medium"
+    },
+    {
+      "id": "TAS-ENERGY-OMBUDSMAN-REPORTS",
+      "jurisdiction": "Tasmania",
+      "body": "Ombudsman Tasmania - Energy Ombudsman",
+      "scope": [
+        "energy complaints",
+        "systemic issues",
+        "billing",
+        "credit",
+        "customer service"
+      ],
+      "coverage_type": "series-bound",
+      "start_year": 2006,
+      "update_cadence": "annual",
+      "url": "https://www.ombudsman.tas.gov.au/publications",
+      "limitation": "The current page exposes recent reports and directs users to Libraries Tasmania for older material.",
+      "coverage_start": "2018-19",
+      "coverage_end": "2024-25",
+      "gap_periods": "2006-01 to 2018-06; 2025-07 to 2026-08",
+      "completeness_level": "medium"
+    },
+    {
+      "id": "TAS-WORKSAFE-PROSECUTIONS",
+      "jurisdiction": "Tasmania",
+      "body": "WorkSafe Tasmania",
+      "scope": [
+        "WHS prosecutions",
+        "electrical work",
+        "court summaries"
+      ],
+      "coverage_type": "case-indexed",
+      "start_year": 2006,
+      "update_cadence": "event-driven",
+      "url": "https://www.worksafe.tas.gov.au/topics/laws-and-compliance/enforcement-and-prosecutions/prosecutions/court-summaries",
+      "limitation": "Published court summaries do not provide a complete 2006-2026 electricity-only series.",
+      "coverage_start": "2020",
+      "coverage_end": "2024",
+      "gap_periods": "2006-01 to 2019-12; 2025-01 to 2026-08",
+      "completeness_level": "medium"
+    },
+    {
+      "id": "TAS-ELECTRICITY-INCIDENTS",
+      "jurisdiction": "Tasmania",
+      "body": "Tasmanian Economic Regulator",
+      "scope": [
+        "electricity incidents",
+        "network events",
+        "licence reporting"
+      ],
+      "coverage_type": "series-bound",
+      "start_year": 2006,
+      "update_cadence": "annual and event-driven",
+      "url": "https://www.economicregulator.tas.gov.au/electricity/reports/incident-reporting",
+      "limitation": "Incident reporting is not by itself evidence of a legal contravention or enforcement outcome.",
+      "coverage_start": "2006",
+      "coverage_end": "ongoing",
+      "gap_periods": "2006-01 to 2014-11; all years with non-public underlying incident reports",
+      "completeness_level": "medium"
+    },
+    {
+      "id": "VIC-ESC-COMPLIANCE-REPORTING",
+      "jurisdiction": "Victoria",
+      "body": "Essential Services Commission Victoria",
+      "scope": [
+        "retail compliance",
+        "market performance",
+        "systemic issues",
+        "customer outcomes"
+      ],
+      "coverage_type": "series-bound",
+      "start_year": 2006,
+      "update_cadence": "continuous and annual",
+      "url": "https://www.esc.vic.gov.au/electricity-and-gas/market-performance-and-reporting",
+      "limitation": "Performance and compliance reporting may identify risks or self-reported breaches without a separate penalty outcome.",
+      "coverage_start": "2006",
+      "coverage_end": "ongoing",
+      "gap_periods": [
+        "2006-01-01 to start of current report archive"
+      ],
+      "completeness_level": "medium"
+    },
+    {
+      "id": "VIC-EWOV-SYSTEMIC-ISSUES",
+      "jurisdiction": "Victoria",
+      "body": "Energy and Water Ombudsman Victoria",
+      "scope": [
+        "systemic issues",
+        "complaints",
+        "retail conduct",
+        "customer harm"
+      ],
+      "coverage_type": "series-bound",
+      "start_year": 2006,
+      "update_cadence": "annual and periodic",
+      "url": "https://www.ewov.com.au/reports/si-report-2025",
+      "limitation": "Systemic-issue reporting is an intelligence source and not a substitute for a regulator or court finding.",
+      "coverage_start": "2006",
+      "coverage_end": "ongoing",
+      "gap_periods": [
+        "2006-01-01 to earliest currently linked report"
+      ],
+      "completeness_level": "medium"
+    },
+    {
+      "id": "VIC-ESV-DISCIPLINARY-OUTCOMES",
+      "jurisdiction": "Victoria",
+      "body": "Energy Safe Victoria",
+      "scope": [
+        "electrical worker discipline",
+        "electrical contractor discipline",
+        "licensing outcomes"
+      ],
+      "coverage_type": "case-indexed",
+      "start_year": 2006,
+      "update_cadence": "event-driven",
+      "url": "https://www.energysafe.vic.gov.au/about-us/regulatory-framework/enforcement/disciplinary-action-outcomes",
+      "limitation": "The current official page exposes disciplinary outcomes only from 2024; no complete older public index was linked.",
+      "coverage_start": "2006",
+      "coverage_end": "ongoing",
+      "gap_periods": [
+        "2006-01-01 to 2023-12-31"
+      ],
+      "completeness_level": "archive-gap"
+    },
+    {
+      "id": "WA-ERA-PILBARA-DISPUTES",
+      "jurisdiction": "Western Australia",
+      "body": "Economic Regulation Authority",
+      "scope": [
+        "Pilbara networks",
+        "access disputes",
+        "arbitration"
+      ],
+      "coverage_type": "case-indexed",
+      "start_year": 2020,
+      "update_cadence": "event-driven",
+      "url": "https://www.erawa.com.au/access/electricity-access/pilbara-network/arbitration-and-disputes",
+      "limitation": "The Pilbara access regime/reporting series is not available for the earlier task period; listed annual reports record no disputes.",
+      "coverage_start": "2020",
+      "coverage_end": "ongoing",
+      "gap_periods": [
+        "2006-01-01 to 2021-06-30"
+      ],
+      "completeness_level": "archive-gap"
+    },
+    {
+      "id": "WA-EWOWA-REPORTS",
+      "jurisdiction": "Western Australia",
+      "body": "Energy and Water Ombudsman Western Australia",
+      "scope": [
+        "electricity complaints",
+        "systemic issues",
+        "billing",
+        "credit",
+        "customer service"
+      ],
+      "coverage_type": "series-bound",
+      "start_year": 2006,
+      "update_cadence": "annual",
+      "url": "https://energyandwater.ombudsman.wa.gov.au/publications-resources",
+      "limitation": "Complaint statistics and resolutions are not regulator or court findings unless separately determined.",
+      "coverage_start": "2006",
+      "coverage_end": "ongoing",
+      "gap_periods": [
+        "2006-01-01 to earliest currently listed annual report"
+      ],
+      "completeness_level": "medium"
+    },
+    {
+      "id": "WA-BUILDING-ENERGY-STATEMENTS",
+      "jurisdiction": "Western Australia",
+      "body": "Building and Energy, Department of Local Government, Industry Regulation and Safety",
+      "scope": [
+        "electrical safety prosecutions",
+        "disciplinary outcomes",
+        "network operator safety",
+        "public warnings"
+      ],
+      "coverage_type": "case-indexed",
+      "start_year": 2006,
+      "update_cadence": "event-driven",
+      "url": "https://www.wa.gov.au/organisation/building-and-energy/stay-informed",
+      "limitation": "The official stay-informed page states that these media statements remain online for six years; older cases are an acknowledged public-archive gap.",
+      "coverage_start": "rolling six-year window",
+      "coverage_end": "ongoing",
+      "gap_periods": [
+        "2006-01-01 to approximately 2020"
+      ],
+      "completeness_level": "archive-gap"
+    },
+    {
+      "id": "AU-AEMO-NEM-OPERATING-INCIDENTS",
+      "jurisdiction": "National Energy Laws",
+      "body": "Australian Energy Market Operator",
+      "scope": [
+        "NEM reviewable operating incidents",
+        "power system security",
+        "restoration",
+        "technical recommendations"
+      ],
+      "coverage_type": "series-bound",
+      "start_year": 2006,
+      "update_cadence": "event-driven",
+      "url": "https://www.aemo.com.au/energy-systems/electricity/national-electricity-market-nem/nem-events-and-reports/power-system-operating-incident-reports",
+      "limitation": "Public index DOM preserved on 6 September 2026 and its observed report links enumerated. The retained acquisition outcomes and text are research-only. A technical incident report is not a judicial or regulatory finding of contravention.",
+      "coverage_start": "2006",
+      "coverage_end": "ongoing",
+      "gap_periods": [
+        "Captured index sections cover 2010-2026; older archived reports are referred to AEMO Support Hub",
+        "Complete publication, attachment, version and 2006-2026 reconciliation remains unverified"
+      ],
+      "completeness_level": "medium"
+    },
+    {
+      "id": "AU-AEMO-NEM-MARKET-EVENTS",
+      "jurisdiction": "National Energy Laws",
+      "body": "Australian Energy Market Operator",
+      "scope": [
+        "market suspension",
+        "directions",
+        "intervention",
+        "pricing events",
+        "system events"
+      ],
+      "coverage_type": "series-bound",
+      "start_year": 2006,
+      "update_cadence": "event-driven",
+      "url": "https://www.aemo.com.au/energy-systems/electricity/national-electricity-market-nem/nem-events-and-reports/market-event-reports",
+      "limitation": "Public index DOM preserved on 6 September 2026. Observed report URLs, query versions and pending acquisitions are retained in data/source-index-enumeration.jsonl. Report files are technical research evidence, not findings of contravention; index enumeration does not certify the complete source family.",
+      "coverage_start": "2006",
+      "coverage_end": "ongoing",
+      "gap_periods": [
+        "Captured index links are enumerated as of 6 September 2026; linked detail pages and their originals remain incomplete after HTTP 403",
+        "Source-family and 2006-2026 period reconciliation not established"
+      ],
+      "completeness_level": "medium"
+    },
+    {
+      "id": "WA-AEMO-WEM-SYSTEM-MANAGEMENT",
+      "jurisdiction": "Western Australia",
+      "body": "Australian Energy Market Operator",
+      "scope": [
+        "WEM system management",
+        "power system incidents",
+        "SWIS operations",
+        "historical system reports"
+      ],
+      "coverage_type": "series-bound",
+      "start_year": 2006,
+      "update_cadence": "periodic and event-driven",
+      "url": "https://www.aemo.com.au/energy-systems/electricity/wholesale-electricity-market-wem/wem-events-and-reports/historical-wem-reports/system-management-report-archive",
+      "limitation": "Historical system-management reports are technical or operational records and must not be restated as ERA breach findings.",
+      "coverage_start": "2006",
+      "coverage_end": "ongoing",
+      "gap_periods": [
+        "Direct official index was blocked during this run and requires a browser-assisted snapshot"
+      ],
+      "completeness_level": "medium"
+    },
+    {
+      "id": "NSW-SAFEWORK-PROSECUTIONS",
+      "jurisdiction": "New South Wales",
+      "body": "SafeWork NSW",
+      "scope": [
+        "WHS prosecutions",
+        "electrical work",
+        "powerline incidents",
+        "enforceable undertakings"
+      ],
+      "coverage_type": "case-indexed",
+      "start_year": 2006,
+      "update_cadence": "quarterly and event-driven",
+      "url": "https://www.safework.nsw.gov.au/compliance-and-prosecutions/prosecutions",
+      "limitation": "The register is WHS-wide, publishes conviction summaries, excludes spent outcomes and must be filtered for electricity-sector relevance.",
+      "coverage_start": "2006",
+      "coverage_end": "ongoing",
+      "gap_periods": [
+        "Spent outcomes and dedicated electricity-sector detail extraction"
+      ],
+      "completeness_level": "high for published named actions"
+    },
+    {
+      "id": "NT-WORKSAFE-PROSECUTIONS",
+      "jurisdiction": "Northern Territory",
+      "body": "NT WorkSafe",
+      "scope": [
+        "WHS prosecutions",
+        "electrical work",
+        "incident notification",
+        "infringement statistics"
+      ],
+      "coverage_type": "case-indexed",
+      "start_year": 2006,
+      "update_cadence": "event-driven",
+      "url": "https://worksafe.nt.gov.au/laws-and-compliance/prosecutions",
+      "limitation": "The register is WHS-wide; published electrical infringement statistics are aggregated and cannot be converted into named case records.",
+      "coverage_start": "2006",
+      "coverage_end": "ongoing",
+      "gap_periods": [
+        "2006-01-01 to 2026-08-27"
+      ],
+      "completeness_level": "high for published named actions"
+    },
+    {
+      "id": "SA-SAFEWORK-PROSECUTIONS",
+      "jurisdiction": "South Australia",
+      "body": "SafeWork SA",
+      "scope": [
+        "WHS prosecutions",
+        "electrical work",
+        "court judgments",
+        "charges laid"
+      ],
+      "coverage_type": "case-indexed",
+      "start_year": 2006,
+      "update_cadence": "event-driven",
+      "url": "https://safework.sa.gov.au/enforcement/prosecutions",
+      "limitation": "The register is WHS-wide and must be filtered for electricity-sector relevance; charges laid are allegations until determined.",
+      "coverage_start": "2006",
+      "coverage_end": "ongoing",
+      "gap_periods": "2006-01 to 2017-12",
+      "completeness_level": "high for published named actions"
+    },
+    {
+      "id": "VIC-WORKSAFE-PROSECUTIONS",
+      "jurisdiction": "Victoria",
+      "body": "WorkSafe Victoria",
+      "scope": [
+        "OHS prosecutions",
+        "electrical work",
+        "enforceable undertakings",
+        "workplace manslaughter"
+      ],
+      "coverage_type": "case-indexed",
+      "start_year": 2007,
+      "update_cadence": "event-driven and annual",
+      "url": "https://www.worksafe.vic.gov.au/prosecution-result-summaries-enforceable-undertakings",
+      "limitation": "The official page states those respective public-series start dates.",
+      "coverage_start": "2007",
+      "coverage_end": "ongoing",
+      "gap_periods": [
+        "2006-01-01 to 2006-12-31 for undertakings; 2006-01-01 to 2011-12-31 for prosecution summaries"
+      ],
+      "completeness_level": "archive-gap"
+    },
+    {
+      "id": "WA-WORKSAFE-PROSECUTIONS",
+      "jurisdiction": "Western Australia",
+      "body": "WorkSafe WA, Department of Local Government, Industry Regulation and Safety",
+      "scope": [
+        "WHS prosecutions",
+        "electrical work",
+        "enforceable undertakings",
+        "legacy OSH prosecutions"
+      ],
+      "coverage_type": "case-indexed",
+      "start_year": 2006,
+      "update_cadence": "event-driven",
+      "url": "https://www.worksafe.wa.gov.au/prosecution-summaries-and-enforceable-whs-undertakings",
+      "limitation": "The register is WHS-wide, does not publish acquittal summaries and separates current WHS Act outcomes from legacy OSH Act archives.",
+      "coverage_start": "2006",
+      "coverage_end": "ongoing",
+      "gap_periods": [],
+      "completeness_level": "high for published named actions"
+    },
+    {
+      "id": "AU-DCCEEW-EPBC-COMPLIANCE",
+      "jurisdiction": "Commonwealth",
+      "body": "Department of Climate Change, Energy, the Environment and Water / National Environmental Protection Agency",
+      "scope": [
+        "EPBC approvals",
+        "approval conditions",
+        "infringement notices",
+        "environmental audits"
+      ],
+      "coverage_type": "case-indexed",
+      "start_year": 2006,
+      "update_cadence": "continuous and annual",
+      "url": "https://www.dcceew.gov.au/environment/epbc/compliance",
+      "limitation": "The regulator is transitioning material to the National Environmental Protection Agency; historical actions and audits are distributed across registers, annual reports and project pages.",
+      "coverage_start": "2006",
+      "coverage_end": "ongoing",
+      "gap_periods": [
+        "Distributed project and action registers; 2026 agency transition"
+      ],
+      "completeness_level": "medium; project and action records are distributed across several official systems"
+    },
+    {
+      "id": "AU-OAIC-PRIVACY-DECISIONS",
+      "jurisdiction": "Commonwealth",
+      "body": "Office of the Australian Information Commissioner",
+      "scope": [
+        "Privacy Act",
+        "privacy determinations",
+        "enforceable undertakings",
+        "data breaches"
+      ],
+      "coverage_type": "case-indexed",
+      "start_year": 2006,
+      "update_cadence": "continuous",
+      "url": "https://www.oaic.gov.au/privacy/privacy-assessments-and-decisions/privacy-decisions",
+      "limitation": "Most complaint resolutions and notified data breaches are confidential or published only as aggregates; filter named decisions for direct electricity-sector relevance.",
+      "coverage_start": "2006",
+      "coverage_end": "ongoing",
+      "gap_periods": [],
+      "completeness_level": "high for published named decisions; aggregate-only for most complaints and notifications"
+    },
+    {
+      "id": "AU-ACMA-SPAM-TELEMARKETING",
+      "jurisdiction": "Commonwealth",
+      "body": "Australian Communications and Media Authority",
+      "scope": [
+        "Spam Act",
+        "Do Not Call Register",
+        "telemarketing",
+        "solar marketing"
+      ],
+      "coverage_type": "case-indexed",
+      "start_year": 2006,
+      "update_cadence": "continuous",
+      "url": "https://www.acma.gov.au/investigations-spam-and-telemarketing",
+      "limitation": "The register is economy-wide and must be filtered for electricity retailers, solar marketers and other directly electricity-related entities; older outcomes are on linked archive pages.",
+      "coverage_start": "2006",
+      "coverage_end": "ongoing",
+      "gap_periods": [
+        "Pre-2017 telemarketing outcomes are not exposed as a continuous table; 2010-2016 spam archive needs a separate materiality pass"
+      ],
+      "completeness_level": "high for published named investigations"
+    },
+    {
+      "id": "AU-CISC-SOCI-COMPLIANCE",
+      "jurisdiction": "Commonwealth",
+      "body": "Cyber and Infrastructure Security Centre",
+      "scope": [
+        "SOCI Act",
+        "critical electricity assets",
+        "CIRMP",
+        "cyber incident reporting"
+      ],
+      "coverage_type": "source-identified",
+      "start_year": 2018,
+      "update_cadence": "continuous and annual",
+      "url": "https://www.cisc.gov.au/legislation-regulation-and-compliance/our-regulatory-principles-and-approach",
+      "limitation": "Protected-information rules and national-security sensitivity mean named compliance and cyber-incident outcomes are rarely public.",
+      "coverage_start": "2018",
+      "coverage_end": "ongoing",
+      "gap_periods": [],
+      "completeness_level": "source-identified; public named outcomes are structurally limited"
+    },
+    {
+      "id": "ACT-EPA-ENFORCEMENT",
+      "jurisdiction": "Australian Capital Territory",
+      "body": "ACT Environment Protection Authority",
+      "scope": [
+        "environment protection orders",
+        "infringement notices",
+        "prosecutions",
+        "electricity projects"
+      ],
+      "coverage_type": "series-bound",
+      "start_year": 2006,
+      "update_cadence": "annual and event-driven",
+      "url": "https://www.environment.act.gov.au/environmental-protection-and-water/environment-protection",
+      "limitation": "Public reporting is largely aggregate and annual; no continuous electricity-only named enforcement register was identified.",
+      "coverage_start": "2006",
+      "coverage_end": "ongoing",
+      "gap_periods": [],
+      "completeness_level": "medium; named outcomes are not published as a continuous electricity-specific series"
+    },
+    {
+      "id": "NSW-EPA-PUBLIC-REGISTERS",
+      "jurisdiction": "New South Wales",
+      "body": "NSW Environment Protection Authority",
+      "scope": [
+        "penalty notices",
+        "prosecutions",
+        "civil proceedings",
+        "enforceable undertakings",
+        "licence notices"
+      ],
+      "coverage_type": "case-indexed",
+      "start_year": 2006,
+      "update_cadence": "continuous",
+      "url": "https://www.epa.nsw.gov.au/Licensing-and-Regulation/Public-registers",
+      "limitation": "The register is economy-wide and must be filtered for direct electricity-sector relevance; the register platform was transitioning during 2026.",
+      "coverage_start": "2006",
+      "coverage_end": "ongoing",
+      "gap_periods": [
+        "2026-04-28 legacy data freeze and platform transition"
+      ],
+      "completeness_level": "high for registered actions subject to platform-transition reconciliation"
+    },
+    {
+      "id": "NT-EPA-COMPLIANCE",
+      "jurisdiction": "Northern Territory",
+      "body": "Northern Territory Environment Protection Authority",
+      "scope": [
+        "environmental approvals",
+        "compliance notices",
+        "investigations",
+        "prosecutions"
+      ],
+      "coverage_type": "series-bound",
+      "start_year": 2006,
+      "update_cadence": "annual and event-driven",
+      "url": "https://ntepa.nt.gov.au/about-ntepa/publications/annual-reports",
+      "limitation": "Compliance actions are distributed across annual reports, notices and investigation material; some outcomes are anonymous aggregates.",
+      "coverage_start": "2006",
+      "coverage_end": "ongoing",
+      "gap_periods": [
+        "2006-01-01 to 2026-08-27"
+      ],
+      "completeness_level": "medium; annual series with limited named case indexing"
+    },
+    {
+      "id": "QLD-ENVIRONMENT-ENFORCEMENT",
+      "jurisdiction": "Queensland",
+      "body": "Queensland environmental regulator",
+      "scope": [
+        "environmental enforcement orders",
+        "protection orders",
+        "direction notices",
+        "clean-up notices",
+        "enforceable undertakings"
+      ],
+      "coverage_type": "case-indexed",
+      "start_year": 2006,
+      "update_cadence": "continuous",
+      "url": "https://apps.des.qld.gov.au/public-register/search/enforcement.php",
+      "limitation": "The official portal expressly excludes warnings, penalty notices and prosecution outcomes. Completeness therefore means all accessible statutory actions in this register, not all environmental enforcement classes.",
+      "coverage_start": "2006",
+      "coverage_end": "ongoing",
+      "gap_periods": [
+        "Warnings, penalty infringement notices and prosecution outcomes are excluded from the Queensland online environmental enforcement register"
+      ],
+      "completeness_level": "archive-gap"
+    },
+    {
+      "id": "SA-EPA-COMPLIANCE",
+      "jurisdiction": "South Australia",
+      "body": "Environment Protection Authority South Australia",
+      "scope": [
+        "environmental licences",
+        "orders",
+        "prosecutions",
+        "electricity projects"
+      ],
+      "coverage_type": "series-bound",
+      "start_year": 2006,
+      "update_cadence": "annual and event-driven",
+      "url": "https://www.epa.sa.gov.au/",
+      "limitation": "No continuous electricity-only case register was identified; public-register, annual-report and published prosecution material must be combined.",
+      "coverage_start": "2006",
+      "coverage_end": "ongoing",
+      "gap_periods": "2006-01 to 2026-08",
+      "completeness_level": "medium; distributed official publication model"
+    },
+    {
+      "id": "TAS-EPA-PROSECUTIONS",
+      "jurisdiction": "Tasmania",
+      "body": "Environment Protection Authority Tasmania",
+      "scope": [
+        "environmental prosecutions",
+        "infringement notices",
+        "civil litigation",
+        "electricity projects"
+      ],
+      "coverage_type": "case-indexed",
+      "start_year": 2006,
+      "update_cadence": "continuous and annual",
+      "url": "https://epa.tas.gov.au/business-industry/compliance-and-enforcement/prosecutions-by-court-proceedings-and-infringement-notices",
+      "limitation": "The published prosecution list begins before the corpus period, while infringement notices and lower-level actions are not all individually published.",
+      "coverage_start": "1996",
+      "coverage_end": "ongoing",
+      "gap_periods": "None for published court-prosecution register; infringement, warning and active-instrument detail is not published as an electricity-filterable chronological case register",
+      "completeness_level": "high for published prosecutions; lower-level activity may be aggregate only"
+    },
+    {
+      "id": "VIC-EPA-PUBLIC-REGISTERS",
+      "jurisdiction": "Victoria",
+      "body": "Environment Protection Authority Victoria",
+      "scope": [
+        "prosecutions",
+        "civil proceedings",
+        "enforceable undertakings",
+        "remedial notices",
+        "permissions"
+      ],
+      "coverage_type": "case-indexed",
+      "start_year": 2006,
+      "update_cadence": "continuous",
+      "url": "https://www.epa.vic.gov.au/public-registers",
+      "limitation": "The register is economy-wide and must be filtered for direct electricity-sector relevance; different register classes have different historical start dates.",
+      "coverage_start": "2006",
+      "coverage_end": "ongoing",
+      "gap_periods": [
+        "Historic prosecution outcomes not retained in the current prosecution register"
+      ],
+      "completeness_level": "high for published register classes, subject to class-specific historical limits"
+    },
+    {
+      "id": "WA-DWER-ENVIRONMENTAL-ENFORCEMENT",
+      "jurisdiction": "Western Australia",
+      "body": "Department of Water and Environmental Regulation",
+      "scope": [
+        "environmental protection notices",
+        "prevention notices",
+        "prosecutions",
+        "modified penalties"
+      ],
+      "coverage_type": "case-indexed",
+      "start_year": 2006,
+      "update_cadence": "continuous",
+      "url": "https://www.wa.gov.au/service/environment/business-and-community-assistance/environmental-enforcement",
+      "limitation": "The register is economy-wide and must be filtered for direct electricity-sector relevance; some modified penalty records are available only for inspection at the department.",
+      "coverage_start": "2006",
+      "coverage_end": "ongoing",
+      "gap_periods": [
+        "Periods/categories not retained on the current page across 2006-2026"
+      ],
+      "completeness_level": "high for online notices and prosecutions; incomplete for offline modified penalties"
+    },
+    {
+      "id": "VIC-ESV-TECHNICAL-INVESTIGATIONS",
+      "jurisdiction": "Victoria",
+      "body": "Energy Safe Victoria",
+      "scope": [
+        "electrical incident investigations",
+        "network fire investigations",
+        "battery incidents",
+        "outage investigations"
+      ],
+      "coverage_type": "case-indexed",
+      "start_year": 2006,
+      "update_cadence": "event-driven",
+      "url": "https://www.energysafe.vic.gov.au/about-us/our-organisation/reports/electrical-incident-and-technical-investigations-reports",
+      "limitation": "The current ESV page does not expose an incident-report archive before 2018.",
+      "coverage_start": "2018",
+      "coverage_end": "ongoing",
+      "gap_periods": [
+        "2006-01-01 to 2017-12-31"
+      ],
+      "completeness_level": "archive-gap"
+    }
+  ]
+}

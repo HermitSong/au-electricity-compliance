@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "baseline_date": "2026-08-29",
+  "name": "temporal-evidence-double-search-double-check",
+  "priority": "accuracy-first",
+  "canonical_truth": [
+    "byte-hashed official source snapshot and addressable source span",
+    "reviewed event record",
+    "reviewed provision version",
+    "verified provision-to-source clause binding",
+    "independently approved temporal and appellate relationship"
+  ],
+  "derived_data_must_not_overwrite_canonical_truth": true,
+  "stages": [
+    {"id": "route", "input": "question", "output": "jurisdiction, actor, activity, asset, event date, answer-as-at date, requested legal status", "implementation": "scripts/route_applicability.py", "gate": "return needs-applicability-input before retrieval if a material jurisdiction, actor, activity or date is unresolved"},
+    {"id": "source-gate", "input": "provision and event source URLs", "output": "freshness, immutable bytes, extraction status and addressable spans", "implementation": "scripts/snapshot_official_sources.py and scripts/extract_source_text.py", "gate": "current-law support requires fresh official bytes and addressable text"},
+    {"id": "clause-binding", "input": "applicable provision routes and extracted source spans", "output": "exact clause ranges, bound span IDs and explicit binding gaps", "implementation": "scripts/build_provision_source_bindings.py", "gate": "instrument-level capture is insufficient; every controlling current provision requires a verified clause-level binding"},
+    {"id": "search-a", "input": "exact entities, phrases, citations and filters", "output": "ranked evidence list A", "implementation": "SQLite FTS5", "independent": true},
+    {"id": "search-b", "input": "decomposed issue-family and synonym query", "output": "ranked evidence list B", "implementation": "canonical JSON and Markdown in-memory scanner", "independent": true},
+    {"id": "merge", "input": "lists A and B", "output": "RRF-ranked candidates with query provenance", "method": "reciprocal-rank-fusion"},
+    {"id": "temporal-expand", "input": "candidate events and provisions", "output": "historical provision and candidate current comparator, supersession and appeal links", "gate": "automatic links remain candidates; future, expired, displaced and unapproved authorities cannot support current-law claims"},
+    {"id": "evidence-packet", "input": "routed evidence candidates", "output": "content-addressed evidence packet with register checksums and source-artifact status", "gate": "official controlling evidence and reproducible provenance required"},
+    {"id": "operational-brief", "input": "evidence packet and obligation register", "output": "controls, minimum evidence, cases, blockers, owners and approval record", "implementation": "scripts/build_operational_brief.py", "gate": "only deterministic applicability routes create controls; may_execute remains false until accountable approval and control evidence are complete"},
+    {"id": "answer", "input": "question and evidence packet only", "output": "claim-addressable draft with evidence IDs", "gate": "no uncited material claim"},
+    {"id": "check-1", "input": "draft and packet", "output": "deterministic citation, date, jurisdiction and status report", "independent": true},
+    {"id": "check-2", "input": "question and draft", "output": "independent re-search and temporal-conflict audit", "implementation": "scripts/double_check_answer.py", "independent": true},
+    {"id": "release", "input": "draft and both checks", "output": "released answer or fail-closed status", "gate": "all blocking checks pass"}
+  ],
+  "release_states": [
+    "ready-for-grounded-drafting",
+    "historical-only",
+    "needs-live-verification",
+    "coverage-gap",
+    "insufficient-evidence",
+    "procedural-status-conflict",
+    "needs-applicability-input"
+  ]
+}

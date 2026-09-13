@@ -1,0 +1,604 @@
+{
+  "schema_version": "1.0",
+  "baseline_date": "2026-08-29",
+  "purpose": "Versioned provision and comparator routes for temporal case classification. A route is not a substitute for checking applicability and the exact operative text at the answer date.",
+  "provisions": [
+    {
+      "provision_id": "NER-REBIDDING-CURRENT-2026-08-29",
+      "issue_family": "wholesale-bidding-rebidding",
+      "jurisdiction": "National Electricity Market",
+      "instrument": "National Electricity Rules",
+      "provisions": [
+        "3.8.22",
+        "3.8.22A"
+      ],
+      "valid_from": "2016-07-01",
+      "valid_to": null,
+      "status": "current-at-baseline",
+      "official_url": "https://energy-rules.aemc.gov.au/ner/622/528972",
+      "version_note": "The objective false-or-misleading and revised rebidding architecture replaced the old subjective bidding-in-good-faith test from 1 July 2016. Verify the live rule view before reliance."
+    },
+    {
+      "provision_id": "NER-DISPATCH-CURRENT-2026-08-29",
+      "issue_family": "dispatch-instructions",
+      "jurisdiction": "National Electricity Market",
+      "instrument": "National Electricity Rules",
+      "provisions": [
+        "4.9.8"
+      ],
+      "valid_from": "2026-08-09",
+      "valid_to": null,
+      "status": "current-at-baseline",
+      "official_url": "https://energy-rules.aemc.gov.au/ner/812/886133",
+      "version_note": "Verified against NER version 252, effective 9 August 2026. Clause 4.9.8 requires compliance with dispatch instructions subject to the exceptions in the operative clause; classify the instruction and any claimed exception before applying it."
+    },
+    {
+      "provision_id": "NER-PASA-AVAILABILITY-CURRENT-2026-08-29",
+      "issue_family": "availability-information",
+      "jurisdiction": "National Electricity Market",
+      "instrument": "National Electricity Rules",
+      "provisions": [
+        "3.7.2(d)-(d1)",
+        "3.7.3(h)"
+      ],
+      "valid_from": "2025-07-31",
+      "valid_to": null,
+      "status": "current-at-baseline",
+      "official_url": "https://energy-rules.aemc.gov.au/ner/812/885849",
+      "version_note": "The current MT PASA availability and unit-state duties are in 3.7.2(d)-(d1), and the current ST PASA participant submission duty is in 3.7.3(h). The enduring PASA amendments commenced on 31 July 2025. Historical paragraph numbering must not be projected forward, and Pelican Point's final outcome must not be expanded to the MT PASA allegation that was not finally found."
+    },
+    {
+      "provision_id": "NER-FCAS-CURRENT-2026-08-29",
+      "issue_family": "fcas",
+      "jurisdiction": "National Electricity Market",
+      "instrument": "National Electricity Rules",
+      "provisions": [
+        "3.8.7A",
+        "4.9.8"
+      ],
+      "valid_from": "2026-08-09",
+      "valid_to": null,
+      "status": "current-at-baseline",
+      "official_url": "https://energy-rules.aemc.gov.au/ner/812/885869",
+      "version_note": "Verified against NER version 252, effective 9 August 2026. Match the exact market ancillary service bid, enabled service, dispatch instruction and any clause 4.9.8 exception to the facts."
+    },
+    {
+      "provision_id": "NER-GPS-CURRENT-2026-08-29",
+      "issue_family": "generator-performance-standards",
+      "jurisdiction": "National Electricity Market",
+      "instrument": "National Electricity Rules and registered performance standards",
+      "provisions": [
+        "4.15",
+        "Schedule 5.2",
+        "registered performance standard applicable to the plant"
+      ],
+      "valid_from": "2026-08-09",
+      "valid_to": null,
+      "status": "current-at-baseline",
+      "official_url": "https://energy-rules.aemc.gov.au/ner/812/886157",
+      "version_note": "Verified against NER version 252, effective 9 August 2026. Rule 4.15 and Schedule 5.2 provide the current route, but the registered plant performance standard, approved settings and any rectification notice are entity-specific primary evidence."
+    },
+    {
+      "provision_id": "NERR-HARDSHIP-CURRENT-2026-08-29",
+      "issue_family": "hardship-payment-difficulty",
+      "jurisdiction": "NECF jurisdictions",
+      "instrument": "National Energy Retail Law and National Energy Retail Rules",
+      "provisions": [
+        "NERL ss 43-50",
+        "NERR rr 70A-72 and 74-76"
+      ],
+      "valid_from": "2026-07-01",
+      "valid_to": null,
+      "status": "current-at-baseline",
+      "official_url": "https://energy-rules.aemc.gov.au/nerr/817/899168",
+      "version_note": "NERR version 51, effective 1 July 2026, is current at the baseline. Schedule 1 of the Assisting Hardship Customers Rule 2025 commences on 30 December 2026 and must not be applied early. Check the local NECF application law; Victoria uses its separate code."
+    },
+    {
+      "provision_id": "NERR-LIFE-SUPPORT-CURRENT-2026-08-29",
+      "issue_family": "life-support",
+      "jurisdiction": "NECF jurisdictions",
+      "instrument": "National Energy Retail Rules",
+      "provisions": [
+        "rr 123-126A"
+      ],
+      "valid_from": "2026-07-01",
+      "valid_to": null,
+      "status": "current-at-baseline",
+      "official_url": "https://energy-rules.aemc.gov.au/nerr/817/899261",
+      "version_note": "NERR version 51, effective 1 July 2026, remains operative at the baseline. The Improving Life Support Processes final rule takes effect on 1 December 2027 and must not be applied early. Confirm retailer or distributor allocation and registration state; Victoria and the Northern Territory require separate routing."
+    },
+    {
+      "provision_id": "NERL-EIC-CURRENT-2026-08-29",
+      "issue_family": "explicit-informed-consent",
+      "jurisdiction": "NECF jurisdictions",
+      "instrument": "National Energy Retail Law",
+      "provisions": [
+        "ss 38-41"
+      ],
+      "valid_from": "2025-12-18",
+      "valid_to": null,
+      "status": "current-at-baseline",
+      "official_url": "https://www.legislation.sa.gov.au/_legislation-documents/lz/c/a/national-energy-retail-law-south-australia-act-2011/current/2011.6.auth.pdf",
+      "version_note": "Verified against the authorised National Energy Retail Law host text dated 18 December 2025. Sections 38-41 cover transactions requiring explicit informed consent, the nature of consent, records and consequences. Check the routed jurisdiction's application law and keep EIC separate from ACL and unsolicited-sales obligations."
+    },
+    {
+      "provision_id": "NERR-DISCONNECTION-CURRENT-2026-08-29",
+      "issue_family": "disconnection",
+      "jurisdiction": "NECF jurisdictions",
+      "instrument": "National Energy Retail Rules",
+      "provisions": [
+        "rr 107-122"
+      ],
+      "valid_from": "2026-07-01",
+      "valid_to": null,
+      "status": "current-at-baseline",
+      "official_url": "https://energy-rules.aemc.gov.au/nerr/817/899240",
+      "version_note": "Verified against NERR version 51, effective 1 July 2026. Apply the reason-specific rule together with hardship, payment plan, life support, notice, protected-period, re-energisation and local NECF modification gates."
+    },
+    {
+      "provision_id": "NERR-BILLING-CURRENT-2026-08-29",
+      "issue_family": "billing-overcharging-centrepay",
+      "jurisdiction": "NECF jurisdictions",
+      "instrument": "National Energy Retail Rules",
+      "provisions": [
+        "Part 2 Division 4",
+        "r 31"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "status": "current-at-baseline-appellate-control",
+      "official_url": "https://energy-rules.aemc.gov.au/nerr",
+      "version_note": "The 2024 AGL Centrepay first-instance overcharge conclusion was quashed by the Full Court on 19 August 2026. Do not state that r 31 prohibited receipt of the Centrepay amounts on that displaced reasoning. Other reconciliation and compliance-system duties may remain relevant."
+    },
+    {
+      "provision_id": "VIC-ERCP-V6-2026-08-29",
+      "issue_family": "victorian-retail-customer-protection",
+      "jurisdiction": "Victoria",
+      "instrument": "Energy Retail Code of Practice version 6",
+      "provisions": [
+        "current code including Parts 5-7 and issue-specific clauses"
+      ],
+      "valid_from": "2026-07-01",
+      "valid_to": "2026-09-30",
+      "status": "current-at-baseline",
+      "official_url": "https://www.esc.vic.gov.au/electricity-and-gas/codes-guidelines-and-policies/energy-retail-code-practice",
+      "version_note": "Version 7 changes scheduled for 1 October 2026 are future at this baseline and cannot be treated as current."
+    },
+    {
+      "provision_id": "VIC-ERCP-V6-PAYMENT-DIFFICULTY-2026-08-29",
+      "issue_family": "hardship-payment-difficulty",
+      "jurisdiction": "Victoria",
+      "instrument": "Energy Retail Code of Practice version 6",
+      "provisions": [
+        "Part 6, clauses 121-146"
+      ],
+      "valid_from": "2026-07-01",
+      "valid_to": "2026-09-30",
+      "status": "current-at-baseline",
+      "official_url": "https://www.esc.vic.gov.au/electricity-and-gas/codes-guidelines-and-policies/energy-retail-code-practice",
+      "version_note": "Clause-complete route to the version 6 payment-difficulty and financial-hardship framework. Apply the customer and contract classifications, each assistance stage and any interaction with family violence, life support and disconnection."
+    },
+    {
+      "provision_id": "VIC-ERCP-V6-FAMILY-VIOLENCE-2026-08-29",
+      "issue_family": "family-violence",
+      "jurisdiction": "Victoria",
+      "instrument": "Energy Retail Code of Practice version 6",
+      "provisions": [
+        "Part 7, clauses 147-160"
+      ],
+      "valid_from": "2026-07-01",
+      "valid_to": "2026-09-30",
+      "status": "current-at-baseline",
+      "official_url": "https://www.esc.vic.gov.au/electricity-and-gas/codes-guidelines-and-policies/energy-retail-code-practice",
+      "version_note": "Clause-complete route to the version 6 family-violence assistance, policy and record-keeping framework. Select the exact clause for training, account security, communication, debt, evidence, policy or records."
+    },
+    {
+      "provision_id": "VIC-ERCP-V6-LIFE-SUPPORT-2026-08-29",
+      "issue_family": "life-support",
+      "jurisdiction": "Victoria",
+      "instrument": "Energy Retail Code of Practice version 6",
+      "provisions": [
+        "Part 8, clauses 161-174"
+      ],
+      "valid_from": "2026-07-01",
+      "valid_to": "2026-09-30",
+      "status": "current-at-baseline",
+      "official_url": "https://www.esc.vic.gov.au/electricity-and-gas/codes-guidelines-and-policies/energy-retail-code-practice",
+      "version_note": "Clause-complete route to the version 6 life-support registration, notification, information, deregistration and record framework. Resolve retailer, exempt seller, distributor and premises roles before selecting the clause."
+    },
+    {
+      "provision_id": "VIC-ERCP-V6-DISCONNECTION-2026-08-29",
+      "issue_family": "disconnection",
+      "jurisdiction": "Victoria",
+      "instrument": "Energy Retail Code of Practice version 6",
+      "provisions": [
+        "Part 10, clauses 179-193"
+      ],
+      "valid_from": "2026-07-01",
+      "valid_to": "2026-09-30",
+      "status": "current-at-baseline",
+      "official_url": "https://www.esc.vic.gov.au/electricity-and-gas/codes-guidelines-and-policies/energy-retail-code-practice",
+      "version_note": "Clause-complete route to the version 6 notice, last-resort disconnection and reconnection framework. Read the routed clause with the Electricity Industry Act or Gas Industry Act and Parts 6 to 8 where applicable."
+    },
+    {
+      "provision_id": "VIC-ERCP-V7-FUTURE-2026-10-01",
+      "issue_family": "victorian-retail-customer-protection",
+      "jurisdiction": "Victoria",
+      "instrument": "Energy Retail Code of Practice version 7",
+      "provisions": [
+        "commencing amendments"
+      ],
+      "valid_from": "2026-10-01",
+      "valid_to": null,
+      "status": "future-at-baseline",
+      "official_url": "https://www.esc.vic.gov.au/electricity-and-gas/electricity-and-gas-inquiries-studies-and-reviews/energy-consumer-reforms-2025",
+      "version_note": "Do not use as operative law before commencement. Recheck final consolidated text on or after 1 October 2026."
+    },
+    {
+      "provision_id": "ACL-ENERGY-MARKETING-CURRENT-2026-08-29",
+      "issue_family": "marketing-pricing-representations",
+      "jurisdiction": "Commonwealth and applied state or territory law",
+      "instrument": "Australian Consumer Law, Schedule 2 to the Competition and Consumer Act 2010, and applicable state or territory application law",
+      "provisions": [
+        "ACL ss 18 and 29",
+        "ACL ss 69-95 where the unsolicited consumer agreement regime applies"
+      ],
+      "valid_from": "2026-08-27",
+      "valid_to": null,
+      "status": "current-at-baseline",
+      "official_url": "https://www.legislation.gov.au/C2004A00109/latest/text",
+      "version_note": "The Federal Register compilation C165 applies through 26 August 2026; the Cash Distribution Framework consequential amendments commencing 27 August 2026 do not amend ACL ss 18, 29 or 69-95. The Unfair Trading Practices Act 2026 commences on 1 July 2027 and is future at this baseline. Match each representation, sales route and remedy to an exact provision and the applicable state or territory application law."
+    },
+    {
+      "provision_id": "DNCR-SPAM-CURRENT-2026-08-29",
+      "issue_family": "telemarketing-spam",
+      "jurisdiction": "Commonwealth",
+      "instrument": "Do Not Call Register Act 2006, Spam Act 2003 and Telecommunications (Telemarketing and Research Calls) Industry Standard 2017",
+      "provisions": [
+        "Do Not Call Register Act 2006 ss 11-12, 12B-12C and Schedule 2",
+        "Spam Act 2003 ss 16-18 and Schedule 2",
+        "Telecommunications (Telemarketing and Research Calls) Industry Standard 2017 ss 8-14"
+      ],
+      "valid_from": "2021-09-01",
+      "valid_to": null,
+      "status": "current-at-baseline",
+      "official_url": "https://www.legislation.gov.au/C2006A00088/latest/text",
+      "version_note": "Verified against Do Not Call Register Act compilation C16 from 1 September 2021, Spam Act compilation C10 from 10 March 2016, and the in-force 2017 Industry Standard registered 28 March 2017. Determine whether the contact was a voice call, fax, SMS, email or other commercial electronic message before selecting the prohibition, consent, sender-identification, unsubscribe, calling-time and contractor-control provisions."
+    },
+    {
+      "provision_id": "WEM-RULES-CURRENT-2026-08-29",
+      "issue_family": "wem-market-conduct",
+      "jurisdiction": "Western Australia WEM",
+      "instrument": "Electricity System and Market Rules",
+      "provisions": [
+        "2.16A.3",
+        "2.16C.3",
+        "2.16C.5-2.16C.10",
+        "ERA Offer Construction and Trading Conduct Guideline"
+      ],
+      "valid_from": "2026-07-01",
+      "valid_to": null,
+      "status": "current-at-baseline",
+      "official_url": "https://www.wa.gov.au/government/document-collections/electricity-system-and-market-rules",
+      "version_note": "Verified against the Electricity System and Market Rules dated 1 July 2026 and the ERA Offer Construction and Trading Conduct Guideline effective 1 February 2025. The instrument was renamed from the Wholesale Electricity Market Rules on 6 February 2025. Historical Synergy clause 7A.2.17 outcomes are historical-only comparators; future gazetted amendments listed for 1 October 2026 or later are not current at the baseline."
+    },
+    {
+      "provision_id": "JURISDICTION-ELECTRICAL-SAFETY-CURRENT-2026-08-29",
+      "issue_family": "electrical-safety-licensing",
+      "jurisdiction": "State or territory specific",
+      "instrument": "Current electrical safety Act, regulations, licensing rules and applicable standards in the routed jurisdiction",
+      "provisions": [
+        "case-specific"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "status": "current-comparator-only-exact-clause-required",
+      "official_url": "https://www.energy.gov.au/energy-and-climate-change-ministerial-council/membership/ecmc-contact-us",
+      "version_note": "Never transfer a safety provision between jurisdictions. Use D07 and the current official legislation for the routed state or territory."
+    },
+    {
+      "provision_id": "JURISDICTION-WHS-CURRENT-2026-08-29",
+      "issue_family": "work-health-safety",
+      "jurisdiction": "State or territory specific",
+      "instrument": "Current WHS Act and regulations, or Victorian OHS legislation",
+      "provisions": [
+        "case-specific"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "status": "current-comparator-only-exact-clause-required",
+      "official_url": "https://www.safeworkaustralia.gov.au/law-and-regulation",
+      "version_note": "Western Australian pre-31 March 2022 OSH cases and superseded regulations are historical only. Victoria uses OHS rather than the model WHS Act."
+    },
+    {
+      "provision_id": "JURISDICTION-ENVIRONMENT-CURRENT-2026-08-29",
+      "issue_family": "environmental",
+      "jurisdiction": "Commonwealth, state or territory specific",
+      "instrument": "Current EPBC and routed state or territory environment and planning legislation",
+      "provisions": [
+        "case-specific"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "status": "current-comparator-only-transition-check-required",
+      "official_url": "https://www.dcceew.gov.au/environment/epbc",
+      "version_note": "The 2026 Commonwealth reforms are staged. Identify the conduct date, decision date and any transitional provision before selecting the current comparator."
+    },
+    {
+      "provision_id": "ENERGY-LICENSING-CURRENT-2026-08-29",
+      "issue_family": "authorisation-exemption",
+      "jurisdiction": "Jurisdiction specific",
+      "instrument": "Current national authorisation, state licence or exemption instrument",
+      "provisions": [
+        "case-specific"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "status": "current-comparator-only-exact-route-required",
+      "official_url": "https://www.aer.gov.au/industry/registers/authorisations",
+      "version_note": "AER retail authorisation does not replace Victorian, Western Australian or Northern Territory licensing analysis."
+    },
+    {
+      "provision_id": "NER-METERING-CURRENT-2026-08-29",
+      "issue_family": "metering",
+      "jurisdiction": "National Electricity Market with jurisdictional modifications",
+      "instrument": "National Electricity Rules Chapter 7 and AEMO metrology procedures",
+      "provisions": [
+        "NER Chapter 7 including 7.16",
+        "AEMO Metrology Procedure Part A v8.14",
+        "AEMO Metrology Procedure Part B v8.13",
+        "AEMO Metrology Procedure Part C v1.1"
+      ],
+      "valid_from": "2026-08-25",
+      "valid_to": null,
+      "status": "current-at-baseline",
+      "official_url": "https://www.aemo.com.au/energy-systems/electricity/national-electricity-market-nem/market-operations/retail-and-metering/metrology-procedures-and-unmetered-loads",
+      "version_note": "At the baseline, NER version 252 is current and the operative AEMO set is Part A v8.14 effective 25 August 2026, Part B v8.13 effective 9 June 2026 and Part C v1.1 effective 19 March 2026. Part A and Part B v8.23 are future versions effective 1 November 2026. Route each question to the exact NER and procedure clause and any jurisdictional modification."
+    },
+    {
+      "provision_id": "AER-RING-FENCING-CURRENT-2026-08-29",
+      "issue_family": "ring-fencing",
+      "jurisdiction": "National Electricity Market",
+      "instrument": "AER Electricity Distribution Ring-fencing Guideline",
+      "provisions": [
+        "NER 6.17.1-6.17.2",
+        "Guideline version 4 clauses 3-6",
+        "entity-specific AER waiver, if any"
+      ],
+      "valid_from": "2025-02-27",
+      "valid_to": null,
+      "status": "current-at-baseline",
+      "official_url": "https://www.aer.gov.au/industry/networks/ring-fencing/ring-fencing-guideline-electricity-distribution-2025",
+      "version_note": "AER distribution guideline version 4 is current and commenced on 27 February 2025. Clauses 3-6 cover separation, non-discrimination and information controls, waivers, and compliance and reporting. The 2026 review does not itself amend version 4; always check an entity-specific waiver or undertaking."
+    },
+    {
+      "provision_id": "REPORTING-RECORDKEEPING-CURRENT-2026-08-29",
+      "issue_family": "reporting-recordkeeping",
+      "jurisdiction": "Instrument specific",
+      "instrument": "Applicable licence, rule, code, regulator guideline or reporting notice",
+      "provisions": [
+        "case-specific"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "status": "current-comparator-only-exact-clause-required",
+      "official_url": "https://www.aer.gov.au/industry/registers/resources/guidelines/retail-performance-reporting-procedures-and-guidelines",
+      "version_note": "A reporting duty is not portable between regulators or reporting periods."
+    },
+    {
+      "provision_id": "NERR-CONTRACT-NOTICES-CURRENT-2026-08-29",
+      "issue_family": "contract-notices",
+      "jurisdiction": "NECF jurisdictions",
+      "instrument": "National Energy Retail Rules",
+      "provisions": [
+        "r 48 and current replacement or related notice provisions"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "status": "current-comparator-only-transition-check-required",
+      "official_url": "https://energy-rules.aemc.gov.au/nerr",
+      "version_note": "Historical fixed-term end notices must be checked against current benefit-change, plan and transition provisions."
+    },
+    {
+      "provision_id": "NERL-OMBUDSMAN-MEMBERSHIP-CURRENT-2026-08-29",
+      "issue_family": "ombudsman-membership",
+      "jurisdiction": "NECF jurisdictions",
+      "instrument": "National Energy Retail Law",
+      "provisions": [
+        "s 86(1)-(4)"
+      ],
+      "valid_from": "2025-12-18",
+      "valid_to": null,
+      "status": "current-at-baseline",
+      "official_url": "https://www.legislation.sa.gov.au/_legislation-documents/lz/c/a/national-energy-retail-law-south-australia-act-2011/current/2011.6.auth.pdf",
+      "version_note": "Section 86, not s 112(2), is the general ombudsman membership and compliance duty for retailers and distributors. Section 112(2) only requires an exempt seller to comply with applicable exemption conditions. Check the routed jurisdiction's application law, the relevant scheme and any exemption conditions."
+    },
+    {
+      "provision_id": "JURISDICTION-WHOLESALE-RULES-CURRENT-2026-08-29",
+      "issue_family": "jurisdictional-wholesale-pricing",
+      "jurisdiction": "Tasmania or other non-uniform state framework",
+      "instrument": "Current jurisdiction-specific wholesale pricing or contract instrument",
+      "provisions": [
+        "case-specific"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "status": "current-comparator-only-exact-instrument-required",
+      "official_url": "https://www.economicregulator.tas.gov.au/electricity/pricing/wholesale-pricing/supporting-regulatory-arrangements",
+      "version_note": "Historical Tasmanian regulated wholesale instruments are not NEM bidding rules and must be versioned separately."
+    },
+    {
+      "provision_id": "POWER-SYSTEM-SECURITY-CURRENT-2026-08-29",
+      "issue_family": "power-system-security",
+      "jurisdiction": "National or routed state and territory system",
+      "instrument": "Current system security, emergency, reliability and market suspension framework",
+      "provisions": [
+        "event and jurisdiction specific"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "status": "current-comparator-only-exact-route-required",
+      "official_url": "https://www.aemo.com.au/energy-systems/electricity/national-electricity-market-nem/system-operations/power-system-operation",
+      "version_note": "A technical event is not a contravention finding. Select the current national or local system instrument only after jurisdiction routing."
+    },
+    {
+      "provision_id": "QLD-RETAIL-PRICING-CURRENT-2026-08-29",
+      "issue_family": "billing-overcharging-centrepay",
+      "jurisdiction": "Queensland",
+      "instrument": "Current Queensland notified-price, standard retail contract and jurisdictional derogation framework",
+      "provisions": [
+        "case-specific"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "status": "current-comparator-only-exact-clause-required",
+      "official_url": "https://www.qca.org.au/energy/",
+      "version_note": "The historical QCA register spans different Queensland codes and derogations. Verify the current notified-price and fee provision for the customer class and date."
+    },
+    {
+      "provision_id": "CER-RET-CURRENT-2026-08-29",
+      "issue_family": "renewable-energy-certificates",
+      "jurisdiction": "Commonwealth",
+      "instrument": "Renewable Energy (Electricity) Act 2000 and Renewable Energy (Electricity) Regulations 2001",
+      "provisions": [
+        "Act ss 9-12 and 13-17A",
+        "Act ss 17C-23F and 24-24B",
+        "Act ss 30-30E and 35-46",
+        "Regulations rr 3L, 19D-20DA and 24-25A"
+      ],
+      "valid_from": "2026-05-01",
+      "valid_to": null,
+      "status": "current-at-baseline",
+      "official_url": "https://www.legislation.gov.au/C2004A00767/latest/text",
+      "version_note": "Verified against Act compilation C34 from 1 January 2026 and Regulations compilation C90 from 1 May 2026. The listed routes cover registration, accreditation, certificate creation and improper creation, suspension, liable-entity and surrender obligations, and key fit-and-proper and installation provisions. Select the exact Act and Regulations clauses for each SRES, LRET, suspension, ineligibility, undertaking or court question; announced future SRES expansion is not operative until its legislation commences."
+    },
+    {
+      "provision_id": "WA-METERING-CODE-CURRENT-2026-08-29",
+      "issue_family": "metering",
+      "jurisdiction": "Western Australia",
+      "instrument": "Electricity Industry (Metering) Code 2012 (WA) and applicable electricity licence conditions",
+      "provisions": [
+        "case-specific Metering Code clause and licence condition"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "status": "current-comparator-only-exact-clause-required",
+      "official_url": "https://www.erawa.com.au/access/electricity-access",
+      "version_note": "Western Australian licensing and metering matters must not be routed to NER Chapter 7 merely because they concern a meter. Verify the current WA Code text, network coverage, licence conditions and any approved metrology document for the entity and date."
+    },
+    {
+      "provision_id": "VIC-VEU-CURRENT-2026-08-29",
+      "issue_family": "victorian-energy-upgrades",
+      "jurisdiction": "Victoria",
+      "instrument": "Victorian Energy Efficiency Target Act 2007, regulations, specifications and binding VEU instruments",
+      "provisions": [
+        "case-specific VEET Act, regulation, specification, guideline and accreditation condition"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "status": "current-comparator-only-exact-clause-required",
+      "official_url": "https://www.esc.vic.gov.au/veu-legislation",
+      "version_note": "VEU accreditation, activity and certificate matters are separate from Victorian retail customer protection. Verify the operative Act, regulations, specifications, guidelines, accreditation status and any review or stay before reliance."
+    },
+    {
+      "provision_id": "NER-BDU-REGISTRATION-V254-2026-09-04",
+      "issue_family": "battery-registration",
+      "jurisdiction": "National Electricity Market",
+      "instrument": "National Electricity Rules v254",
+      "provisions": [
+        "2.1A.1-2.1A.3",
+        "2.1B.2",
+        "2.2.2-2.2.3",
+        "2.2.5A-2.2.8",
+        "2.9.3",
+        "Chapter 10 small-resource definitions"
+      ],
+      "valid_from": "2026-09-04",
+      "valid_to": null,
+      "status": "current-at-baseline",
+      "official_url": "https://aemc-dra-production-s3.s3.ap-southeast-2.amazonaws.com/rules/bc0d2a8e1cf523289a553dfefbec0a3b359f4b5b/assets/files/NER%20-%20v254%20-%20Full.pdf",
+      "version_note": "Additive scoped review as at 13 September 2026, not a whole-KB baseline update. NER v254 effective 4 September 2026. NEM participant and BDU classifications, with statutory alternatives and intermediary liabilities. MW alone does not establish a registration exemption, connection entitlement, state licence or operational approval. This is not the WA WEM or NT regime."
+    },
+    {
+      "provision_id": "NER-BIDDING-V254-2026-09-04",
+      "issue_family": "wholesale-bidding-rebidding",
+      "jurisdiction": "National Electricity Market",
+      "instrument": "National Electricity Rules v254",
+      "provisions": [
+        "3.8.6",
+        "3.8.22",
+        "3.8.22A",
+        "Chapter 10 trading interval"
+      ],
+      "valid_from": "2026-09-04",
+      "valid_to": null,
+      "status": "current-at-baseline",
+      "official_url": "https://aemc-dra-production-s3.s3.ap-southeast-2.amazonaws.com/rules/bc0d2a8e1cf523289a553dfefbec0a3b359f4b5b/assets/files/NER%20-%20v254%20-%20Full.pdf",
+      "version_note": "Additive scoped review as at 13 September 2026, not a whole-KB baseline update. NER v254 effective 4 September 2026. Energy dispatch bids and rebids in NER v254. GEN/LOAD bands, capacity, ramps and energy constraints are distinct. Separate FCAS offers, technical validation, AEMO procedures and plant-specific parameters require their own sources."
+    },
+    {
+      "provision_id": "NER-DISPATCH-V254-2026-09-04",
+      "issue_family": "dispatch-instructions",
+      "jurisdiction": "National Electricity Market",
+      "instrument": "National Electricity Rules v254",
+      "provisions": [
+        "4.9.8",
+        "4.9.9",
+        "4.9.9A",
+        "4.9.9B"
+      ],
+      "valid_from": "2026-09-04",
+      "valid_to": null,
+      "status": "current-at-baseline",
+      "official_url": "https://aemc-dra-production-s3.s3.ap-southeast-2.amazonaws.com/rules/bc0d2a8e1cf523289a553dfefbec0a3b359f4b5b/assets/files/NER%20-%20v254%20-%20Full.pdf",
+      "version_note": "Additive scoped review as at 13 September 2026, not a whole-KB baseline update. NER v254 effective 4 September 2026. NER dispatch compliance, express safety/equipment and frequency-response qualifications, capability and change-notification duties. Do not substitute historical Hornsdale registration or paragraph numbering for the current plant classification. Technical tolerances and control evidence remain project-specific."
+    },
+    {
+      "provision_id": "NER-SETTLEMENT-V254-2026-09-04",
+      "issue_family": "market-settlement",
+      "jurisdiction": "National Electricity Market",
+      "instrument": "National Electricity Rules v254",
+      "provisions": [
+        "3.15.6",
+        "3.15.15-3.15.18",
+        "Chapter 10 payment date",
+        "11.179"
+      ],
+      "valid_from": "2026-09-04",
+      "valid_to": null,
+      "status": "current-at-baseline",
+      "official_url": "https://aemc-dra-production-s3.s3.ap-southeast-2.amazonaws.com/rules/bc0d2a8e1cf523289a553dfefbec0a3b359f4b5b/assets/files/NER%20-%20v254%20-%20Full.pdf",
+      "version_note": "Additive scoped review as at 13 September 2026, not a whole-KB baseline update. NER v254 effective 4 September 2026. Spot energy transaction formula, statements, payment and disputes. AGE must already be determined under rule 3.15.4; raw meter data and dispatch targets are not interchangeable. The formula excludes separate FCAS, fees, adjustments, tax and contracts. Payment is the later of the ninth business day or two business days after receipt of the final statement. During the 9 August to 17 October 2026 transition, clause 11.179 permits final statements between 7 and 18 business days: use the relevant billing-period transitional calendar, not an automatic nine-day payment date. This review does not establish any specific calendar payment date."
+    },
+    {
+      "provision_id": "AEMO-REGISTRATION-FEES-FY27",
+      "issue_family": "registration-fees",
+      "jurisdiction": "National Electricity Market",
+      "instrument": "AEMO Final Budget and Fees FY27",
+      "provisions": [
+        "Important notice: GST basis",
+        "Table 46 and registration assessment explanation",
+        "Table 47 including footnotes"
+      ],
+      "valid_from": "2026-07-01",
+      "valid_to": "2027-06-30",
+      "status": "current-at-baseline",
+      "official_url": "https://www.aemo.com.au/-/media/files/about_aemo/energy_market_budget_and_fees/2026/aemo-final-budget-and-fees-fy27.pdf?rev=6b35a59f8cfc49b58dd02205fc0770e0&sc_lang=en",
+      "version_note": "Scoped review as at 13 September 2026. This official fee/guidance record is not legislation. NEM FY27 registration categories and published general hourly rates, net of GST. The Scheduled Market BDU fixed fee is per registration, not per MW and not a cap on project costs. A 6MW/55MW comparison assumes equal application scope. FCAS classification and additional registration categories are conditional. Do not substitute these rates for connection charge-out rates or infer actual additional hours."
+    },
+    {
+      "provision_id": "AEMO-REGISTRATION-INVOICING-FY27",
+      "issue_family": "registration-fees",
+      "jurisdiction": "National Electricity Market",
+      "instrument": "AEMO Market Registration Invoice Fact Sheet July 2026",
+      "provisions": [
+        "Invoicing approach and FAQ pages 1-3"
+      ],
+      "valid_from": "2026-07-01",
+      "valid_to": "2027-06-30",
+      "status": "current-at-baseline",
+      "official_url": "https://www.aemo.com.au/-/media/files/electricity/nem/participant_information/registration/2026/market-registration-invoice-fact-sheet.pdf?rev=4906ebba9fe545e595ae2b260aaa8a22&sc_lang=en",
+      "version_note": "Scoped review as at 13 September 2026. This official fee/guidance record is not legislation. Official administrative invoicing guidance effective 1 July 2026, not a statute or a fixed quote. Additional BDU/IRP assessment is scope-driven after the fixed-fee effort threshold. Notifications, the 95% stop option and monthly arrears do not themselves establish a project-specific fee ceiling, effort estimate or refund entitlement."
+    }
+  ]
+}

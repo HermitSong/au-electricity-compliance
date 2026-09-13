@@ -1,0 +1,914 @@
+{
+  "schema_version": "1.0",
+  "baseline_date": "2026-08-29",
+  "corpus_period": "2006-01-01 to 2026-08-29 inclusive",
+  "definition": "All individually identifiable electricity-sector matters discoverable in the registered official public source families; unpublished, confidential, anonymous aggregate and inaccessible archive material is explicitly outside the event universe and recorded as a limitation.",
+  "source_family_count": 54,
+  "source_reviews": [
+    {
+      "source_family_id": "ACT-ACAT-ENERGY-DISPUTES",
+      "source_url": "https://www.icrc.act.gov.au/nerl-retailers",
+      "public_date_scope": "2006-01-01 to 2026-08-27",
+      "pages_or_years_checked": "ACAT energy and water ombudsman function and public decision availability reviewed.",
+      "extraction_status": "aggregate-only",
+      "public_record_count": 0,
+      "indexed_enforcement_records": 0,
+      "indexed_technical_records": 0,
+      "curated_addition_records": 0,
+      "anonymous_or_aggregate_count": 0,
+      "gap_periods": [],
+      "gap_reason": "No continuous public case-level electricity decision series was identified; private complaints are not treated as violations.",
+      "checked_at": "2026-08-27"
+    },
+    {
+      "source_family_id": "ACT-EPA-ENFORCEMENT",
+      "source_url": "https://www.environment.act.gov.au/environmental-protection-and-water/environment-protection",
+      "public_date_scope": "2006-01-01 to 2026-08-27",
+      "pages_or_years_checked": "Current environment-protection and annual-report sources reviewed for named electricity-project outcomes.",
+      "extraction_status": "aggregate-only",
+      "public_record_count": 0,
+      "indexed_enforcement_records": 0,
+      "indexed_technical_records": 0,
+      "curated_addition_records": 0,
+      "anonymous_or_aggregate_count": 0,
+      "gap_periods": [],
+      "gap_reason": "No continuous electricity-only named enforcement register is published.",
+      "checked_at": "2026-08-27"
+    },
+    {
+      "source_family_id": "ACT-ICRC-ULAR",
+      "source_url": "https://www.icrc.act.gov.au/news/2019/commission-releases-2017-18-utility-licence-annual-licence-monitoring-report",
+      "public_date_scope": "2005-06 to 2024-25",
+      "pages_or_years_checked": "Published utility licence annual monitoring series and known named breach records.",
+      "extraction_status": "archive-gap",
+      "public_record_count": 1,
+      "indexed_enforcement_records": 1,
+      "indexed_technical_records": 0,
+      "curated_addition_records": 0,
+      "anonymous_or_aggregate_count": 0,
+      "gap_periods": [
+        "2012-13 to 2015-16"
+      ],
+      "gap_reason": "The ICRC publication series has a documented four-year gap; annual reports may describe additional matters at aggregate level.",
+      "checked_at": "2026-08-27"
+    },
+    {
+      "source_family_id": "ACT-WORKSAFE-PROSECUTIONS",
+      "source_url": "https://www.worksafe.act.gov.au/laws-and-compliance/enforcement-and-prosecutions/prosecutions/list-of-prosecutions",
+      "public_date_scope": "2006-01-01 to 2026-08-27",
+      "pages_or_years_checked": "Official WHS-wide prosecution list identified for strict electricity-sector filtering.",
+      "extraction_status": "archive-gap",
+      "public_record_count": 5,
+      "indexed_enforcement_records": 5,
+      "indexed_technical_records": 0,
+      "curated_addition_records": 5,
+      "anonymous_or_aggregate_count": 0,
+      "gap_periods": [
+        "Dedicated detail-page extraction pending"
+      ],
+      "gap_reason": "Zero is not asserted; the source remains an explicit extraction backlog.",
+      "checked_at": "2026-08-27"
+    },
+    {
+      "source_family_id": "AU-ACCC-ENFORCEMENT",
+      "source_url": "https://www.accc.gov.au/news-centre?type=accc_news&f%5B0%5D=topic%3A133",
+      "public_date_scope": "2006-01-01 to 2026-08-27",
+      "pages_or_years_checked": "All 22 Energy-topic index pages and 534 cards; electricity/solar/battery compliance-and-enforcement pages reviewed at detail level.",
+      "extraction_status": "complete-case-indexed",
+      "public_record_count": 40,
+      "indexed_enforcement_records": 40,
+      "indexed_technical_records": 0,
+      "curated_addition_records": 0,
+      "anonymous_or_aggregate_count": 0,
+      "gap_periods": [],
+      "gap_reason": "The current official Energy topic index was exhausted; mergers, monitoring reports, gas-only and petrol matters were excluded.",
+      "checked_at": "2026-08-27"
+    },
+    {
+      "source_family_id": "AU-ACMA-SPAM-TELEMARKETING",
+      "source_url": "https://www.acma.gov.au/investigations-spam-and-telemarketing",
+      "public_date_scope": "2010-01-01 to 2026-08-27",
+      "pages_or_years_checked": "Every current 2017-2026 outcome-table row checked; linked 2010-2016 spam archive identified; 87 current rows parsed.",
+      "extraction_status": "archive-gap",
+      "public_record_count": 10,
+      "indexed_enforcement_records": 10,
+      "indexed_technical_records": 0,
+      "curated_addition_records": 0,
+      "anonymous_or_aggregate_count": 0,
+      "gap_periods": [
+        "Pre-2017 telemarketing outcomes are not exposed as a continuous table; 2010-2016 spam archive needs a separate materiality pass"
+      ],
+      "gap_reason": "Current table was exhausted for electricity retailers, energy marketers and solar entities.",
+      "checked_at": "2026-08-27"
+    },
+    {
+      "source_family_id": "AU-AEMO-NEM-MARKET-EVENTS",
+      "source_url": "https://www.aemo.com.au/energy-systems/electricity/national-electricity-market-nem/nem-events-and-reports/market-event-reports",
+      "public_date_scope": "2006-01-01 to 2026-08-27",
+      "pages_or_years_checked": "Official market-event source identified; one June 2022 event is represented by the AER technical report and direct AEMO index remains bot-protected.",
+      "extraction_status": "archive-gap",
+      "public_record_count": 1,
+      "indexed_enforcement_records": 0,
+      "indexed_technical_records": 1,
+      "curated_addition_records": 1,
+      "anonymous_or_aggregate_count": 0,
+      "gap_periods": [
+        "Captured index links are enumerated as of 6 September 2026; linked detail pages and their originals remain incomplete after HTTP 403",
+        "Source-family and 2006-2026 period reconciliation not established"
+      ],
+      "gap_reason": "Public index DOM preserved on 6 September 2026. Observed report URLs, query versions and pending acquisitions are retained in data/source-index-enumeration.jsonl. Report files are technical research evidence, not findings of contravention; index enumeration does not certify the complete source family.",
+      "checked_at": "2026-08-27",
+      "enumeration_evidence_path": "review/results/source-index-enumeration-report.json"
+    },
+    {
+      "source_family_id": "AU-AEMO-NEM-OPERATING-INCIDENTS",
+      "source_url": "https://www.aemo.com.au/energy-systems/electricity/national-electricity-market-nem/nem-events-and-reports/power-system-operating-incident-reports",
+      "public_date_scope": "2006-01-01 to 2026-08-27",
+      "pages_or_years_checked": "Official incident-report source identified; access is bot-protected from the corpus runner.",
+      "extraction_status": "archive-gap",
+      "public_record_count": 0,
+      "indexed_enforcement_records": 0,
+      "indexed_technical_records": 0,
+      "curated_addition_records": 0,
+      "anonymous_or_aggregate_count": 0,
+      "gap_periods": [
+        "Captured index sections cover 2010-2026; older archived reports are referred to AEMO Support Hub",
+        "Complete publication, attachment, version and 2006-2026 reconciliation remains unverified"
+      ],
+      "gap_reason": "Public index DOM preserved on 6 September 2026 and its observed report links enumerated. The retained acquisition outcomes and text are research-only. A technical incident report is not a judicial or regulatory finding of contravention.",
+      "checked_at": "2026-08-27",
+      "enumeration_evidence_path": "review/results/source-index-enumeration-report.json"
+    },
+    {
+      "source_family_id": "AU-AER-COMPLIANCE",
+      "source_url": "https://www.aer.gov.au/publications/reports/compliance",
+      "public_date_scope": "2006-01-01 to 2026-08-27",
+      "pages_or_years_checked": "All 465 compliance-report pages in the official AER sitemap; electricity sector and enforcement/technical classifications applied from the pages' structured fields.",
+      "extraction_status": "complete-case-indexed",
+      "public_record_count": 100,
+      "indexed_enforcement_records": 98,
+      "indexed_technical_records": 2,
+      "curated_addition_records": 5,
+      "anonymous_or_aggregate_count": 0,
+      "gap_periods": [],
+      "gap_reason": "The structured public case series was exhausted. Aggregate annual-report activity without an individual official page is not invented as a named event.",
+      "checked_at": "2026-08-27"
+    },
+    {
+      "source_family_id": "AU-CER-COMPLIANCE",
+      "source_url": "https://cer.gov.au/about-us/corporate-policies/compliance-enforcement-and-education-policy",
+      "public_date_scope": "2006-01-01 to 2026-08-27",
+      "pages_or_years_checked": "Current compliance policy, enforcement publications, RET/NGER annual reports and official sitemap identified for the next dedicated extraction pass.",
+      "extraction_status": "archive-gap",
+      "public_record_count": 91,
+      "indexed_enforcement_records": 91,
+      "indexed_technical_records": 0,
+      "curated_addition_records": 91,
+      "anonymous_or_aggregate_count": 0,
+      "gap_periods": [
+        "Distributed enforcement outcomes across annual reports, undertakings and court pages"
+      ],
+      "gap_reason": "No single continuous named-case register is exposed. Zero is not asserted; this source remains an explicit extraction backlog.",
+      "checked_at": "2026-08-27"
+    },
+    {
+      "source_family_id": "AU-CISC-SOCI-COMPLIANCE",
+      "source_url": "https://www.cisc.gov.au/legislation-regulation-and-compliance/our-regulatory-principles-and-approach",
+      "public_date_scope": "2018-01-01 to 2026-08-27",
+      "pages_or_years_checked": "Regulatory approach and public annual reporting reviewed.",
+      "extraction_status": "aggregate-only",
+      "public_record_count": 0,
+      "indexed_enforcement_records": 0,
+      "indexed_technical_records": 0,
+      "curated_addition_records": 0,
+      "anonymous_or_aggregate_count": 0,
+      "gap_periods": [],
+      "gap_reason": "Protected-information and national-security rules structurally limit named public electricity-asset compliance outcomes.",
+      "checked_at": "2026-08-27"
+    },
+    {
+      "source_family_id": "AU-DCCEEW-EPBC-COMPLIANCE",
+      "source_url": "https://www.dcceew.gov.au/environment/epbc/compliance",
+      "public_date_scope": "2006-01-01 to 2026-08-27",
+      "pages_or_years_checked": "EPBC compliance, audit and enforcement sources identified; project-level electricity materiality filter pending.",
+      "extraction_status": "archive-gap",
+      "public_record_count": 0,
+      "indexed_enforcement_records": 0,
+      "indexed_technical_records": 0,
+      "curated_addition_records": 0,
+      "anonymous_or_aggregate_count": 0,
+      "gap_periods": [
+        "Distributed project and action registers; 2026 agency transition"
+      ],
+      "gap_reason": "No unsupported completeness claim is made during the transition to the National Environmental Protection Agency.",
+      "checked_at": "2026-08-27"
+    },
+    {
+      "source_family_id": "AU-OAIC-PRIVACY-DECISIONS",
+      "source_url": "https://www.oaic.gov.au/privacy/privacy-assessments-and-decisions/privacy-decisions",
+      "public_date_scope": "2006-01-01 to 2026-08-27",
+      "pages_or_years_checked": "Named public privacy decisions and undertaking indexes reviewed for direct electricity-sector outcomes.",
+      "extraction_status": "complete-case-indexed",
+      "public_record_count": 0,
+      "indexed_enforcement_records": 0,
+      "indexed_technical_records": 0,
+      "curated_addition_records": 0,
+      "anonymous_or_aggregate_count": 0,
+      "gap_periods": [],
+      "gap_reason": "No directly electricity-sector named final determination was identified; most complaints and data-breach notifications are confidential or aggregate.",
+      "checked_at": "2026-08-27"
+    },
+    {
+      "source_family_id": "NSW-BUILDING-COMMISSION-ELECTRICAL",
+      "source_url": "https://www.nsw.gov.au/departments-and-agencies/building-commission/about-us/consumer-protection-schemes-and-systems/home-building-compliance-and-enforcement",
+      "public_date_scope": "2006-01-01 to 2026-08-27",
+      "pages_or_years_checked": "Construction-wide compliance source identified.",
+      "extraction_status": "archive-gap",
+      "public_record_count": 0,
+      "indexed_enforcement_records": 0,
+      "indexed_technical_records": 0,
+      "curated_addition_records": 0,
+      "anonymous_or_aggregate_count": 0,
+      "gap_periods": [
+        "No continuous electricity-only named-case register"
+      ],
+      "gap_reason": "Electricity-sector materiality requires case-level filtering across construction enforcement publications.",
+      "checked_at": "2026-08-27"
+    },
+    {
+      "source_family_id": "NSW-EPA-PUBLIC-REGISTERS",
+      "source_url": "https://www.epa.nsw.gov.au/Licensing-and-Regulation/Public-registers",
+      "public_date_scope": "2006-01-01 to 2026-08-27",
+      "pages_or_years_checked": "Legacy and replacement public-register sources identified.",
+      "extraction_status": "archive-gap",
+      "public_record_count": 0,
+      "indexed_enforcement_records": 0,
+      "indexed_technical_records": 0,
+      "curated_addition_records": 0,
+      "anonymous_or_aggregate_count": 0,
+      "gap_periods": [
+        "2026-04-28 legacy data freeze and platform transition"
+      ],
+      "gap_reason": "A cross-platform electricity-sector reconciliation is required before a completeness claim can be made.",
+      "checked_at": "2026-08-27"
+    },
+    {
+      "source_family_id": "NSW-EWON-SYSTEMIC",
+      "source_url": "https://www.ewon.com.au/page/publications-and-submissions/annual-reports",
+      "public_date_scope": "2006-01-01 to 2026-08-27",
+      "pages_or_years_checked": "Public annual reports and systemic-issue reporting reviewed.",
+      "extraction_status": "aggregate-only",
+      "public_record_count": 0,
+      "indexed_enforcement_records": 0,
+      "indexed_technical_records": 0,
+      "curated_addition_records": 0,
+      "anonymous_or_aggregate_count": 0,
+      "gap_periods": [],
+      "gap_reason": "Complaint outcomes are mostly anonymised and are not regulator breach findings unless separately referred and determined.",
+      "checked_at": "2026-08-27"
+    },
+    {
+      "source_family_id": "NSW-IPART-NETWORK-COMPLIANCE",
+      "source_url": "https://www.ipart.nsw.gov.au/Home/Publications?document_industry=1&document_type=923&page=0",
+      "public_date_scope": "2005-01-01 to 2026-08-27",
+      "pages_or_years_checked": "Annual network licence compliance publication series identified.",
+      "extraction_status": "archive-gap",
+      "public_record_count": 0,
+      "indexed_enforcement_records": 0,
+      "indexed_technical_records": 0,
+      "curated_addition_records": 0,
+      "anonymous_or_aggregate_count": 0,
+      "gap_periods": [
+        "Report-level findings require dedicated PDF extraction"
+      ],
+      "gap_reason": "Zero is not asserted; report-level and finding-level normalization remains an explicit backlog.",
+      "checked_at": "2026-08-27"
+    },
+    {
+      "source_family_id": "NSW-SAFEWORK-PROSECUTIONS",
+      "source_url": "https://www.safework.nsw.gov.au/compliance-and-prosecutions/prosecutions",
+      "public_date_scope": "2006-01-01 to 2026-08-27",
+      "pages_or_years_checked": "WHS-wide prosecution register and official sitemap identified.",
+      "extraction_status": "archive-gap",
+      "public_record_count": 50,
+      "indexed_enforcement_records": 29,
+      "indexed_technical_records": 21,
+      "curated_addition_records": 50,
+      "anonymous_or_aggregate_count": 0,
+      "gap_periods": [
+        "Spent outcomes and dedicated electricity-sector detail extraction"
+      ],
+      "gap_reason": "Zero is not asserted; the dedicated strict-materiality pass remains in the extraction backlog.",
+      "checked_at": "2026-08-27"
+    },
+    {
+      "source_family_id": "NT-EPA-COMPLIANCE",
+      "source_url": "https://ntepa.nt.gov.au/about-ntepa/publications/annual-reports",
+      "public_date_scope": "Current annual-report and compliance-publication access through 2026-08-27",
+      "pages_or_years_checked": "Annual-report source family and targeted official search results for electricity generation, network and renewable infrastructure matters.",
+      "extraction_status": "archive-gap",
+      "public_record_count": 0,
+      "indexed_enforcement_records": 0,
+      "indexed_technical_records": 0,
+      "curated_addition_records": 0,
+      "anonymous_or_aggregate_count": 0,
+      "gap_periods": [
+        "2006-01-01 to 2026-08-27"
+      ],
+      "gap_reason": "NT EPA compliance actions are distributed across reports, notices and investigations and no complete electricity-sector named-action register was publicly indexed in this pass.",
+      "checked_at": "2026-08-27"
+    },
+    {
+      "source_family_id": "NT-UC-ANNUAL-COMPLIANCE",
+      "source_url": "https://utilicom.nt.gov.au/electricity/reporting/annual-compliance-monitoring-report",
+      "public_date_scope": "2018-19 to 2024-25 public annual compliance reports; task period 2006-01-01 to 2026-08-27",
+      "pages_or_years_checked": "2018-19, 2019-20, 2021-22, 2022-23, 2023-24 and 2024-25 report records and publication archive; 2020-21 publication entry located but its full breach detail was not individually indexed in accessible search material.",
+      "extraction_status": "archive-gap",
+      "public_record_count": 30,
+      "indexed_enforcement_records": 25,
+      "indexed_technical_records": 5,
+      "curated_addition_records": 0,
+      "anonymous_or_aggregate_count": 59,
+      "gap_periods": [
+        "2006-01-01 to 2017-06-30",
+        "2020-07-01 to 2021-06-30 detailed annual-report breach table",
+        "aggregate-only components within later reports where individual breaches are counted but not separately publicly described"
+      ],
+      "gap_reason": "The Commission has no court-style case register. Earlier standalone reports are not a complete public individual-case archive, and several report tables provide totals by licensee or theme rather than a public record for each underlying incident.",
+      "checked_at": "2026-08-27"
+    },
+    {
+      "source_family_id": "NT-UC-COMPLAINT-ROUTING",
+      "source_url": "https://utilicom.nt.gov.au/complaints/electricity-supply-complaints",
+      "public_date_scope": "Current complaint-routing information, accessed 2026-08-27",
+      "pages_or_years_checked": "Current electricity supply complaints page.",
+      "extraction_status": "aggregate-only",
+      "public_record_count": 0,
+      "indexed_enforcement_records": 0,
+      "indexed_technical_records": 0,
+      "curated_addition_records": 0,
+      "anonymous_or_aggregate_count": 0,
+      "gap_periods": [
+        "2006-01-01 to 2026-08-27"
+      ],
+      "gap_reason": "This is a routing and procedural page, not a public named complaint or enforcement-outcome register. It was not converted into violations.",
+      "checked_at": "2026-08-27"
+    },
+    {
+      "source_family_id": "NT-WORKSAFE-PROSECUTIONS",
+      "source_url": "https://worksafe.nt.gov.au/laws-and-compliance/prosecutions",
+      "public_date_scope": "Current public prosecution material through 2026-08-27",
+      "pages_or_years_checked": "Official prosecution landing page and targeted official search results for electrical and electricity terms.",
+      "extraction_status": "archive-gap",
+      "public_record_count": 0,
+      "indexed_enforcement_records": 0,
+      "indexed_technical_records": 0,
+      "curated_addition_records": 0,
+      "anonymous_or_aggregate_count": 0,
+      "gap_periods": [
+        "2006-01-01 to 2026-08-27"
+      ],
+      "gap_reason": "No complete NT WorkSafe electrical-sector case index was exposed in the accessible public pages during this pass. A zero result must not be read as proof of no prosecutions.",
+      "checked_at": "2026-08-27"
+    },
+    {
+      "source_family_id": "QLD-ELECTRICITY-AUTHORITY-REPORTING",
+      "source_url": "https://www.business.qld.gov.au/industries/mining-energy-water/energy/electricity/regulation-licensing/reporting-entities",
+      "public_date_scope": "2006-01-01 to 2026-08-27 statutory reporting context",
+      "pages_or_years_checked": "Current Queensland electricity-authority reporting-entity page and linked reporting context.",
+      "extraction_status": "aggregate-only",
+      "public_record_count": 0,
+      "indexed_enforcement_records": 0,
+      "indexed_technical_records": 0,
+      "curated_addition_records": 0,
+      "anonymous_or_aggregate_count": 0,
+      "gap_periods": [
+        "2006-01-01 to 2026-08-27"
+      ],
+      "gap_reason": "The authority reporting page identifies reporting entities and obligations, not a named enforcement or breach-case register. It cannot support invented individual violations.",
+      "checked_at": "2026-08-27"
+    },
+    {
+      "source_family_id": "QLD-ENVIRONMENT-ENFORCEMENT",
+      "source_url": "https://apps.des.qld.gov.au/public-register/search/enforcement.php",
+      "public_date_scope": "All accessible rows in the downloaded Queensland environmental-enforcement register through 2026-08-27, filtered to records expressly listing ERA 14 electricity generation",
+      "pages_or_years_checked": "Complete downloaded register workbook; duplicate lifecycle rows consolidated by Enforcement Reference. Every unique reference with an explicit electricity-generation activity was retained.",
+      "extraction_status": "archive-gap",
+      "public_record_count": 38,
+      "indexed_enforcement_records": 38,
+      "indexed_technical_records": 0,
+      "curated_addition_records": 0,
+      "anonymous_or_aggregate_count": 0,
+      "gap_periods": [
+        "Warnings, penalty infringement notices and prosecution outcomes are excluded from the Queensland online environmental enforcement register"
+      ],
+      "gap_reason": "The official portal expressly excludes warnings, penalty notices and prosecution outcomes. Completeness therefore means all accessible statutory actions in this register, not all environmental enforcement classes.",
+      "checked_at": "2026-08-27"
+    },
+    {
+      "source_family_id": "QLD-EWOQ-ANNUAL",
+      "source_url": "https://www.ewoq.com.au/about-us/final-orders",
+      "public_date_scope": "All electricity final orders displayed by EWOQ through 2026-08-27; page states no final orders have been needed since 2015",
+      "pages_or_years_checked": "Every listed electricity final order on the official final-orders page.",
+      "extraction_status": "complete-case-indexed",
+      "public_record_count": 11,
+      "indexed_enforcement_records": 11,
+      "indexed_technical_records": 0,
+      "curated_addition_records": 0,
+      "anonymous_or_aggregate_count": 0,
+      "gap_periods": [],
+      "gap_reason": "The review is complete for public EWOQ final orders, not for complaints, conciliated resolutions or anonymised case studies.",
+      "checked_at": "2026-08-27"
+    },
+    {
+      "source_family_id": "QLD-OWHSP-COURT-REPORTS",
+      "source_url": "https://www.owhsp.qld.gov.au/court-report",
+      "public_date_scope": "Electrical court reports reachable on the official current report archive through 2026-08-27",
+      "pages_or_years_checked": "All 47 downloaded candidate court-report pages were re-audited against the charged-conduct materiality rule. Forty-three Electrical Safety Act or direct electricity-hazard matters were retained; four generic WHS machinery or fall-protection matters were excluded. Each retained page was individually parsed for decision date, legislation and outcome.",
+      "extraction_status": "complete-case-indexed",
+      "public_record_count": 43,
+      "indexed_enforcement_records": 43,
+      "indexed_technical_records": 0,
+      "curated_addition_records": 0,
+      "anonymous_or_aggregate_count": 0,
+      "gap_periods": [],
+      "gap_reason": "The court reports are a complete accessible electrical candidate set for this pass after materiality filtering. Generic WHS machinery and fall-protection matters are excluded even where a machine was de-energised, an employer was solar-related, or the injured worker was an electrician. Many retained pages intentionally omit the defendant name, so the public case is indexed by official report URL and decision date rather than inferred identity.",
+      "checked_at": "2026-08-27"
+    },
+    {
+      "source_family_id": "QLD-QCA-ENERGY-REPORTING",
+      "source_url": "https://www.qca.org.au/wp-content/uploads/2022/02/register-of-breaches-energy-businesses-5.pdf",
+      "public_date_scope": "2008 to July 2025 in the current QCA Register of Breaches by Energy Businesses",
+      "pages_or_years_checked": "All three pages of the July 2025 official register; 20 electricity rows extracted.",
+      "extraction_status": "archive-gap",
+      "public_record_count": 20,
+      "indexed_enforcement_records": 20,
+      "indexed_technical_records": 0,
+      "curated_addition_records": 0,
+      "anonymous_or_aggregate_count": 0,
+      "gap_periods": [
+        "2006-01-01 to 2007-12-31",
+        "after July 2025 to 2026-08-27"
+      ],
+      "gap_reason": "The accessible current register starts with a 2008 event and is current only to July 2025. It covers the QCA code and Queensland-derogation remit, not all safety, licensing or market enforcement.",
+      "checked_at": "2026-08-27"
+    },
+    {
+      "source_family_id": "SA-EPA-COMPLIANCE",
+      "source_url": "https://www.epa.sa.gov.au/",
+      "public_date_scope": "2006-01 to 2026-08-27",
+      "pages_or_years_checked": "EPA landing pages, South Australian Government environment-licensing information and EPA public-register entry points searched for electricity, power station, wind, solar and battery enforcement outcomes",
+      "extraction_status": "archive-gap",
+      "public_record_count": 0,
+      "indexed_enforcement_records": 0,
+      "indexed_technical_records": 0,
+      "curated_addition_records": 0,
+      "anonymous_or_aggregate_count": 0,
+      "gap_periods": [
+        "2006-01 to 2026-08"
+      ],
+      "gap_reason": "No public chronological EPA SA prosecution, infringement, warning or order register filtered by electricity sector was located in the official source family. Licence and site documents are searchable through a public register but are not a case index; no case is asserted without an official identifiable enforcement outcome.",
+      "checked_at": "2026-08-27"
+    },
+    {
+      "source_family_id": "SA-ESCOSA-ENFORCEMENT",
+      "source_url": "https://www.escosa.sa.gov.au/approach/enforcement",
+      "public_date_scope": "2015-12 to 2019-10",
+      "pages_or_years_checked": "ESCOSA enforcement register and both linked electricity REES compliance projects",
+      "extraction_status": "archive-gap",
+      "public_record_count": 2,
+      "indexed_enforcement_records": 2,
+      "indexed_technical_records": 0,
+      "curated_addition_records": 0,
+      "anonymous_or_aggregate_count": 0,
+      "gap_periods": [
+        "2006-01 to 2015-11; 2019-11 to 2026-08"
+      ],
+      "gap_reason": "The public electricity warning-and-assurance register page exposes two in-period named electricity entries. It also links an April 2005 electricity warning outside this corpus period; no additional in-period named electricity entries are published on that register page.",
+      "checked_at": "2026-08-27"
+    },
+    {
+      "source_family_id": "SA-EWOSA-ANNUAL-REPORTS",
+      "source_url": "https://ewosa.com.au/publications/annual-reports",
+      "public_date_scope": "2006-07 to 2024-25",
+      "pages_or_years_checked": "All 19 annual-report links listed on the official EWOSA annual-reports index",
+      "extraction_status": "aggregate-only",
+      "public_record_count": 0,
+      "indexed_enforcement_records": 0,
+      "indexed_technical_records": 0,
+      "curated_addition_records": 0,
+      "anonymous_or_aggregate_count": 19,
+      "gap_periods": [
+        "2025-07 to 2026-08"
+      ],
+      "gap_reason": "The annual-report series is complete for 2006-07 to 2024-25. Energy case studies and systemic issues generally anonymise suppliers and customers; no individually identifiable electricity final ombudsman/systemic outcome was added. Anonymous complaint, case-study and systemic-issue counts are not converted into events.",
+      "checked_at": "2026-08-27"
+    },
+    {
+      "source_family_id": "SA-OTR-ANNUAL-REPORTS",
+      "source_url": "https://www.energymining.sa.gov.au/industry/regulatory-services/office-of-the-technical-regulator",
+      "public_date_scope": "2009-03 to 2025-07 public electrical-work notices; 2018-19 to 2024-25 annual-report index",
+      "pages_or_years_checked": "OTR public-notices page, including all six named electrician/electrical-work notices dated March 2009, September 2014, November 2017, October 2018, October 2019 and July 2025; Technical Regulator annual-report index and 2018-19, 2019-20, 2020-21, 2021-22, 2022-23, 2023-24 and 2024-25 report entries; 2024-25 named event section checked",
+      "extraction_status": "archive-gap",
+      "public_record_count": 8,
+      "indexed_enforcement_records": 6,
+      "indexed_technical_records": 2,
+      "curated_addition_records": 0,
+      "anonymous_or_aggregate_count": 0,
+      "gap_periods": [
+        "2006-01 to 2009-02; annual-report archive before 2018-19"
+      ],
+      "gap_reason": "The current OTR public-notices page lists six named electrical-work notices from March 2009 onward, but does not provide a completeness statement or a chronological archive before that notice. The current annual-report index starts at 2018-19. Reports include aggregate installation enforcement and incident statistics but generally do not expose names for individual directions, warnings, expiation notices, prosecutions or licence actions. Two named system events were extracted as technical records.",
+      "checked_at": "2026-08-27"
+    },
+    {
+      "source_family_id": "SA-SAFEWORK-PROSECUTIONS",
+      "source_url": "https://www.safework.sa.gov.au/enforcement/prosecutions/prosecutions",
+      "public_date_scope": "2018 to 2026-08-27 on current published judgement page",
+      "pages_or_years_checked": "Current SafeWork SA judgements page; electricity, powerline, electrical-work, DER, energy-storage and power-station items; linked dated conviction releases",
+      "extraction_status": "archive-gap",
+      "public_record_count": 11,
+      "indexed_enforcement_records": 11,
+      "indexed_technical_records": 0,
+      "curated_addition_records": 0,
+      "anonymous_or_aggregate_count": 3,
+      "gap_periods": [
+        "2006-01 to 2017-12"
+      ],
+      "gap_reason": "Current public judgement series exposes 2018 onward but has no indexed 2006-17 archive on the source family page. Three workers had anonymised 2024 high-risk-work licence suspensions; they are recorded as an aggregate, not invented as named cases.",
+      "checked_at": "2026-08-27"
+    },
+    {
+      "source_family_id": "TAS-ECONOMIC-REGULATOR",
+      "source_url": "https://www.economicregulator.tas.gov.au/about-us/annual-reports",
+      "public_date_scope": "2013-14 to 2024-25",
+      "pages_or_years_checked": "All 12 annual reports listed on the official annual-reports page, plus the electricity performance-report and licence pages",
+      "extraction_status": "archive-gap",
+      "public_record_count": 5,
+      "indexed_enforcement_records": 5,
+      "indexed_technical_records": 0,
+      "curated_addition_records": 0,
+      "anonymous_or_aggregate_count": 0,
+      "gap_periods": [
+        "2006-01 to 2013-06"
+      ],
+      "gap_reason": "The current annual-report index starts at 2013-14. Five individually named electricity compliance matters were found. Routine independent reviews, licence amendments and performance reports without an identified breach are not treated as violations.",
+      "checked_at": "2026-08-27"
+    },
+    {
+      "source_family_id": "TAS-ELECTRICITY-INCIDENTS",
+      "source_url": "https://www.economicregulator.tas.gov.au/electricity/reports/incident-reporting",
+      "public_date_scope": "2014-12 to 2024-12 identifiable incidents found in official reliability, annual and performance reports",
+      "pages_or_years_checked": "Incident-reporting page, 2016 network reliability review, 2020-21 and 2024-25 annual reports, 2024-25 Energy in Tasmania report and network-reliability page",
+      "extraction_status": "archive-gap",
+      "public_record_count": 7,
+      "indexed_enforcement_records": 0,
+      "indexed_technical_records": 7,
+      "curated_addition_records": 0,
+      "anonymous_or_aggregate_count": 0,
+      "gap_periods": [
+        "2006-01 to 2014-11; all years with non-public underlying incident reports"
+      ],
+      "gap_reason": "The Regulator states that significant incidents are published through Summary Reports and Energy in Tasmania reports, but the current incident page does not link a complete chronological Summary Report archive. Only individually identifiable technical incidents stated in accessible official reports are included. 2019-20 and 2020-21 annual reports explicitly state no full reports were received.",
+      "checked_at": "2026-08-27"
+    },
+    {
+      "source_family_id": "TAS-ENERGY-OMBUDSMAN-REPORTS",
+      "source_url": "https://www.ombudsman.tas.gov.au/publications",
+      "public_date_scope": "2018-19 to 2024-25 on current official page",
+      "pages_or_years_checked": "Current Ombudsman Tasmania publications page, annual-report links and energy-complaint service page",
+      "extraction_status": "archive-gap",
+      "public_record_count": 0,
+      "indexed_enforcement_records": 0,
+      "indexed_technical_records": 0,
+      "curated_addition_records": 0,
+      "anonymous_or_aggregate_count": 7,
+      "gap_periods": [
+        "2006-01 to 2018-06; 2025-07 to 2026-08"
+      ],
+      "gap_reason": "Earlier reports are directed to Libraries Tasmania and were not exposed as an indexed energy-case series on the source family page. Current annual reports provide aggregate Ombudsman Tasmania reporting, not named Energy Ombudsman final outcomes. A right-to-information decision involving Hydro Tasmania is excluded because it is not an Energy Ombudsman consumer outcome.",
+      "checked_at": "2026-08-27"
+    },
+    {
+      "source_family_id": "TAS-EPA-PROSECUTIONS",
+      "source_url": "https://epa.tas.gov.au/business-industry/compliance-and-enforcement/prosecutions-by-court-proceedings-and-infringement-notices",
+      "public_date_scope": "2006-01 to 2026-08-27",
+      "pages_or_years_checked": "EPA prosecution register PDF, covering court prosecutions since 1996; EPA compliance, regulatory-tools and instruments-register pages",
+      "extraction_status": "complete-case-indexed",
+      "public_record_count": 0,
+      "indexed_enforcement_records": 0,
+      "indexed_technical_records": 0,
+      "curated_addition_records": 0,
+      "anonymous_or_aggregate_count": 0,
+      "gap_periods": [
+        "None for published court-prosecution register; infringement, warning and active-instrument detail is not published as an electricity-filterable chronological case register"
+      ],
+      "gap_reason": "The published court-prosecution register was exhausted and contained no direct electricity generation, network, retail, DER, solar, BESS, electrical-work or electricity-infrastructure construction prosecution in the period. Aggregate enforcement tables and active instruments are not converted into cases without an individually identifiable electricity outcome.",
+      "checked_at": "2026-08-27"
+    },
+    {
+      "source_family_id": "TAS-WORKSAFE-PROSECUTIONS",
+      "source_url": "https://www.worksafe.tas.gov.au/topics/laws-and-compliance/enforcement-and-prosecutions/prosecutions/court-summaries",
+      "public_date_scope": "2020 to 2024 on current official court-summary archive",
+      "pages_or_years_checked": "2020, 2021, 2022, 2023 and 2024 court-summary pages; direct-electricity, electrical-work, powerline, solar, generation and network items filtered",
+      "extraction_status": "archive-gap",
+      "public_record_count": 2,
+      "indexed_enforcement_records": 2,
+      "indexed_technical_records": 0,
+      "curated_addition_records": 0,
+      "anonymous_or_aggregate_count": 0,
+      "gap_periods": [
+        "2006-01 to 2019-12; 2025-01 to 2026-08"
+      ],
+      "gap_reason": "The official court-summary archive currently begins at 2020 and ends at 2024. It states that some successful prosecutions with no conviction recorded are removed to comply with court orders; excluded/removed cases cannot be reconstructed as named events.",
+      "checked_at": "2026-08-27"
+    },
+    {
+      "source_family_id": "VIC-ENERGY-SAFE-PROSECUTIONS",
+      "source_url": "https://www.energysafe.vic.gov.au/about-us/regulatory-framework/enforcement/prosecutions",
+      "public_date_scope": "2021-07-01 to 2026-08-27",
+      "pages_or_years_checked": "Every accordion case on the current ESV prosecution page; gas-only matters excluded.",
+      "extraction_status": "archive-gap",
+      "public_record_count": 21,
+      "indexed_enforcement_records": 21,
+      "indexed_technical_records": 0,
+      "curated_addition_records": 0,
+      "anonymous_or_aggregate_count": 0,
+      "gap_periods": [
+        "2006-01-01 to 2021-06-30"
+      ],
+      "gap_reason": "The current prosecution page exposes outcomes only from July 2021. No complete older ESV case index was publicly linked.",
+      "checked_at": "2026-08-27"
+    },
+    {
+      "source_family_id": "VIC-EPA-PUBLIC-REGISTERS",
+      "source_url": "https://www.epa.vic.gov.au/public-registers",
+      "public_date_scope": "Public enforceable-undertaking and current-prosecution registers through 2026-08-27",
+      "pages_or_years_checked": "Public-register landing page, linked enforceable-undertaking register (including pre-2015 entries) and current prosecution register; strict electricity-sector materiality filter.",
+      "extraction_status": "archive-gap",
+      "public_record_count": 5,
+      "indexed_enforcement_records": 5,
+      "indexed_technical_records": 0,
+      "curated_addition_records": 0,
+      "anonymous_or_aggregate_count": 0,
+      "gap_periods": [
+        "Historic prosecution outcomes not retained in the current prosecution register"
+      ],
+      "gap_reason": "The undertaking register reaches earlier years, but the current prosecution register is not represented as a complete 2006-2026 prosecution archive.",
+      "checked_at": "2026-08-27"
+    },
+    {
+      "source_family_id": "VIC-ESC-COMPLIANCE-REPORTING",
+      "source_url": "https://www.esc.vic.gov.au/electricity-and-gas/victorian-energy-market-reporting-hub",
+      "public_date_scope": "Annual and quarterly public reporting available on the current hub",
+      "pages_or_years_checked": "Current reporting-hub publications and enforcement cross-links reviewed; individually named enforcement matters are indexed once under VIC-ESC-PENALTIES.",
+      "extraction_status": "aggregate-only",
+      "public_record_count": 0,
+      "indexed_enforcement_records": 0,
+      "indexed_technical_records": 0,
+      "curated_addition_records": 0,
+      "anonymous_or_aggregate_count": 0,
+      "gap_periods": [
+        "2006-01-01 to start of current report archive"
+      ],
+      "gap_reason": "Compliance reports are predominantly aggregate; named enforcement actions overlap the ESC enforcement register and were deduplicated there.",
+      "checked_at": "2026-08-27"
+    },
+    {
+      "source_family_id": "VIC-ESC-PENALTIES",
+      "source_url": "https://www.esc.vic.gov.au/register",
+      "public_date_scope": "2014-01-01 to 2026-08-27",
+      "pages_or_years_checked": "All six ESC enforcement-register result pages (page=0 through page=5); water rows excluded; pagination duplicates removed.",
+      "extraction_status": "archive-gap",
+      "public_record_count": 113,
+      "indexed_enforcement_records": 113,
+      "indexed_technical_records": 0,
+      "curated_addition_records": 1,
+      "anonymous_or_aggregate_count": 0,
+      "gap_periods": [
+        "2006-01-01 to 2013-12-31"
+      ],
+      "gap_reason": "The current official register states that it contains enforcement action since 2014; no earlier case index is exposed there.",
+      "checked_at": "2026-08-27"
+    },
+    {
+      "source_family_id": "VIC-ESV-DISCIPLINARY-OUTCOMES",
+      "source_url": "https://www.energysafe.vic.gov.au/about-us/regulatory-framework/enforcement/disciplinary-action-outcomes",
+      "public_date_scope": "2024-01-01 to 2026-08-27",
+      "pages_or_years_checked": "Every disciplinary accordion item on the current ESV page.",
+      "extraction_status": "archive-gap",
+      "public_record_count": 12,
+      "indexed_enforcement_records": 12,
+      "indexed_technical_records": 0,
+      "curated_addition_records": 0,
+      "anonymous_or_aggregate_count": 0,
+      "gap_periods": [
+        "2006-01-01 to 2023-12-31"
+      ],
+      "gap_reason": "The current official page exposes disciplinary outcomes only from 2024; no complete older public index was linked.",
+      "checked_at": "2026-08-27"
+    },
+    {
+      "source_family_id": "VIC-ESV-TECHNICAL-INVESTIGATIONS",
+      "source_url": "https://www.energysafe.vic.gov.au/about-us/our-organisation/reports/electrical-incident-and-technical-investigations-reports",
+      "public_date_scope": "Individually linked electrical incident reports retained on the current ESV page",
+      "pages_or_years_checked": "Every incident-specific report on the current page: Victorian Big Battery fire, six St Patrick's Day fire/electrical reports and the 2018 Australia Day outages report. Non-incident asset-practice and guidance reports excluded.",
+      "extraction_status": "archive-gap",
+      "public_record_count": 8,
+      "indexed_enforcement_records": 0,
+      "indexed_technical_records": 8,
+      "curated_addition_records": 0,
+      "anonymous_or_aggregate_count": 0,
+      "gap_periods": [
+        "2006-01-01 to 2017-12-31"
+      ],
+      "gap_reason": "The current ESV page does not expose an incident-report archive before 2018.",
+      "checked_at": "2026-08-27"
+    },
+    {
+      "source_family_id": "VIC-EWOV-SYSTEMIC-ISSUES",
+      "source_url": "https://www.ewov.com.au/reports/si-report-2025",
+      "public_date_scope": "Published annual/systemic reporting currently accessible",
+      "pages_or_years_checked": "Current EWOV systemic-issues report and linked public report archive reviewed for final named entity outcomes.",
+      "extraction_status": "aggregate-only",
+      "public_record_count": 0,
+      "indexed_enforcement_records": 0,
+      "indexed_technical_records": 0,
+      "curated_addition_records": 0,
+      "anonymous_or_aggregate_count": 0,
+      "gap_periods": [
+        "2006-01-01 to earliest currently linked report"
+      ],
+      "gap_reason": "EWOV public reports describe complaint/systemic trends primarily in aggregate or anonymised form; complaints and unnamed issues are not recorded as violations.",
+      "checked_at": "2026-08-27"
+    },
+    {
+      "source_family_id": "VIC-WORKSAFE-PROSECUTIONS",
+      "source_url": "https://www.worksafe.vic.gov.au/prosecution-result-summaries-enforceable-undertakings",
+      "public_date_scope": "Enforceable undertakings from 2007; prosecution summaries from 2012; through 2026-08-27",
+      "pages_or_years_checked": "All records returned by the official WorkSafe search-record API (record_type=prs, rows=2000), then strict electricity-sector relevance filtering.",
+      "extraction_status": "archive-gap",
+      "public_record_count": 84,
+      "indexed_enforcement_records": 84,
+      "indexed_technical_records": 0,
+      "curated_addition_records": 0,
+      "anonymous_or_aggregate_count": 0,
+      "gap_periods": [
+        "2006-01-01 to 2006-12-31 for undertakings; 2006-01-01 to 2011-12-31 for prosecution summaries"
+      ],
+      "gap_reason": "The official page states those respective public-series start dates.",
+      "checked_at": "2026-08-27"
+    },
+    {
+      "source_family_id": "WA-AEMO-WEM-SYSTEM-MANAGEMENT",
+      "source_url": "https://www.aemo.com.au/energy-systems/electricity/wholesale-electricity-market-wem/wem-events-and-reports/historical-wem-reports/power-system-incident-reports",
+      "public_date_scope": "2006-01-01 to 2026-08-27",
+      "pages_or_years_checked": "All individually linked historical WEM power-system incident reports on the official page; periodic aggregate System Management reports were not converted into incidents.",
+      "extraction_status": "archive-gap",
+      "public_record_count": 0,
+      "indexed_enforcement_records": 0,
+      "indexed_technical_records": 0,
+      "curated_addition_records": 0,
+      "anonymous_or_aggregate_count": 0,
+      "gap_periods": [
+        "Direct official index was blocked during this run and requires a browser-assisted snapshot"
+      ],
+      "gap_reason": "The source is not marked complete because the official index returned an access block. Technical incidents are not legal breach findings.",
+      "checked_at": "2026-08-27"
+    },
+    {
+      "source_family_id": "WA-BUILDING-ENERGY-SAFETY",
+      "source_url": "https://www.wa.gov.au/organisation/building-and-energy/stay-informed",
+      "public_date_scope": "Current six-year rolling publication window",
+      "pages_or_years_checked": "Building and Energy publication policy and safety information reviewed; case pages are counted once under WA-BUILDING-ENERGY-STATEMENTS.",
+      "extraction_status": "archive-gap",
+      "public_record_count": 0,
+      "indexed_enforcement_records": 0,
+      "indexed_technical_records": 0,
+      "curated_addition_records": 0,
+      "anonymous_or_aggregate_count": 0,
+      "gap_periods": [
+        "2006-01-01 to approximately 2020"
+      ],
+      "gap_reason": "The agency states that prosecution and disciplinary media statements remain online for six years; older safety/enforcement publications are not a complete retained case series.",
+      "checked_at": "2026-08-27"
+    },
+    {
+      "source_family_id": "WA-BUILDING-ENERGY-STATEMENTS",
+      "source_url": "https://www.wa.gov.au/government/document-collections/disciplinary-and-prosecutions-media-releases-electrical",
+      "public_date_scope": "Current six-year rolling publication window through 2026-08-27",
+      "pages_or_years_checked": "Every linked item in the Electrical and Network Operators prosecution/disciplinary collections.",
+      "extraction_status": "archive-gap",
+      "public_record_count": 57,
+      "indexed_enforcement_records": 57,
+      "indexed_technical_records": 0,
+      "curated_addition_records": 0,
+      "anonymous_or_aggregate_count": 0,
+      "gap_periods": [
+        "2006-01-01 to approximately 2020"
+      ],
+      "gap_reason": "The official stay-informed page states that these media statements remain online for six years; older cases are an acknowledged public-archive gap.",
+      "checked_at": "2026-08-27"
+    },
+    {
+      "source_family_id": "WA-DWER-ENVIRONMENTAL-ENFORCEMENT",
+      "source_url": "https://www.wa.gov.au/service/environment/business-and-community-assistance/environmental-enforcement",
+      "public_date_scope": "Current online notices, modified penalty notices and prosecution tables through 2026-08-27",
+      "pages_or_years_checked": "All entries exposed on the official environmental-enforcement page reviewed; only materially electricity-sector matters included.",
+      "extraction_status": "archive-gap",
+      "public_record_count": 0,
+      "indexed_enforcement_records": 0,
+      "indexed_technical_records": 0,
+      "curated_addition_records": 0,
+      "anonymous_or_aggregate_count": 0,
+      "gap_periods": [
+        "Periods/categories not retained on the current page across 2006-2026"
+      ],
+      "gap_reason": "The page is a current publication register and does not state that every historic enforcement matter since 2006 remains online.",
+      "checked_at": "2026-08-27"
+    },
+    {
+      "source_family_id": "WA-ERA-ELECTRICITY-LICENSING",
+      "source_url": "https://www.erawa.com.au/licensing/electricity-licensing/licence-holders",
+      "public_date_scope": "Official documents linked from current licence-holder pages through 2026-08-27",
+      "pages_or_years_checked": "All 61 current licence-holder pages and all linked official PDFs: explicit Type 1 breach/compliance-enforcement notices, audit/review reports and implementation plans. Audit findings are represented at report level.",
+      "extraction_status": "archive-gap",
+      "public_record_count": 54,
+      "indexed_enforcement_records": 50,
+      "indexed_technical_records": 4,
+      "curated_addition_records": 1,
+      "anonymous_or_aggregate_count": 0,
+      "gap_periods": [
+        "Former/expired licence-holder pages and older reports no longer linked from the current index"
+      ],
+      "gap_reason": "The current index is not a complete historic index of every former licensee or every report since 2006. The accessible linked series was exhausted; obligation findings are indexed at report level, not as one record per audit table row.",
+      "checked_at": "2026-08-27"
+    },
+    {
+      "source_family_id": "WA-ERA-PILBARA-DISPUTES",
+      "source_url": "https://www.erawa.com.au/access/electricity-access/pilbara-network/arbitration-and-disputes",
+      "public_date_scope": "2021-07-01 to 2025-06-30 published reporting years",
+      "pages_or_years_checked": "All annual Pilbara dispute reports currently listed (2021-22 through 2024-25).",
+      "extraction_status": "archive-gap",
+      "public_record_count": 0,
+      "indexed_enforcement_records": 0,
+      "indexed_technical_records": 0,
+      "curated_addition_records": 0,
+      "anonymous_or_aggregate_count": 0,
+      "gap_periods": [
+        "2006-01-01 to 2021-06-30"
+      ],
+      "gap_reason": "The Pilbara access regime/reporting series is not available for the earlier task period; listed annual reports record no disputes.",
+      "checked_at": "2026-08-27"
+    },
+    {
+      "source_family_id": "WA-ERA-WEM-REGISTERS",
+      "source_url": "https://www.erawa.com.au/markets/wholesale-electricity-market/compliance/wholesale-electricity-market-wem-public-registers",
+      "public_date_scope": "Current public breach and investigation registers through 2026-08-27",
+      "pages_or_years_checked": "All named non-compliance notices and all INV references on the current register; identities and clauses retained as withheld where ERA withholds them.",
+      "extraction_status": "archive-gap",
+      "public_record_count": 27,
+      "indexed_enforcement_records": 27,
+      "indexed_technical_records": 0,
+      "curated_addition_records": 2,
+      "anonymous_or_aggregate_count": 21,
+      "gap_periods": [
+        "2006-01-01 to earliest retained current register entry"
+      ],
+      "gap_reason": "The live register does not expose a complete historic investigation index for the whole period; participant identity may lawfully be withheld.",
+      "checked_at": "2026-08-27"
+    },
+    {
+      "source_family_id": "WA-EWOWA-REPORTS",
+      "source_url": "https://energyandwater.ombudsman.wa.gov.au/publications-resources",
+      "public_date_scope": "Current public annual-report/resource archive through 2026-08-27",
+      "pages_or_years_checked": "All currently listed annual reports and public resources reviewed for final named entity outcomes.",
+      "extraction_status": "aggregate-only",
+      "public_record_count": 0,
+      "indexed_enforcement_records": 0,
+      "indexed_technical_records": 0,
+      "curated_addition_records": 0,
+      "anonymous_or_aggregate_count": 0,
+      "gap_periods": [
+        "2006-01-01 to earliest currently listed annual report"
+      ],
+      "gap_reason": "Public ombudsman reporting is aggregate or anonymised; complaints are not violations and no named final electricity-sector enforcement outcome was identified.",
+      "checked_at": "2026-08-27"
+    },
+    {
+      "source_family_id": "WA-WORKSAFE-PROSECUTIONS",
+      "source_url": "https://prosecutions.commerce.wa.gov.au/",
+      "public_date_scope": "Successful legacy prosecutions from 2005 through current database, supplemented by current WHS prosecution page",
+      "pages_or_years_checked": "All 12 legacy database pages and every linked detail record; strict electricity-sector relevance filtering. Current WHS page reviewed separately.",
+      "extraction_status": "complete-series-indexed",
+      "public_record_count": 18,
+      "indexed_enforcement_records": 18,
+      "indexed_technical_records": 0,
+      "curated_addition_records": 0,
+      "anonymous_or_aggregate_count": 0,
+      "gap_periods": [],
+      "gap_reason": "The legacy database publishes successful prosecutions, not all investigations or acquittals; that is a public-series limitation rather than an extraction gap.",
+      "checked_at": "2026-08-27"
+    }
+  ]
+}

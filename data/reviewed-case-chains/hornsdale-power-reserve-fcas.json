@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0-research-review",
+  "chain_id": "hornsdale-power-reserve-fcas",
+  "retrieval_aliases": ["Hornsdale Power Reserve", "HPR FCAS", "2022 FCA 738"],
+  "canonical_event_id": "au-aer-2022-06-28-aer-v-hornsdale-power-reserve-pty-ltd-2022-fca-738",
+  "event_ids": [
+    "au-aer-2021-09-22-hornsdale-power-reserve-alleged-breaches-national-electricity-rules",
+    "au-aer-2022-06-28-aer-v-hornsdale-power-reserve-pty-ltd-2022-fca-738"
+  ],
+  "source_evidence_ids": [],
+  "undistributed_source_evidence_ids": ["source-span:2d6d5085270b1e560101bc3e00a19e61", "source-span:2ea0eba14c24349e2a859647b8a68a0e"],
+  "public_distribution_note": "Court text spans are omitted from this public edition. Event metadata is searchable; exact judgment wording and operative-source review require lawful local acquisition. This projection grants no current-law approval.",
+  "review_date": "2026-09-13",
+  "review_timezone": "Australia/Adelaide",
+  "review_type": "official-source-research-linkage-after-first-blind-diagnostic",
+  "authored_language": "en",
+  "legal_review_status": "research-only-not-current-law-approval",
+  "supports_current_law_drafting": false,
+  "current_law_release": false,
+  "operational_bindings_approved": false,
+  "independent_human_review_performed": false,
+  "complete_corpus_claim": false,
+  "canonical_records_modified": false,
+  "identity_limit": "Hornsdale Power Reserve battery FCAS case only. Do not conflate HWF 1 wind-farm protection-setting litigation or every use of the abbreviation HPR.",
+  "sources": [
+    {"url": "https://www.aer.gov.au/publications/reports/compliance/hornsdale-power-reserve-alleged-breaches-national-electricity-rules", "observed_on": "2026-09-13", "form": "official web text; direct HTTP capture was an access challenge and is rejected"},
+    {"url": "https://www.aer.gov.au/publications/reports/compliance/aer-v-hornsdale-power-reserve-pty-ltd-2022-fca-738", "observed_on": "2026-09-13", "form": "official web text; direct HTTP capture was an access challenge and is rejected"},
+    {"url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/2022/2022fca0738", "observed_on": "2026-09-13", "snapshot_path": "official-snapshots/f6/f6f63910c5b6bfddc6e2033c21177ff0c1dd6cef85d9125c38842719e6c2ef6a.html", "sha256": "f6f63910c5b6bfddc6e2033c21177ff0c1dd6cef85d9125c38842719e6c2ef6a", "locators_checked": ["case caption and legislation list", "Orders 1-6", "paragraphs 7-9"]}
+  ],
+  "chronology": [
+    {"date_from": "2019-07-23", "date_to": "2019-11-14", "kind": "historical-conduct", "note": "Historical FCAS capability, offers and dispatch conduct; retain the judgment's historical rule version and roles."},
+    {"date": "2021-09-22", "kind": "proceedings-allegations-only", "note": "Preserve the commencement record as allegations at that date; link it to the subsequent disposition."},
+    {"date": "2022-06-28", "kind": "final-court-order", "note": "Consent declarations under NER 3.8.7A(l), 4.9.8(a) and 4.9.8(d); A$900,000 penalty and A$30,000 agreed costs. Remaining claims dismissed."}
+  ],
+  "current_use_limits": [
+    "The judgment lists historical NER version 126 and Market Generator/Market Customer roles. Do not paste those roles or paragraph numbers into a current BDU manual without an operative-source comparison.",
+    "The historical penalty is the order in this proceeding, not a fixed tariff or maximum for future contraventions.",
+    "Current FCAS-specific clause and MASS review remains incomplete; the separate scoped dispatch binding does not fill that gap.",
+    "Selected official web and judgment checks are not a complete docket or subsequent-treatment audit. Check later treatment for a material use.",
+    "The whole judgment HTML is preserved. Derived HTML text has layout/encoding artefacts; confirm material wording against the original, not a reconstructed quotation."
+  ]
+}

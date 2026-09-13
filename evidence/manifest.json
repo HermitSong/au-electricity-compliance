@@ -1,0 +1,123 @@
+{
+  "schema_version": "1.0",
+  "packaged_on": "2026-09-13",
+  "scope": "Two AEMO historical PDFs and two derived page renders, not the full local archive",
+  "project_licence_applies": false,
+  "current_law_release": false,
+  "assets": [
+    {
+      "path": "evidence/originals/AEMO-Battery-Systems-Fact-Sheet-2024.pdf",
+      "sha256": "e5baebaaa4274938ccf262d7e82e4a2945f4003fe183cf6838d3f659a873eb9f",
+      "size_bytes": 388124,
+      "title": "Registering a Battery in the NEM Fact Sheet, version 3",
+      "issuer": "Australian Energy Market Operator (AEMO)",
+      "official_url": "https://www.aemo.com.au/-/media/files/electricity/nem/participant_information/registration/2024/registration-fact-sheet-nem-battery-systems.pdf",
+      "publication_date": "2024-06",
+      "retrieved_at": null,
+      "source_date_limit": "Original retrieval time was not recorded; do not infer it from this packaging date.",
+      "kind": "official-pdf",
+      "parent_sha256": null,
+      "page_number": null,
+      "licence_basis": "AEMO general copyright permission; not the project licence",
+      "permission_url": "https://www.aemo.com.au/privacy-and-legal-notices/copyright-permissions",
+      "attribution": "Source: Australian Energy Market Operator (AEMO). Original author and copyright holder.",
+      "permission_reviewed_on": "2026-09-13",
+      "redistribution_status": "reviewed-for-this-release",
+      "review_method": "AI-assisted publisher-policy, document-notice, full-text and page-render inspection; not a lawyer opinion",
+      "privacy_review": "Public technical publication; no private company input or browser chrome included",
+      "current_law_release": false,
+      "temporal_limit": "Historical guidance at the stated date; FY26 fees are not FY27 fees. Recheck operative rules and subsequent changes before reliance.",
+      "transformation": "Unmodified PDF bytes"
+    },
+    {
+      "path": "evidence/renders/AEMO-Battery-Systems-Fact-Sheet-2024-page-04.png",
+      "sha256": "5e307f895ad0fd9b7d957df44bc189eeaadd3743590f9df6cdabb4fa9a591f1a",
+      "size_bytes": 305377,
+      "title": "Registering a Battery in the NEM Fact Sheet, version 3",
+      "issuer": "Australian Energy Market Operator (AEMO)",
+      "official_url": "https://www.aemo.com.au/-/media/files/electricity/nem/participant_information/registration/2024/registration-fact-sheet-nem-battery-systems.pdf",
+      "publication_date": "2024-06",
+      "retrieved_at": null,
+      "source_date_limit": "Original retrieval time was not recorded; do not infer it from this packaging date.",
+      "kind": "page-render",
+      "parent_sha256": "e5baebaaa4274938ccf262d7e82e4a2945f4003fe183cf6838d3f659a873eb9f",
+      "page_number": 4,
+      "licence_basis": "AEMO general copyright permission; not the project licence",
+      "permission_url": "https://www.aemo.com.au/privacy-and-legal-notices/copyright-permissions",
+      "attribution": "Source: Australian Energy Market Operator (AEMO). Original author and copyright holder.",
+      "permission_reviewed_on": "2026-09-13",
+      "redistribution_status": "reviewed-for-this-release",
+      "review_method": "AI-assisted publisher-policy, document-notice, full-text and page-render inspection; not a lawyer opinion",
+      "privacy_review": "Public technical publication; no private company input or browser chrome included",
+      "current_law_release": false,
+      "temporal_limit": "Historical guidance at the stated date; FY26 fees are not FY27 fees. Recheck operative rules and subsequent changes before reliance.",
+      "transformation": "Page rendered to PNG; not a browser screenshot or a new official publication"
+    },
+    {
+      "path": "evidence/originals/AEMO-FY26-Connection-Registration-Fees.pdf",
+      "sha256": "19dd7c1a29226688edbcc2b4943a591c6584fb2b76a2df8c4fd50928154b9cf2",
+      "size_bytes": 188759,
+      "title": "Application and Registration fees for FY26",
+      "issuer": "Australian Energy Market Operator (AEMO)",
+      "official_url": "https://www.aemo.com.au/-/media/files/about_aemo/energy_market_budget_and_fees/2025/connection-and-registration-fees-fact-sheet.pdf",
+      "publication_date": "2025",
+      "retrieved_at": null,
+      "source_date_limit": "Original retrieval time was not recorded; do not infer it from this packaging date.",
+      "kind": "official-pdf",
+      "parent_sha256": null,
+      "page_number": null,
+      "licence_basis": "AEMO general copyright permission; not the project licence",
+      "permission_url": "https://www.aemo.com.au/privacy-and-legal-notices/copyright-permissions",
+      "attribution": "Source: Australian Energy Market Operator (AEMO). Original author and copyright holder.",
+      "permission_reviewed_on": "2026-09-13",
+      "redistribution_status": "reviewed-for-this-release",
+      "review_method": "AI-assisted publisher-policy, document-notice, full-text and page-render inspection; not a lawyer opinion",
+      "privacy_review": "Public technical publication; no private company input or browser chrome included",
+      "current_law_release": false,
+      "temporal_limit": "Historical guidance at the stated date; FY26 fees are not FY27 fees. Recheck operative rules and subsequent changes before reliance.",
+      "transformation": "Unmodified PDF bytes"
+    },
+    {
+      "path": "evidence/renders/AEMO-FY26-Connection-Registration-Fees-page-02.png",
+      "sha256": "edf0a92259c1ec3407a57201ba894774b2934d8755c7770ca166e86e878f6e80",
+      "size_bytes": 264119,
+      "title": "Application and Registration fees for FY26",
+      "issuer": "Australian Energy Market Operator (AEMO)",
+      "official_url": "https://www.aemo.com.au/-/media/files/about_aemo/energy_market_budget_and_fees/2025/connection-and-registration-fees-fact-sheet.pdf",
+      "publication_date": "2025",
+      "retrieved_at": null,
+      "source_date_limit": "Original retrieval time was not recorded; do not infer it from this packaging date.",
+      "kind": "page-render",
+      "parent_sha256": "19dd7c1a29226688edbcc2b4943a591c6584fb2b76a2df8c4fd50928154b9cf2",
+      "page_number": 2,
+      "licence_basis": "AEMO general copyright permission; not the project licence",
+      "permission_url": "https://www.aemo.com.au/privacy-and-legal-notices/copyright-permissions",
+      "attribution": "Source: Australian Energy Market Operator (AEMO). Original author and copyright holder.",
+      "permission_reviewed_on": "2026-09-13",
+      "redistribution_status": "reviewed-for-this-release",
+      "review_method": "AI-assisted publisher-policy, document-notice, full-text and page-render inspection; not a lawyer opinion",
+      "privacy_review": "Public technical publication; no private company input or browser chrome included",
+      "current_law_release": false,
+      "temporal_limit": "Historical guidance at the stated date; FY26 fees are not FY27 fees. Recheck operative rules and subsequent changes before reliance.",
+      "transformation": "Page rendered to PNG; not a browser screenshot or a new official publication"
+    }
+  ],
+  "unreleased_groups": [
+    {
+      "group": "Other official files, case snapshots, OCR, screenshots and source-original objects",
+      "reason": "Individual redistribution, attribution and privacy reviews incomplete; preserved locally with source references"
+    },
+    {
+      "group": "FY27 Budget and Fees complete PDF",
+      "reason": "Contains expressly attributed third-party artwork; further component-rights review needed for this release"
+    },
+    {
+      "group": "IESS Integrated Resource Provider Transition Plan complete PDF",
+      "reason": "Page 9 reproduces an AEMC figure; component-rights review remains incomplete"
+    },
+    {
+      "group": "Local search databases, recovery logs and private enterprise materials",
+      "reason": "Rebuildable or private; excluded from public upload"
+    }
+  ]
+}

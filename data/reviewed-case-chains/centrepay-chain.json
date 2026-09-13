@@ -1,0 +1,1372 @@
+{
+  "schema_version": "1.0-research-review",
+  "chain_id": "agl-centrepay-rule31",
+  "retrieval_aliases": [
+    "AGL Centrepay",
+    "AGL's Centrepay",
+    "2026 FCAFC 106"
+  ],
+  "canonical_event_id": "au-fcafc-2026-08-19-agl-centrepay-appeal",
+  "event_ids": [
+    "au-aer-2022-12-16-agl-alleged-breaches-overcharging-obligations",
+    "au-aer-2024-12-19-agl-breaches-national-energy-retail-rules",
+    "au-fcafc-2026-08-19-agl-centrepay-appeal"
+  ],
+  "review_date": "2026-09-06",
+  "review_timezone": "Australia/Adelaide",
+  "review_type": "evidence-bound-research-review",
+  "authored_language": "en",
+  "legal_review_status": "needs-independent-review",
+  "supports_current_law_drafting": false,
+  "current_law_release": false,
+  "operational_bindings_approved": false,
+  "independent_human_review_performed": false,
+  "independent_reviewer": null,
+  "complete_corpus_claim": false,
+  "canonical_records_modified": true,
+  "parent_integration": {
+    "integrated_on": "2026-09-06",
+    "status": "research-chain-integrated-not-legally-approved",
+    "changes": [
+      "Corrected appellate-event status to appeal-allowed",
+      "Clarified scope of displaced December orders",
+      "Preserved 2022 event-time allegations posture with later disposition",
+      "Linked three canonical events to case lookup and frozen answer packets"
+    ],
+    "liability_judgment_node": "present-in-research-chronology; no-new-canonical-event-created",
+    "parent_captures": [
+      {
+        "source_id": "LJ",
+        "snapshot_path": "source-originals/objects/f2/f2723b784f595db9f6b3a124535388e6335aed802575cd67b4b38f0fc277fc6c.html",
+        "sha256": "f2723b784f595db9f6b3a124535388e6335aed802575cd67b4b38f0fc277fc6c",
+        "representation": "browser-rendered-html-and-text; linked-flowchart-not-separately-archived"
+      },
+      {
+        "source_id": "PJ",
+        "snapshot_path": "source-originals/objects/7f/7f2bbc2aadbfd44cab199ad8c93ca0f5f55dfac0d03e6b03196a8d235d89af95.html",
+        "sha256": "7f2bbc2aadbfd44cab199ad8c93ca0f5f55dfac0d03e6b03196a8d235d89af95",
+        "representation": "browser-rendered-html-and-text"
+      }
+    ],
+    "original_word_acquisition": "First Court-linked Word route deferred after robots.txt returned HTTP 403; no further routes attempted. Three observed Word links retained as gaps.",
+    "review_findings_note": "The dated metadata findings below preserve the pre-integration observations; changes above do not resolve the remaining substantive gaps.",
+    "independent_human_legal_review": false
+  },
+  "source_acquisition_and_ocr_owner": "parent",
+  "new_source_artifacts_written": true,
+  "read_only_kb_root": ".",
+  "stage_root": "<local-only-research-stage>",
+  "report_path": "review/results/centrepay-temporal-review-2026-09-06.md",
+  "scope_note": "Research assertions integrated by the parent as stated in parent_integration. Source observation and integration do not approve legal or operational use. Later docket activity and source discrepancies remain unresolved.",
+  "sources": {
+    "AJ": {
+      "title": "AGL Retail Energy Limited v Australian Energy Regulator [2026] FCAFC 106",
+      "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/full/2026/2026fcafc0106",
+      "publisher": "Federal Court of Australia",
+      "source_form": "official-court-html-and-existing-kb-browser-rendered-text",
+      "observed_on": "2026-09-06",
+      "judgment_date": "2026-08-19",
+      "file_number": "VID 115 of 2025",
+      "judges": [
+        "Markovic J",
+        "McEvoy J",
+        "Younan J"
+      ],
+      "paragraph_count_stated": 186,
+      "archived_text_path": "source-originals/objects/e0/e0c3772c3dbf9e8718ff65c0047e5e7cc508708d3032f40f394ee2dd7a57687b.txt",
+      "archived_text_sha256": "e0c3772c3dbf9e8718ff65c0047e5e7cc508708d3032f40f394ee2dd7a57687b",
+      "archive_hash_recalculated": true,
+      "archive_capture_record": "source-originals/recovery-inapp.jsonl:38",
+      "archive_retrieved_at": "2026-09-05T09:19:39.109Z",
+      "archive_representation": "browser-rendered-text-with-viewport-screenshot",
+      "archive_extraction_status": "extracted-unreviewed",
+      "archive_completeness_status": "browser-rendering-completeness-unreviewed",
+      "targeted_live_comparison": [
+        "caption and case number",
+        "judgment date",
+        "orders 1-8",
+        "[2]",
+        "[7]",
+        "[17]",
+        "[125]",
+        "[152]-[158]",
+        "[178]-[186]"
+      ],
+      "comparison_result": "Checked propositions and numbered orders agree; no byte-for-byte or whole-document certification.",
+      "original_word_or_sealed_order_acquired_here": false
+    },
+    "LJ": {
+      "title": "Australian Energy Regulator v AGL Retail Energy Limited [2024] FCA 969",
+      "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/2024/2024fca0969",
+      "publisher": "Federal Court of Australia",
+      "source_form": "official-court-html",
+      "observed_on": "2026-09-06",
+      "judgment_date": "2024-08-23",
+      "file_number": "VID 749 of 2022",
+      "judge": "Downes J",
+      "paragraph_count_stated": 171,
+      "access_note": "Initial open returned an internal error; the AER's published judgment link subsequently returned readable official HTML."
+    },
+    "PJ": {
+      "title": "Australian Energy Regulator v AGL Retail Energy Limited (Relief Hearing) [2024] FCA 1500",
+      "url": "https://www.judgments.fedcourt.gov.au/judgments/Judgments/fca/single/2024/2024fca1500",
+      "publisher": "Federal Court of Australia",
+      "source_form": "official-court-html",
+      "observed_on": "2026-09-06",
+      "judgment_date": "2024-12-19",
+      "file_number": "VID 749 of 2022",
+      "judge": "Downes J",
+      "access_note": "Initial open returned an internal error; the AER's published judgment link subsequently returned readable official HTML."
+    },
+    "AER-START": {
+      "title": "AGL: alleged breaches of the overcharging obligations",
+      "url": "https://www.aer.gov.au/publications/reports/compliance/agl-alleged-breaches-overcharging-obligations",
+      "publisher": "Australian Energy Regulator",
+      "source_form": "official-regulator-html-and-existing-kb-browser-text",
+      "observed_on": "2026-09-06",
+      "publication_date_stated": "2022-12-16",
+      "archived_text_path": "source-originals/objects/59/5917927fe7478f85de86524e2265a1148a8e9be9bf26a7064eea6cf0a7cfc6dc.json"
+    },
+    "AER-LJ": {
+      "title": "Court finds AGL breached overcharging rules in relation to Centrepay payments",
+      "url": "https://www.aer.gov.au/news/articles/news-releases/court-finds-agl-breached-overcharging-rules-relation-centrepay-payments",
+      "publisher": "Australian Energy Regulator",
+      "source_form": "official-regulator-html",
+      "observed_on": "2026-09-06",
+      "publication_date_stated": "2024-08-23"
+    },
+    "AER-PJ": {
+      "title": "AGL: Breaches of the National Energy Retail Rules",
+      "url": "https://www.aer.gov.au/publications/reports/compliance/agl-breaches-national-energy-retail-rules",
+      "publisher": "Australian Energy Regulator",
+      "source_form": "official-regulator-html-and-existing-kb-browser-text",
+      "observed_on": "2026-09-06",
+      "publication_date_stated": "2024-12-19",
+      "archived_text_path": "source-originals/objects/f9/f9455744ec1b8853316ac210bcae043a9b7f17b8335133d49b10fcbf2619a32c.json"
+    },
+    "AER-APPEAL": {
+      "title": "Statement - AGL appeal of Centrepay decision",
+      "url": "https://www.aer.gov.au/news/articles/news-releases/statement-agl-appeal-centrepay-decision-0",
+      "publisher": "Australian Energy Regulator",
+      "source_form": "official-regulator-html",
+      "observed_on": "2026-09-06",
+      "publication_date_stated": "2025-03-03"
+    },
+    "AER-AJ": {
+      "title": "Statement from the AER on Full Federal Court decision to uphold AGL appeal",
+      "url": "https://www.aer.gov.au/news/articles/news-releases/statement-aer-full-federal-court-decision-uphold-agl-appeal",
+      "publisher": "Australian Energy Regulator",
+      "source_form": "official-regulator-html",
+      "observed_on": "2026-09-06",
+      "publication_date_stated": "2026-08-19"
+    },
+    "AER-JULY": {
+      "title": "Statement: AER overseeing Centrepay refunds",
+      "url": "https://www.aer.gov.au/news/articles/news-releases/statement-aer-overseeing-centrepay-refunds",
+      "publisher": "Australian Energy Regulator",
+      "source_form": "official-regulator-search-extract",
+      "observed_on": "2026-09-06",
+      "publication_date_stated": "2024-07-19"
+    },
+    "DOCKET": {
+      "title": "VID115/2025 - Applications for file",
+      "url": "https://www.comcourts.gov.au/file/Federal/P/VID115/2025/actions",
+      "publisher": "Federal Court of Australia / Federal Law Search",
+      "source_form": "official-docket-live-browser-metadata",
+      "observed_on": "2026-09-06",
+      "sections_opened": [
+        "File details",
+        "Existing applications",
+        "CROSS APPEAL > Documents Filed",
+        "APPEALS AND RELATED > Documents Filed"
+      ],
+      "filed_document_contents_inspected": false
+    },
+    "ORDERS": {
+      "title": "VID115/2025 - List of orders",
+      "url": "https://www.comcourts.gov.au/file/FEDERAL/P/VID115/2025/order_list",
+      "publisher": "Federal Court of Australia / Federal Law Search",
+      "source_form": "official-docket-live-browser-metadata",
+      "observed_on": "2026-09-06",
+      "latest_displayed_order_date": "2026-08-19",
+      "latest_displayed_order_document_url": "https://www.comcourts.gov.au/file/Federal/P/VID115/2025/4006307/event/33060410/document/2855492",
+      "linked_order_document_acquired": false
+    },
+    "NERR30": {
+      "title": "National Energy Retail Rules version 30 - rule 31",
+      "url": "https://energy-rules.aemc.gov.au/nerr/354/45215#rule_31",
+      "summary_url": "https://energy-rules.aemc.gov.au/nerr/354",
+      "inspected_part_url": "https://energy-rules.aemc.gov.au/nerr/354/45191#2",
+      "publisher": "Australian Energy Market Commission",
+      "source_form": "official-rule-live-dynamic-browser-text",
+      "observed_on": "2026-09-06",
+      "version": 30,
+      "compilation_valid_from": "2021-10-21",
+      "compilation_valid_to": "2022-03-02",
+      "covers_entire_conduct_period": false
+    },
+    "NERR51": {
+      "title": "National Energy Retail Rules version 51 - rule 31",
+      "url": "https://energy-rules.aemc.gov.au/nerr/817/899095#rule_31",
+      "summary_url": "https://energy-rules.aemc.gov.au/nerr/817",
+      "inspected_part_url": "https://energy-rules.aemc.gov.au/nerr/817/899070#2",
+      "publisher": "Australian Energy Market Commission",
+      "source_form": "official-rule-live-dynamic-browser-text",
+      "observed_on": "2026-09-06",
+      "version": 51,
+      "compilation_valid_from": "2026-07-01",
+      "compilation_valid_to": null,
+      "current_selector_observed": true,
+      "null_end_date_meaning": "No end date established; not a promise of indefinite validity."
+    },
+    "AER-THRESHOLD": {
+      "title": "Other retail roles - Overcharging threshold",
+      "url": "https://www.aer.gov.au/other-retail-roles",
+      "publisher": "Australian Energy Regulator",
+      "source_form": "official-regulator-search-extract",
+      "observed_on": "2026-09-06"
+    },
+    "FLS-LIMITS": {
+      "title": "Federal Law Search disclaimer",
+      "url": "https://www.comcourts.gov.au/public/esearch/disclaimer",
+      "publisher": "Federal Law Search",
+      "source_form": "official-docket-explanatory-html",
+      "observed_on": "2026-09-06"
+    },
+    "HCA-FCA": {
+      "title": "Special leave applications to the High Court",
+      "url": "https://www.fedcourt.gov.au/digital-law-library/judgments/hca-special-leave",
+      "publisher": "Federal Court of Australia",
+      "source_form": "official-court-status-list-html",
+      "observed_on": "2026-09-06",
+      "completeness_and_currency_disclaimed_by_publisher": true
+    },
+    "HCA": {
+      "title": "Special Leave",
+      "url": "https://www.hcourt.gov.au/cases-and-judgments/special-leave",
+      "publisher": "High Court of Australia",
+      "source_form": "official-court-html-index",
+      "observed_on": "2026-09-06",
+      "linked_results_url": "https://www.hcourt.gov.au/cases-and-judgments/special-leave/results",
+      "linked_results_access": "403-forbidden-not-bypassed"
+    }
+  },
+  "timeline": [
+    {
+      "node_id": "background-2013",
+      "event_date": "2013-06-14",
+      "date_type": "historical-notification",
+      "claim_class": "court-recorded-background",
+      "statement": "Services Australia wrote to AGL Sales about Centrepay deductions after service cessation; this predates the relevant conduct interval.",
+      "evidence": [
+        {
+          "source_id": "LJ",
+          "pinpoint": "[60]"
+        },
+        {
+          "source_id": "AJ",
+          "pinpoint": "[130]"
+        }
+      ]
+    },
+    {
+      "node_id": "conduct-relevant-period",
+      "period_start": "2016-12-23",
+      "period_end": "2021-11-02",
+      "date_type": "broader-relevant-period",
+      "claim_class": "court-recorded-background-with-displaced-legal-characterisation",
+      "affected_customers": 483,
+      "statement": "Payments continued after service cessation, final billing and payment of energy debts. Receipt facts must be separated from the subsequently displaced rule 31 characterisation.",
+      "evidence": [
+        {
+          "source_id": "LJ",
+          "pinpoint": "[2], [24]-[33]"
+        },
+        {
+          "source_id": "AJ",
+          "pinpoint": "[2], [10]-[13], [184]"
+        }
+      ]
+    },
+    {
+      "node_id": "declared-breach-period",
+      "period_start": "2017-01-09",
+      "period_end": "2021-10-28",
+      "date_type": "outer-dates-of-first-instance-declared-contraventions",
+      "claim_class": "first-instance-holding-set-aside",
+      "statement": "Separate from the broader relevant period; individual entity periods are in first_instance_relief.",
+      "evidence": [
+        {
+          "source_id": "PJ",
+          "pinpoint": "declaration 1(d)-(g), declaration 2"
+        },
+        {
+          "source_id": "AER-PJ",
+          "pinpoint": "findings list"
+        }
+      ]
+    },
+    {
+      "node_id": "remediation-2020",
+      "date_type": "source-qualified-background-dates",
+      "claim_class": "first-instance-record-of-background-and-party-position",
+      "dates": [
+        {
+          "date": "2020-05-14",
+          "qualifier": "by",
+          "event": "AGL's own awareness case for a class of affected customers"
+        },
+        {
+          "date": "2020-07-24",
+          "qualifier": "on",
+          "event": "notification to Services Australia"
+        },
+        {
+          "date": "2020-08-19",
+          "qualifier": "around",
+          "event": "commencement of customer letter campaign"
+        }
+      ],
+      "legal_limit": "These do not resolve the legal awareness grounds, which the Full Court did not decide.",
+      "evidence": [
+        {
+          "source_id": "PJ",
+          "pinpoint": "[65]"
+        },
+        {
+          "source_id": "AJ",
+          "pinpoint": "[7], [131]-[132]"
+        }
+      ]
+    },
+    {
+      "node_id": "proceedings-instituted",
+      "canonical_event_id": "au-aer-2022-12-16-agl-alleged-breaches-overcharging-obligations",
+      "event_date": "2022-12-16",
+      "publication_date": "2022-12-16",
+      "date_type": "regulator-reported-institution-date",
+      "claim_class": "regulator-reported-procedural-fact",
+      "status_at_event": "allegations-only",
+      "statement": "AER instituted the Centrepay proceeding; civil penalties, declarations, a compliance program and costs were sought.",
+      "date_conflict_id": "institution-date",
+      "evidence": [
+        {
+          "source_id": "AER-START",
+          "pinpoint": "release date, opening paragraph and relief sought"
+        },
+        {
+          "source_id": "AER-AJ",
+          "pinpoint": "Court proceedings"
+        }
+      ]
+    },
+    {
+      "node_id": "liability-hearing",
+      "period_start": "2024-06-03",
+      "period_end": "2024-06-06",
+      "date_type": "hearing",
+      "claim_class": "judicial-procedural-fact",
+      "evidence": [
+        {
+          "source_id": "LJ",
+          "pinpoint": "header: Date of hearing"
+        }
+      ]
+    },
+    {
+      "node_id": "liability-judgment",
+      "canonical_event_id": null,
+      "event_date": "2024-08-23",
+      "date_type": "liability-judgment",
+      "claim_class": "first-instance-holding-set-aside",
+      "citation": "[2024] FCA 969",
+      "statement": "Rule 31(1)-(3) and section 273(1) liability found; orders directed preparation of minutes and case management. Monetary relief was not imposed on this date.",
+      "monetary_penalty_imposed_at_this_node": false,
+      "evidence": [
+        {
+          "source_id": "LJ",
+          "pinpoint": "[163]-[171], orders 1-3"
+        },
+        {
+          "source_id": "AJ",
+          "pinpoint": "[1]-[3]"
+        }
+      ]
+    },
+    {
+      "node_id": "relief-judgment",
+      "canonical_event_id": "au-aer-2024-12-19-agl-breaches-national-energy-retail-rules",
+      "event_date": "2024-12-19",
+      "date_type": "declarations-and-relief",
+      "claim_class": "first-instance-orders-set-aside",
+      "citation": "[2024] FCA 1500",
+      "statement": "Declarations, AUD 25 million, systems and compliance-program orders, and costs; all displaced by AJ order 5.",
+      "evidence": [
+        {
+          "source_id": "PJ",
+          "pinpoint": "declarations 1-2; orders 3-6"
+        },
+        {
+          "source_id": "AJ",
+          "pinpoint": "order 5"
+        }
+      ]
+    },
+    {
+      "node_id": "penalty-paid",
+      "event_date": "2025-01-16",
+      "date_type": "payment-as-recorded-in-appellate-order",
+      "claim_class": "judicially-recorded-fact",
+      "amount_aud": 25000000,
+      "evidence": [
+        {
+          "source_id": "AJ",
+          "pinpoint": "order 6"
+        }
+      ]
+    },
+    {
+      "node_id": "appeal-filed",
+      "event_date": "2025-02-07",
+      "date_type": "notice-of-appeal-filing",
+      "claim_class": "judicial-procedural-fact-corroborated-by-docket",
+      "evidence": [
+        {
+          "source_id": "AJ",
+          "pinpoint": "[1], order 1(a)"
+        },
+        {
+          "source_id": "DOCKET",
+          "pinpoint": "APPEALS AND RELATED > Documents Filed: Notice of Appeal, 7 February 2025, 12:16"
+        }
+      ]
+    },
+    {
+      "node_id": "cross-appeal-filed",
+      "event_date": null,
+      "date_type": "unresolved-source-specific-filing-dates",
+      "claim_class": "source-conflict",
+      "conflict_id": "cross-appeal-date",
+      "evidence": [
+        {
+          "source_id": "AJ",
+          "pinpoint": "[6]: 5 March 2025"
+        },
+        {
+          "source_id": "DOCKET",
+          "pinpoint": "CROSS APPEAL > Documents Filed: 28 February 2025, 14:40"
+        },
+        {
+          "source_id": "AER-APPEAL",
+          "pinpoint": "issue date 3 March 2025 and statement that cross appeal and notice of contention have been filed"
+        }
+      ]
+    },
+    {
+      "node_id": "contingent-further-evidence-application",
+      "event_date": null,
+      "date_type": "unresolved-source-specific-filing-dates",
+      "claim_class": "source-conflict",
+      "conflict_id": "interlocutory-2025-date",
+      "evidence": [
+        {
+          "source_id": "AJ",
+          "pinpoint": "order 4; [7]: 5 August 2025"
+        },
+        {
+          "source_id": "DOCKET",
+          "pinpoint": "CROSS APPEAL > Documents Filed: interlocutory application and affidavit, 1 August 2025, 15:34"
+        }
+      ]
+    },
+    {
+      "node_id": "appeal-hearing",
+      "period_start": "2025-11-27",
+      "period_end": "2025-11-28",
+      "date_type": "appeal-hearing",
+      "claim_class": "judicial-procedural-fact",
+      "evidence": [
+        {
+          "source_id": "AJ",
+          "pinpoint": "header: Date of hearing"
+        },
+        {
+          "source_id": "ORDERS",
+          "pinpoint": "28 November 2025: Adjourned - Judgment Reserved"
+        }
+      ]
+    },
+    {
+      "node_id": "appeal-judgment",
+      "canonical_event_id": "au-fcafc-2026-08-19-agl-centrepay-appeal",
+      "event_date": "2026-08-19",
+      "date_type": "appellate-judgment-and-orders",
+      "claim_class": "appellate-holding-and-order",
+      "status_at_event": "appeal-allowed-cross-appeal-dismissed",
+      "statement": "All December orders set aside, original proceeding dismissed, repayment with interest and costs ordered, with provision for appeal-costs submissions.",
+      "evidence": [
+        {
+          "source_id": "AJ",
+          "pinpoint": "orders 2-8; [184]-[186]"
+        }
+      ]
+    },
+    {
+      "node_id": "aer-post-judgment-submissions",
+      "event_date": "2026-08-26",
+      "time_as_displayed": "12:37",
+      "date_type": "docket-filing",
+      "claim_class": "administrative-observation",
+      "document_title": "Submissions",
+      "filed_by": "Australian Energy Regulator",
+      "contents_verified": false,
+      "evidence": [
+        {
+          "source_id": "DOCKET",
+          "pinpoint": "APPEALS AND RELATED > Documents Filed"
+        }
+      ]
+    },
+    {
+      "node_id": "agl-post-judgment-submissions",
+      "event_date": "2026-09-02",
+      "time_as_displayed": "09:36",
+      "date_type": "docket-filing",
+      "claim_class": "administrative-observation",
+      "document_title": "Submissions",
+      "filed_by": "AGL Retail Energy Limited (ACN 074 839 464)",
+      "contents_verified": false,
+      "evidence": [
+        {
+          "source_id": "DOCKET",
+          "pinpoint": "APPEALS AND RELATED > Documents Filed"
+        }
+      ]
+    },
+    {
+      "node_id": "aer-post-judgment-application",
+      "event_date": "2026-09-02",
+      "time_as_displayed": "16:04",
+      "date_type": "docket-filing",
+      "claim_class": "administrative-observation",
+      "document_title": "Interlocutory Application",
+      "filed_by": "Australian Energy Regulator",
+      "contents_verified": false,
+      "relief_sought": null,
+      "disposition": null,
+      "must_not_infer": [
+        "stay granted",
+        "High Court application filed",
+        "appeal reopened",
+        "costs-only application"
+      ],
+      "evidence": [
+        {
+          "source_id": "DOCKET",
+          "pinpoint": "APPEALS AND RELATED > Documents Filed"
+        }
+      ]
+    }
+  ],
+  "first_instance_relief": {
+    "legal_effect_at_review": "set-aside-by-AJ-order-5",
+    "declared_breach_counts_total": {
+      "r31_1": 3531,
+      "r31_2": 3531,
+      "r31_3": 9094,
+      "r31_all": 16156
+    },
+    "penalty_total_aud": 25000000,
+    "penalty_allocation_basis": "PJ order 3 allocates penalty to rule 31 contraventions; no separate section 273 monetary allocation in that order.",
+    "entities": [
+      {
+        "name": "AGL Retail Energy Limited",
+        "declared_period_start": "2020-09-03",
+        "declared_period_end": "2021-03-04",
+        "r31_1": 14,
+        "r31_2": 14,
+        "r31_3": 7,
+        "penalty_aud": 54160,
+        "evidence": [
+          {
+            "source_id": "PJ",
+            "pinpoint": "declaration 1(d); order 3(a)"
+          }
+        ]
+      },
+      {
+        "name": "AGL Sales Pty Ltd",
+        "declared_period_start": "2017-01-09",
+        "declared_period_end": "2021-10-28",
+        "r31_1": 2547,
+        "r31_2": 2547,
+        "r31_3": 5679,
+        "penalty_aud": 16670277,
+        "evidence": [
+          {
+            "source_id": "PJ",
+            "pinpoint": "declaration 1(e); order 3(b)"
+          }
+        ]
+      },
+      {
+        "name": "AGL South Australia Pty Ltd",
+        "declared_period_start": "2017-04-11",
+        "declared_period_end": "2021-07-06",
+        "r31_1": 931,
+        "r31_2": 931,
+        "r31_3": 3106,
+        "penalty_aud": 7687546,
+        "evidence": [
+          {
+            "source_id": "PJ",
+            "pinpoint": "declaration 1(f); order 3(c)"
+          }
+        ]
+      },
+      {
+        "name": "Powerdirect Pty Ltd",
+        "declared_period_start": "2018-05-28",
+        "declared_period_end": "2020-12-24",
+        "r31_1": 39,
+        "r31_2": 39,
+        "r31_3": 302,
+        "penalty_aud": 588017,
+        "evidence": [
+          {
+            "source_id": "PJ",
+            "pinpoint": "declaration 1(g); order 3(d)"
+          }
+        ]
+      }
+    ],
+    "relief_items": [
+      {
+        "item": "rule 31 declarations",
+        "original_locator": "PJ declaration 1",
+        "set_aside_by": "AJ order 5"
+      },
+      {
+        "item": "section 273(1) declaration",
+        "original_locator": "PJ declaration 2",
+        "set_aside_by": "AJ order 5"
+      },
+      {
+        "item": "AUD 25 million penalty",
+        "original_locator": "PJ order 3",
+        "set_aside_by": "AJ order 5"
+      },
+      {
+        "item": "automatic detection and employee escalation for inactive-customer deductions, first three respondents",
+        "original_locator": "PJ order 4",
+        "set_aside_by": "AJ order 5"
+      },
+      {
+        "item": "compliance/training program, independent-review requirements, compliance officer and reporting, first three respondents",
+        "original_locator": "PJ order 5(a)-(k)",
+        "set_aside_by": "AJ order 5"
+      },
+      {
+        "item": "AGL to pay AER's costs",
+        "original_locator": "PJ order 6",
+        "set_aside_by": "AJ order 5",
+        "replacement": "AJ order 5(b): AER to pay respondents' costs below"
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "PJ",
+        "pinpoint": "declarations 1-2; orders 3-6"
+      },
+      {
+        "source_id": "AJ",
+        "pinpoint": "order 5"
+      }
+    ]
+  },
+  "appellate_orders": [
+    {
+      "number": "1(a)-(b)",
+      "effect": "Leave to rely on grounds 4-5 and withdraw the specified small-customer admission in the amended defence.",
+      "evidence": [
+        {
+          "source_id": "AJ",
+          "pinpoint": "order 1"
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "effect": "Appeal allowed.",
+      "evidence": [
+        {
+          "source_id": "AJ",
+          "pinpoint": "order 2"
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "effect": "Cross-appeal dismissed.",
+      "evidence": [
+        {
+          "source_id": "AJ",
+          "pinpoint": "order 3"
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "effect": "Respondent's interlocutory application identified by the Court as filed 5 August 2025 dismissed.",
+      "evidence": [
+        {
+          "source_id": "AJ",
+          "pinpoint": "order 4"
+        }
+      ]
+    },
+    {
+      "number": "5(a)-(b)",
+      "effect": "All primary orders dated 19 December 2024 set aside; original proceeding dismissed; AER to pay respondents' costs below.",
+      "evidence": [
+        {
+          "source_id": "AJ",
+          "pinpoint": "order 5"
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "effect": "AER to repay AUD 25 million paid on 16 January 2025 within 28 days, with interest under Federal Court of Australia Act 1976 sections 51A and 52.",
+      "performance_verified": false,
+      "stay_or_variation_status": "unverified",
+      "evidence": [
+        {
+          "source_id": "AJ",
+          "pinpoint": "order 6"
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "effect": "AER to pay appeal costs as agreed or taxed, subject to order 8.",
+      "evidence": [
+        {
+          "source_id": "AJ",
+          "pinpoint": "order 7"
+        }
+      ]
+    },
+    {
+      "number": "8(a)-(c)",
+      "effect": "Submissions to vary order 7 permitted by 26 August 2026, replies by 2 September 2026; determination on the papers.",
+      "later_disposition_verified": false,
+      "evidence": [
+        {
+          "source_id": "AJ",
+          "pinpoint": "order 8"
+        }
+      ]
+    }
+  ],
+  "holdings_and_limits": [
+    {
+      "id": "overcharge-construction",
+      "claim_class": "appellate-holding",
+      "statement": "An assertion of entitlement to an excessive payment is necessary; it need not be a bill. Mere receipt of an overpayment is insufficient.",
+      "grounds": [
+        1,
+        2
+      ],
+      "result": "allowed",
+      "evidence": [
+        {
+          "source_id": "AJ",
+          "pinpoint": "[114], [124]-[126]"
+        }
+      ]
+    },
+    {
+      "id": "no-assertion-on-these-facts",
+      "claim_class": "appellate-application-of-law-to-facts",
+      "statement": "The SAP design, receipt, processing and retention did not support the inferred assertion of entitlement to payment for energy in this case.",
+      "grounds": [
+        3
+      ],
+      "result": "allowed",
+      "evidence": [
+        {
+          "source_id": "AJ",
+          "pinpoint": "[148]-[158]"
+        }
+      ]
+    },
+    {
+      "id": "former-small-customers",
+      "claim_class": "appellate-holding",
+      "statement": "A small customer for rule 31 may be a person who has ceased to obtain retail services from the retailer.",
+      "grounds": [
+        4,
+        5
+      ],
+      "result": "leave-granted-grounds-failed",
+      "evidence": [
+        {
+          "source_id": "AJ",
+          "pinpoint": "[166], [173]-[178]"
+        }
+      ]
+    },
+    {
+      "id": "section273-case-specific-reversal",
+      "claim_class": "appellate-holding",
+      "statement": "The pleaded section 273 finding fails on this record, but section 273 is not generally predicated on demonstrating substantive non-compliance.",
+      "grounds": [
+        8
+      ],
+      "result": "allowed",
+      "evidence": [
+        {
+          "source_id": "AJ",
+          "pinpoint": "[179]-[183], especially [181]-[182]"
+        }
+      ]
+    },
+    {
+      "id": "awareness-and-penalty-unresolved",
+      "claim_class": "expressly-not-decided-on-appeal",
+      "statement": "Grounds 6-7 on awareness and 9-14 on penalty did not arise; conditional cross-appeal/contention and further-evidence issues also did not require substantive determination. Do not label the SAP-awareness reasoning affirmed or separately rejected on its merits.",
+      "evidence": [
+        {
+          "source_id": "AJ",
+          "pinpoint": "[5]-[7], [131]-[132]"
+        }
+      ]
+    },
+    {
+      "id": "contractual-background",
+      "claim_class": "court-recorded-background-not-surviving-remedial-order",
+      "statement": "The judgment records cancellation requirements and the undisputed contractual obligation to return payments. No new contract damages or customer refund order is established here, and current Centrepay terms are not verified.",
+      "evidence": [
+        {
+          "source_id": "AJ",
+          "pinpoint": "[10(6)], [137], [152]-[153]"
+        }
+      ]
+    }
+  ],
+  "temporal_relations": [
+    {
+      "from": "proceedings-instituted",
+      "relation": "later-liability-reasons",
+      "to": "liability-judgment",
+      "status": "research-supported-not-integrated"
+    },
+    {
+      "from": "liability-judgment",
+      "relation": "followed-by-declarations-and-relief",
+      "to": "relief-judgment",
+      "status": "research-supported-not-integrated"
+    },
+    {
+      "from": "appeal-judgment",
+      "relation": "displaces-rule31-and-section273-liability",
+      "to": "liability-judgment",
+      "evidence": [
+        {
+          "source_id": "AJ",
+          "pinpoint": "[7], [179]-[185]"
+        }
+      ],
+      "status": "research-supported-not-integrated"
+    },
+    {
+      "from": "appeal-judgment",
+      "relation": "sets-aside-all-orders-dated-2024-12-19",
+      "to": "relief-judgment",
+      "evidence": [
+        {
+          "source_id": "AJ",
+          "pinpoint": "order 5"
+        }
+      ],
+      "status": "research-supported-not-integrated"
+    },
+    {
+      "from": "appeal-judgment",
+      "relation": "dismisses-original-proceeding",
+      "to": "proceedings-instituted",
+      "evidence": [
+        {
+          "source_id": "AJ",
+          "pinpoint": "order 5(a)"
+        }
+      ],
+      "status": "research-supported-not-integrated"
+    },
+    {
+      "from": "aer-post-judgment-application",
+      "relation": "later-filing-content-and-effect-unverified",
+      "to": "appeal-judgment",
+      "evidence": [
+        {
+          "source_id": "DOCKET",
+          "pinpoint": "APPEALS AND RELATED > Documents Filed, 2 September 2026"
+        }
+      ],
+      "status": "research-observation-not-integrated"
+    }
+  ],
+  "historical_and_current_comparator": {
+    "existing_candidate_provision_id": "NERR-BILLING-CURRENT-2026-08-29",
+    "comparison_status": "research-supported-independent-review-required",
+    "historical_jurisdictions_expressly_recorded": [
+      "New South Wales",
+      "Queensland",
+      "South Australia"
+    ],
+    "historical_rule_evidence": [
+      {
+        "source_id": "LJ",
+        "pinpoint": "[69]"
+      },
+      {
+        "source_id": "AJ",
+        "pinpoint": "[17] and legislation header"
+      }
+    ],
+    "historical_version_warning": "Version 30 began 21 October 2021; it is not a compilation covering the entire December 2016-November 2021 interval. Earlier compilations and application-law amendments have not all been independently audited.",
+    "current_compilation": {
+      "version": 51,
+      "valid_from": "2026-07-01",
+      "date_is": "compilation-start-not-proven-rule31-amendment-date",
+      "evidence": [
+        {
+          "source_id": "NERR51",
+          "pinpoint": "summary Start Date and current version selector"
+        }
+      ]
+    },
+    "material_comparison": "Inspected version 30 and 51 rule 31(1)-(3) retain the same material trigger and remedy structure; no amendment reversing the appellate holding is established by this review.",
+    "branches": [
+      {
+        "provision": "31(1)",
+        "summary": "At or above threshold: notify within 10 business days after awareness of overcharging."
+      },
+      {
+        "provision": "31(2)(a)-(c)",
+        "summary": "At or above threshold: reasonable customer repayment direction; otherwise credit next bill; absent such direction for a departed customer, best endeavours refund within 10 business days."
+      },
+      {
+        "provision": "31(3)(a)-(b)",
+        "summary": "Below threshold: next-bill credit or best endeavours refund to departed customer within 10 business days."
+      },
+      {
+        "provision": "31(4)-(5)",
+        "summary": "No interest on overcharged amount; limited lookback only for the stated customer unlawful act or omission."
+      },
+      {
+        "provision": "31(6)-(8)",
+        "summary": "AUD 50 default or another AER-determined amount; consultation and website publication mechanisms. Current AER threshold page identifies AUD 50."
+      },
+      {
+        "provision": "31(9)-(10)",
+        "summary": "Standard and market retail contracts, with prepayment meter market retail contracts excluded."
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "NERR30",
+        "pinpoint": "rule 31(1)-(10)"
+      },
+      {
+        "source_id": "NERR51",
+        "pinpoint": "rule 31(1)-(10)"
+      },
+      {
+        "source_id": "AER-THRESHOLD",
+        "pinpoint": "Overcharging threshold"
+      }
+    ],
+    "interpretive_inference": "The appellate construction remains relevant to comparison with current rule 31, subject to facts, qualifying contract/customer, awareness, remedy branch and subsequent authority. This is not an approved current-law binding.",
+    "section273_comparator": "The general monitoring duty must be separately verified against current host and local application laws; retain the distinction in AJ [181]-[183].",
+    "historical_penalty_regime_note": "PJ [84] separates calculations before and from 29 January 2021; later penalty tiers must not be backdated.",
+    "historical_penalty_regime_evidence": [
+      {
+        "source_id": "PJ",
+        "pinpoint": "[84]"
+      }
+    ],
+    "supports_current_law_drafting": false
+  },
+  "source_conflicts": [
+    {
+      "conflict_id": "institution-date",
+      "assertions": [
+        {
+          "source_id": "AER-START",
+          "pinpoint": "opening paragraph",
+          "date": "2022-12-16"
+        },
+        {
+          "source_id": "AER-LJ",
+          "pinpoint": "Court proceedings",
+          "date": "2022-12-16"
+        },
+        {
+          "source_id": "AER-AJ",
+          "pinpoint": "Court proceedings",
+          "date": "2022-12-16"
+        },
+        {
+          "source_id": "AER-JULY",
+          "pinpoint": "Notes to Editors > AGL Centrepay proceedings",
+          "date": "2022-12-22"
+        }
+      ],
+      "resolution": "Use 16 December as the better-supported regulator-reported date, preserve the discrepancy, and obtain original filing evidence before calling it court-docket-verified."
+    },
+    {
+      "conflict_id": "cross-appeal-date",
+      "assertions": [
+        {
+          "source_id": "AJ",
+          "pinpoint": "[6]",
+          "date": "2025-03-05"
+        },
+        {
+          "source_id": "DOCKET",
+          "pinpoint": "CROSS APPEAL > Documents Filed",
+          "date": "2025-02-28"
+        },
+        {
+          "source_id": "AER-APPEAL",
+          "pinpoint": "publication date and has-filed statement",
+          "publication_date": "2025-03-03"
+        }
+      ],
+      "resolution": "Unresolved; do not invent filing versus lodgement distinctions or substitute publication date. Obtain filed notice."
+    },
+    {
+      "conflict_id": "interlocutory-2025-date",
+      "assertions": [
+        {
+          "source_id": "AJ",
+          "pinpoint": "order 4",
+          "date": "2025-08-05"
+        },
+        {
+          "source_id": "DOCKET",
+          "pinpoint": "CROSS APPEAL > Documents Filed",
+          "date": "2025-08-01"
+        }
+      ],
+      "resolution": "Unresolved; Court order identifies the dismissed application. Confirm filed instrument identity and date."
+    },
+    {
+      "conflict_id": "rule31-7-reproduction",
+      "assertions": [
+        {
+          "source_id": "AJ",
+          "pinpoint": "[17], reproduced rule 31(7)",
+          "paraphrase": "Determination of new threshold on the AER website."
+        },
+        {
+          "source_id": "NERR30",
+          "pinpoint": "31(7)-(8)",
+          "paraphrase": "Retail consultation procedure for determination; website publication separately required."
+        },
+        {
+          "source_id": "NERR51",
+          "pinpoint": "31(7)-(8)",
+          "paraphrase": "Same consultation/publication distinction."
+        }
+      ],
+      "resolution": "Archived Court text and live Court HTML agree. Flag the discrepancy with AEMC text for original-document comparison; it is not evidence of a later amendment."
+    },
+    {
+      "conflict_id": "administrative-open-status",
+      "assertions": [
+        {
+          "source_id": "AJ",
+          "pinpoint": "orders 2-5",
+          "status": "appeal-allowed-cross-appeal-dismissed-original-proceeding-dismissed"
+        },
+        {
+          "source_id": "DOCKET",
+          "pinpoint": "Existing applications and aggregate search result",
+          "status": "appeal-closed-19-Aug-2026-cross-appeal-open-file-open"
+        }
+      ],
+      "resolution": "Retain separate judicial disposition and observed administrative status. Do not infer revival of liability or High Court process from Open."
+    }
+  ],
+  "later_status": {
+    "as_of": "2026-09-06",
+    "judicial_disposition_last_verified": "2026-08-19 appeal allowed; original proceeding and cross-appeal dismissed",
+    "later_activity_observed": true,
+    "latest_filing_observed": "2026-09-02 AER interlocutory application",
+    "file_status_displayed": "Open",
+    "appeal_application_status_displayed": "Closed",
+    "appeal_application_finalised_date_displayed": "2026-08-19",
+    "cross_appeal_status_displayed": "Open",
+    "file_finalised_date_displayed": null,
+    "latest_order_in_inspected_list": "2026-08-19",
+    "absence_of_other_orders_established": false,
+    "high_court_special_leave_status": "unverified",
+    "no_further_appeal_claim": false,
+    "repayment_completed": null,
+    "stay_or_costs_variation": "unverified",
+    "costs_filing_connection": {
+      "claim_class": "inference-only",
+      "statement": "The 26 August and 2 September submissions align with order 8 deadlines; their actual subject matter is not established by titles."
+    },
+    "search_limits": [
+      "Federal Court special-leave list had no AGL match and expressly disclaims completeness, currency and accuracy.",
+      "High Court special-leave landing page was accessible; linked results page returned 403 and was not bypassed.",
+      "Targeted official-domain searches did not provide affirmative later special-leave evidence; absence of hits is not evidence that no application exists.",
+      "Federal Law Search is selected administrative information, not the formal court record; filed-document contents were not inspected."
+    ],
+    "evidence": [
+      {
+        "source_id": "DOCKET",
+        "pinpoint": "Existing applications; expanded Documents Filed sections"
+      },
+      {
+        "source_id": "ORDERS",
+        "pinpoint": "unfiltered list of orders observed 6 September"
+      },
+      {
+        "source_id": "AJ",
+        "pinpoint": "orders 6-8"
+      },
+      {
+        "source_id": "FLS-LIMITS",
+        "pinpoint": "Information that is not displayed; Using information obtained through Federal Law Search"
+      },
+      {
+        "source_id": "HCA-FCA",
+        "pinpoint": "Currency/completeness of information"
+      },
+      {
+        "source_id": "HCA",
+        "pinpoint": "Results link"
+      }
+    ]
+  },
+  "metadata_findings_for_parent": [
+    {
+      "id": "M1",
+      "classification": "precise-status-subject-error",
+      "locations": [
+        "data/enforcement-events-full.jsonl:821",
+        "data/curated-full-corpus-additions.jsonl:10",
+        "data/event-provision-links.jsonl:871",
+        "knowledge-base/D04-Retail-Enforcement-Case-Library.md:59",
+        "knowledge-base/D00-Enforcement-Event-Timeline-2006-2026.md:113"
+      ],
+      "record_id": "au-fcafc-2026-08-19-agl-centrepay-appeal",
+      "observed": "Appellate event status/historical_status is quashed-on-appeal.",
+      "proposal": "Use schema-supported appeal-allowed / cross-appeal-dismissed semantics for AJ; reserve set-aside status for December orders; later High Court status remains unverified.",
+      "evidence": [
+        {
+          "source_id": "AJ",
+          "pinpoint": "orders 2-5"
+        }
+      ]
+    },
+    {
+      "id": "M2",
+      "classification": "material-omission",
+      "locations": [
+        "data/enforcement-events-full.jsonl:620",
+        "data/enforcement-events-full.jsonl:821",
+        "data/curated-full-corpus-additions.jsonl:10"
+      ],
+      "observed": "Appellate outcome describes penalty displacement without complete order mapping.",
+      "proposal": "Map all PJ declarations/orders to AJ order 5; add dismissal, repayment with interest and qualified costs, without deleting historical relief.",
+      "evidence": [
+        {
+          "source_id": "PJ",
+          "pinpoint": "declarations 1-2 and orders 3-6"
+        },
+        {
+          "source_id": "AJ",
+          "pinpoint": "orders 5-8"
+        }
+      ]
+    },
+    {
+      "id": "M3",
+      "classification": "temporal-linkage-error-if-used-as-current-case-status",
+      "locations": [
+        "data/enforcement-events-full.jsonl:453",
+        "data/event-provision-links.jsonl:484"
+      ],
+      "record_id": "au-aer-2022-12-16-agl-alleged-breaches-overcharging-obligations",
+      "observed": "Institution event remains allegations-only and pending-or-non-final without an explicit completed merits chain.",
+      "proposal": "Preserve 2022 event posture; add later liability, relief and appellate dismissal links. Do not report original merits as awaiting decision.",
+      "evidence": [
+        {
+          "source_id": "AER-START",
+          "pinpoint": "opening paragraph"
+        },
+        {
+          "source_id": "AJ",
+          "pinpoint": "order 5(a)"
+        }
+      ]
+    },
+    {
+      "id": "M4",
+      "classification": "missing-distinct-liability-node-in-inspected-file",
+      "locations": [
+        "data/enforcement-events-full.jsonl",
+        "data/enforcement-events-full.jsonl:620"
+      ],
+      "observed": "No matching 23 August 2024 / FCA 969 event found in the inspected canonical event file.",
+      "proposal": "Parent may add a separate 23 August liability event and retain the 19 December relief event. No whole-KB absence claim.",
+      "evidence": [
+        {
+          "source_id": "LJ",
+          "pinpoint": "header, orders 1-3"
+        },
+        {
+          "source_id": "AJ",
+          "pinpoint": "[1]-[3]"
+        }
+      ]
+    },
+    {
+      "id": "M5",
+      "classification": "date-taxonomy-omission-not-incorrect-existing-breach-dates",
+      "locations": [
+        "data/enforcement-events-full.jsonl:620"
+      ],
+      "observed": "Issue text has 9 January 2017-28 October 2021 without separately recording the broader relevant interval.",
+      "proposal": "Keep declared dates; add broader 23 December 2016-2 November 2021 and entity periods with distinct date_type fields.",
+      "evidence": [
+        {
+          "source_id": "AJ",
+          "pinpoint": "[2]"
+        },
+        {
+          "source_id": "PJ",
+          "pinpoint": "declaration 1(d)-(g)"
+        }
+      ]
+    },
+    {
+      "id": "M6",
+      "classification": "underspecified-current-comparator",
+      "locations": [
+        "data/provision-version-register.json"
+      ],
+      "record_id": "NERR-BILLING-CURRENT-2026-08-29",
+      "observed": "Generic NERR URL and null version dates.",
+      "proposal": "Candidate locator: version 51 rule 31, compilation start 1 July 2026; do not confuse compilation start with rule amendment or lift review restrictions.",
+      "evidence": [
+        {
+          "source_id": "NERR51",
+          "pinpoint": "summary and rule 31"
+        }
+      ]
+    },
+    {
+      "id": "M7",
+      "classification": "publisher-family-ambiguity",
+      "locations": [
+        "data/enforcement-events-full.jsonl:821",
+        "data/curated-full-corpus-additions.jsonl:10"
+      ],
+      "observed": "Court source is assigned source_family_id AU-AER-COMPLIANCE.",
+      "proposal": "Retain discovery family if intended, but record Federal Court as publisher/judicial authority and full official case title separately.",
+      "evidence": [
+        {
+          "source_id": "AJ",
+          "pinpoint": "caption and header"
+        }
+      ]
+    },
+    {
+      "id": "M8",
+      "classification": "new-status-evidence-and-unresolved-source-conflicts",
+      "locations": [
+        "canonical Centrepay chain on parent integration"
+      ],
+      "proposal": "Add dated later docket observations and unresolved cross-source dates/rule reproduction conflicts. Do not modify source originals or infer finality.",
+      "evidence": [
+        {
+          "source_id": "DOCKET",
+          "pinpoint": "Documents Filed and Existing applications"
+        },
+        {
+          "source_id": "AJ",
+          "pinpoint": "[6], [17], order 4"
+        },
+        {
+          "source_id": "NERR30",
+          "pinpoint": "31(7)-(8)"
+        }
+      ]
+    }
+  ],
+  "gaps": [
+    {
+      "id": "G1",
+      "status": "open",
+      "item": "Contents and disposition of AER interlocutory application filed 2 September 2026; any stay or changed repayment/costs order.",
+      "priority": "high",
+      "owner": "parent",
+      "evidence": [
+        {
+          "source_id": "DOCKET",
+          "pinpoint": "2 September 2026, 16:04"
+        }
+      ]
+    },
+    {
+      "id": "G2",
+      "status": "open",
+      "item": "26 August AER submissions and 2 September AGL submissions; do not assume their contents from order 8 dates.",
+      "owner": "parent",
+      "evidence": [
+        {
+          "source_id": "DOCKET",
+          "pinpoint": "APPEALS AND RELATED > Documents Filed"
+        }
+      ]
+    },
+    {
+      "id": "G3",
+      "status": "unverified",
+      "item": "Any High Court special-leave application, result or other later appeal; negative search is insufficient.",
+      "owner": "parent"
+    },
+    {
+      "id": "G4",
+      "status": "open",
+      "item": "Original filing evidence for institution, cross-appeal and August 2025 interlocutory dates; distinguish instruments and timestamps only with evidence.",
+      "owner": "parent"
+    },
+    {
+      "id": "G5",
+      "status": "open",
+      "item": "Historical Rule compilations/application-law coverage before version 30, original-document comparison of rule 31(7), and separate current NERL/Centrepay terms verification.",
+      "owner": "parent"
+    },
+    {
+      "id": "G6",
+      "status": "parent-acquisition-pending",
+      "item": "Preserve judgment originals and new docket/rule observations. Three HTML judgments were accessible; this does not certify original Word documents, sealed orders, schedules or full archive integrity.",
+      "owner": "parent"
+    },
+    {
+      "id": "G7",
+      "status": "needs-independent-review",
+      "item": "Independent legal review and any parent verified current-law release process. This research does not satisfy those gates.",
+      "owner": "parent"
+    }
+  ],
+  "verification_boundary": "Only research consistency, JSON integrity, source-reference resolution, date/order relationships and historical arithmetic are checked here. Legal correctness, completeness and operational readiness are not certified."
+}

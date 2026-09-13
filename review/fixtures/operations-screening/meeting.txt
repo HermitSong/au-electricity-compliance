@@ -1,0 +1,8 @@
+SYNTHETIC DEMO ONLY. No real customer, account, recording or finding is represented.
+[00:00] Chair: Revenue and the office lease are on the agenda.
+[04:12] Operations: Customer information may have been sent to a wrong recipient last week. We have not checked the access logs. The team says it recalled the message but has not verified deletion.
+[09:05] Service lead: There is an email backlog. Several billing disputes have been unanswered for two weeks because of staff shortage. We must check the individual receipt dates and the complaints policy.
+[12:20] Collections: One customer said they cannot afford the bill. We have not verified whether the payment plan is still active or debt collection is running.
+[15:40] Training lead: In a hypothetical exercise, a life support customer has an outage. This is not a report of an actual outage.
+[19:30] Chair: The training pack also covers family violence and safe contact. Do not infer that this describes a current customer.
+[23:00] Chair: The backlog action from the last meeting is still unresolved. A named owner and completion evidence are needed.

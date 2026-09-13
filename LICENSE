@@ -1,0 +1,157 @@
+Australian Electricity Compliance Source-Available Licence 1.0
+
+Copyright (c) 2026 HermitSong and the respective contributors, to the extent
+copyright subsists in their original contributions.
+Project: https://github.com/HermitSong/au-electricity-compliance
+Identifier: LicenseRef-AU-Electricity-Compliance-Source-Available-1.0
+
+1. Scope and definitions
+
+"Licensed Material" means original software, tests, documentation, knowledge
+explanations and protectable original selection or arrangement of structured
+content made available under this licence by its rights holder. It includes
+protectable modifications but excludes material identified in section 7.
+"Licensor" means each rights holder granting rights in its own contribution.
+"You" means the individual or legal entity exercising the permissions below.
+"Your Organisation" means that entity and entities under common control with it.
+Control means the power to direct management by ownership, voting or contract.
+"Internal Use" means use for Your Organisation's own operations, including its
+electricity business, compliance, audits, risk management and staff training.
+
+2. Free permissions
+
+Subject to this licence, each Licensor grants You a worldwide, non-exclusive,
+royalty-free copyright licence to access, run, copy and modify its Licensed
+Material for:
+(a) Internal Use, including production deployment and internal integrations;
+(b) personal learning, teaching, research, evaluation and non-commercial demos,
+    including funded research that does not itself provide an offering restricted
+    under section 4; and
+(c) contributing improvements and sharing source copies or modifications without
+    charging for access or copies, subject to sections 4 and 5.
+
+You may keep internal modifications private. There is no requirement to publish
+Your Organisation's modifications, private records, prompts or ordinary outputs.
+These permissions last for the copyright term while You comply with this licence.
+There is no automatic conversion to an open-source licence or automatic expiry
+of the commercial restrictions.
+
+3. Contractors, infrastructure and ordinary outputs
+
+You may engage staff, advisers and contractors to deploy, host, configure,
+integrate or maintain a private instance on Your Organisation's behalf and under
+its control, solely for its Internal Use. They may charge for this work and generic
+infrastructure. You must ensure they observe this licence and do not use this
+permission to sell or operate a reusable third-party compliance product. Each
+client must obtain its own applicable licence. General-purpose cloud or model
+providers need no project commercial licence merely because You use their
+infrastructure for a permitted purpose.
+
+You may share ordinary results of permitted use with Your Organisation's customers,
+auditors, regulators and advisers in the course of its own operations. For example,
+a retailer may send a compliance explanation with an electricity bill. This does
+not permit selling substantial Licensed Material as a content product or supplying
+the services restricted by section 4. No rights are claimed in output merely
+because the project produced it. Independently applicable source, copyright and
+privacy rights still apply.
+
+4. Commercial offerings requiring separate permission
+
+Without a separate written commercial licence from the relevant rights holder(s),
+You may not:
+(a) sell, rent, sublicense for a fee or distribute for compensation the Licensed
+    Material or a product substantially incorporating its protectable expression;
+(b) supply a white-label or rebranded commercial version of the project to others;
+(c) offer external users paid access to project functionality through a hosted
+    service, SaaS, API, chatbot or other interface; or
+(d) supply paid managed compliance-answering or monitoring services to third-party
+    clients where project functionality is a substantial part of the service sold.
+
+These restrictions also apply to payment bundled with another product, described
+as a membership or service fee, or collected through an intermediary. Ordinary
+Internal Use and the services expressly permitted by section 3 are not prohibited
+merely because money changes hands. Charging for electricity, network services or
+storage operations is not charging for this project. Independent consulting that
+does not exercise restricted rights in Licensed Material is not prohibited.
+
+A commercial licence may have separate terms and pricing. Requesting one, opening
+an issue, receiving an automated reply or contributing does not grant it. Contact
+the maintainer through the repository to arrange a private channel; do not post
+confidential commercial details or personal records publicly.
+
+5. Notices, modifications and permitted redistribution
+
+Retain this licence, copyright notices, source attribution, disclaimers and relevant
+third-party notices with permitted copies or redistributions. Identify material
+modifications and their dates. Do not imply endorsement by a Licensor, regulator,
+court or source publisher. Permitted redistributions, including modified source
+forks, must preserve recipients' rights and restrictions under this licence.
+Clearly separate independently licensed material. You may not remove restrictions
+or grant commercial exceptions over contributions You do not own. Recipients
+receive rights in existing contributions directly from their Licensors.
+
+Truthful identification and attribution of the project are allowed. No right is
+granted to market derivatives as official or endorsed project releases.
+
+6. Contributions
+
+You retain ownership of Your original contributions. Redistribution under this
+licence alone does not give the maintainer a right to relicense Your changes
+commercially. Broader grants require a separately acknowledged contribution
+agreement. Commercial offerings must respect the rights actually obtained in
+external contributions and dependencies.
+
+7. Excluded material and preserved rights
+
+This licence grants no new rights over official legislation, rules, judgments,
+regulator publications, third-party wording, photographs, screenshots of third-
+party content, logos, trademarks, dependencies, personal information or confidential
+records. Their own licences and applicable law govern them.
+
+Facts, ideas, public-domain material and unprotected elements do not become
+proprietary through collection, OCR, indexing or inclusion here. You may obtain
+official sources independently and build an independent system. Any protection
+in original selection or arrangement does not cover underlying unprotected facts
+or impose this licence on independently sourced material.
+
+Nothing here limits copyright exceptions, mandatory statutory rights, valid
+permissions from another rights holder or rights previously granted under another
+licence. In particular, valid earlier MIT or Creative Commons permissions are not
+revoked. LICENSING.md and third-party manifests identify boundaries; they cannot
+enlarge a Licensor's rights.
+
+8. Acceptance, breach and reinstatement
+
+By exercising permissions that require this licence, You accept its conditions.
+A material breach terminates the affected permissions. For a first notified breach,
+they are reinstated if You stop the breach and take reasonable remedial steps
+within 30 days of written notice. Further reinstatement requires the relevant
+Licensor's written agreement. Lawful downstream permissions already granted are
+not cancelled solely because Your permissions terminate.
+
+9. No warranty, advice or certification
+
+To the extent permitted by applicable law, the Licensed Material is supplied
+"AS IS", without warranties or conditions, including accuracy, completeness,
+currency, fitness for purpose, merchantability or non-infringement. It is regulatory
+information and research tooling, not legal advice, operational clearance or a
+guarantee of compliance. This licence grants no electricity-market, professional-
+practice or regulatory authorisation.
+
+10. Liability and mandatory law
+
+To the extent permitted by applicable law, no Licensor is liable for losses arising
+from the Licensed Material or its use, including incorrect answers, missing cases,
+data loss, business interruption or regulatory penalties. Nothing excludes rights,
+guarantees or liabilities that cannot lawfully be excluded. If a term is invalid,
+the remaining terms continue to the extent permitted by applicable law.
+
+11. Other rights and interpretation
+
+No ownership, trademark or patent rights are transferred or granted except as
+expressly stated or necessarily arising under applicable law. Section 7 prevails
+over purported restrictions on excluded material. Separate written permissions
+prevail within their expressly agreed scope. The English text governs this licence.
+
+This is a project-specific source-available licence, not an OSI-approved open-source
+licence, not MIT, not a Creative Commons licence and not Business Source License.

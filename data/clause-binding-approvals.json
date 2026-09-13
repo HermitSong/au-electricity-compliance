@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "approvals": [
+    {
+      "provision_id": "NER-BDU-REGISTRATION-V254-2026-09-04",
+      "candidate_sha256": "14973d3d3fd7260c0deb73129ed177e4c9dfc746854d99daced2629a28db4c3e",
+      "reviewer_id": "codex-task:01a098bc-9a5d-7580-9e8a-67a85963c43e",
+      "reviewed_at": "2026-09-13",
+      "result": "approved-for-scoped-drafting",
+      "review_note": "Independent Codex task source review. Confirmed the live AEMC current NER page selected version 254 and its version summary stated 4 September 2026; independently downloaded the linked full PDF (HTTP 200, 8497194 bytes), SHA-256 acc777d749c526c75e80c202ae176b5b0ed26750900a6050a542fa0ca426bf69. Replayed all 15 unique source IDs against normalized pypdf page text and recorded character ranges, allowing boundary whitespace trimming only; verified provision digest, ordered span-record digest, text/source hashes, URL and adjacent clause boundaries. Read the complete stated clauses, including exemptions, alternative AEMO classifications and conditions, small-resource definitions, intermediary joint and several liability, revocation and jurisdictional qualifications. Scoped to 13 September 2026 NEM drafting; this does not establish project-specific classification, a state licence, connection entitlement, exemption or execution permission. Unbound cross-references and procedures require additional sources. Source approval only; release-code findings are recorded in review/accuracy-2026-09-13/binding-independent-review.md. No professional certification or legal guarantee."
+    },
+    {
+      "provision_id": "NER-BIDDING-V254-2026-09-04",
+      "candidate_sha256": "2fe1781e889543fe3d1c038efbfffacb357be1f4c6155c6ee39ecd6bf67bd186",
+      "reviewer_id": "codex-task:01a098bc-9a5d-7580-9e8a-67a85963c43e",
+      "reviewed_at": "2026-09-13",
+      "result": "approved-for-scoped-drafting",
+      "review_note": "Independent Codex task source review. Verified live AEMC NER version 254, effective 4 September 2026, and independently retrieved the full official PDF with matching SHA-256 acc777d749c526c75e80c202ae176b5b0ed26750900a6050a542fa0ca426bf69. Replayed all 8 unique source IDs on pages 222-224, 241-244 and 1697 against normalise(pypdf page extract_text()) at the recorded offsets, with boundary whitespace trimming only; matched provision and ordered span-record digests, text/source hashes and URL. Checked complete 3.8.6, 3.8.22 and 3.8.22A through their next-clause boundaries, including separate production/consumption bands, energy and ramp constraints, price/quantity qualifications, firm rebid prices, reasons and contemporaneous records, genuine intention/reasonable basis, timing and court qualifications. Visually checked the loss-factor formula and its note on PDF page 224. Scoped to 13 September 2026 energy bidding explanation; FCAS, detailed late-rebid definitions/record retention, AER guidelines, AEMO procedures and plant parameters need their own source review. Release-code findings remain separately recorded. No operational approval, professional certification or legal guarantee."
+    },
+    {
+      "provision_id": "NER-DISPATCH-V254-2026-09-04",
+      "candidate_sha256": "43245617b349f1eff104fa01e544146cb0f428cf2aa208304fc8fd7d166bf494",
+      "reviewer_id": "codex-task:01a098bc-9a5d-7580-9e8a-67a85963c43e",
+      "reviewed_at": "2026-09-13",
+      "result": "approved-for-scoped-drafting",
+      "review_note": "Independent Codex task source review. Confirmed AEMC current NER version 254 and 4 September 2026 effective date online, and matched an independent official PDF download to SHA-256 acc777d749c526c75e80c202ae176b5b0ed26750900a6050a542fa0ca426bf69. Replayed all 3 unique source IDs on PDF pages 490-492 with normalise(pypdf page extract_text()) and the recorded character ranges, trimming boundary whitespace only; checked provision and ordered span-record digests, source/text hashes and URL. Read all paragraphs from 4.9.8 through the end of 4.9.9B before 4.9.9C, preserving the public-safety/equipment exception, frequency-response and semi-scheduled qualifications, resource capability duties and prompt change notifications. Scoped to 13 September 2026 rule drafting. Historical Hornsdale paragraph numbering does not establish current plant classification, and this range does not establish technical tolerances or control-system compliance. Release-code findings are separately documented. No operational approval, professional certification or legal guarantee."
+    },
+    {
+      "provision_id": "NER-SETTLEMENT-V254-2026-09-04",
+      "candidate_sha256": "034cbdaaf51f975fe3deb9443b908c507cb1d1c09cda94ec6e194f5dfcd4bdf4",
+      "reviewer_id": "codex-task:01a098bc-9a5d-7580-9e8a-67a85963c43e",
+      "reviewed_at": "2026-09-13",
+      "result": "approved-for-scoped-drafting",
+      "review_note": "Independent Codex task source review of the revised eight-span candidate only; the earlier five-span candidate was withheld for missing the active transition. Confirmed live AEMC NER v254 effective 4 September 2026 and independently downloaded the full PDF with SHA-256 acc777d749c526c75e80c202ae176b5b0ed26750900a6050a542fa0ca426bf69. Replayed all 8 unique source IDs on PDF pages 345-346, 392-393, 1655 and 2068-2070 against normalized pypdf text at recorded offsets, trimming boundary whitespace only; verified provision and ordered span-record digests, text/source hashes and URL. Read complete 3.15.6, 3.15.15-3.15.18 including 3.15.15A, Chapter 10 payment date, and 11.179 through the boundary before 11.180. Checked formula/loss-factor and intervention qualifications, disputes despite payment, and visually inspected pages 346 and 2070. Rule 11.179.4(b) permits final statements 7-18 business days after the relevant billing period during the transition beginning 9 August and ending immediately before 17 October 2026; the Chapter 10 later-of payment definition still applies, and 11.179.4(e) preserves payments after transition for affected billing periods. Scoped to a transition-aware explanation as at 13 September 2026. The exact billing-period calendar, statement receipt and operational timetable remain unbound, so no specific calendar payment date is established. AGE, other settlement components and unbound cross-references require separate review. Release-code findings are separately recorded. No payment instruction, operational approval, professional certification or legal guarantee."
+    },
+    {
+      "provision_id": "AEMO-REGISTRATION-FEES-FY27",
+      "candidate_sha256": "6408578de050fe8138b722f97af9e98987438042454e7f6d1a322e692ab9c919",
+      "reviewer_id": "codex-task:01a098bc-9a5d-7580-9e8a-67a85963c43e",
+      "reviewed_at": "2026-09-13",
+      "result": "approved-for-scoped-drafting",
+      "review_note": "Independent Codex task review of the official FY27 fee publication as at 13 September 2026. The current AEMO fees-and-charges page links to the exact candidate PDF URL as its 19 June 2026 FY27 publication; independently opened the linked 91-page PDF online and checked the relevant text. Recomputed local full-PDF SHA-256 8832452d464178aa7b3ad90b8c9f4fc451d0c3123f2eb311543bb3868a322a86 (3185372 bytes). Replayed all 3 unique source IDs on pages 2, 76 and 77 against normalise(pypdf page extract_text()) at the recorded offsets, trimming boundary whitespace only; matched provision, ordered span-record and text digests, URL and source hashes. Visually checked all 3 pages, FY27 column alignment, Table 46 general hourly rates, the complete Table 47 through footnotes A-D and its boundary before WEM Table 48. Confirmed Australian-dollar net-GST basis, Scheduled Market BDU A$48150 per registration, conditional ancillary-service/other classification fees, and additional assessment effort beyond the fixed fee. Equal-scope 6MW/55MW applications in the same registration category have equal listed base fees; no project total or T&M cap follows. Connections charge-out rates are separate. Scope is the FY27 fee publication from 1 July 2026, not a statute, legal entitlement or project quote. Online AEMO PDF content was checked, but independent remote-byte hashing was unavailable after a raw-download HTTP 403. Release-code findings are separate. No operational approval, professional certification or legal guarantee."
+    },
+    {
+      "provision_id": "AEMO-REGISTRATION-INVOICING-FY27",
+      "candidate_sha256": "8d7ef89bb35646673e889cd630913d70bddb0f26a81362dd6a567c4e96ad1a87",
+      "reviewer_id": "codex-task:01a098bc-9a5d-7580-9e8a-67a85963c43e",
+      "reviewed_at": "2026-09-13",
+      "result": "approved-for-scoped-drafting",
+      "review_note": "Independent Codex task review of administrative invoicing guidance as at 13 September 2026. Confirmed the current AEMO fees-and-charges page links to this exact URL, labelled 3 July 2026; independently opened the linked three-page PDF online, which states the arrangements apply from 1 July 2026. Recomputed local full-PDF SHA-256 f9f7f12952f3906897b6e126c574dad784576392cf3356ba971496a3c3559f94 (255672 bytes). Replayed all 3 unique source IDs against normalized pypdf pages 1-3 at recorded offsets with boundary whitespace trimming only; verified provision and ordered span-record digests, source/text hashes and URL. Visually read all three pages, including the two-column reading order, threshold limitation to the stated categories, additional actual assessment effort, 70/95/100 percent notifications, the option to advise AEMO at 95 percent that the applicant does not wish to proceed, and monthly arrears. The unselected end is contact/more-information material, not an omitted charging exception. No fee ceiling, actual hours, refund right, retrospective invoice conclusion or instruction to proceed is established. This is guidance supporting scoped drafting, not a statute or fixed quote; the register's FY27 end date is a conservative review scope, not a stated expiry of the fact sheet. Online content was independently checked; remote-byte hash equality was not established. Release-code findings remain separate. No operational approval, professional certification or legal guarantee."
+    }
+  ]
+}
